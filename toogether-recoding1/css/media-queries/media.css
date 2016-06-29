@@ -52,5 +52,13 @@
     -webkit-justify-content: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important; } }
+@media screen and (max-width: 570px) {
+  /* line 43, ../../sass/media.sass */
+  .staff-info-subscribe {
+    width: 100% !important; }
+
+  /* line 47, ../../sass/media.sass */
+  .staff-info img {
+    margin: auto; } }
 
 /*# sourceMappingURL=media.css.map */

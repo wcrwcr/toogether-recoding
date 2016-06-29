@@ -5,6 +5,8 @@
   src: url("../fonts/fonts/Helvetica.woff")
   src: url("../fonts/fonts/Helvetica.eot")
 
+a:focus
+  outline: none
 
 body
   font-family: Helvetica,"Helvetica-custom",Arial, sans-serif
@@ -94,10 +96,13 @@ body
         #dropDownLanguage
           display: none
           list-style-type: none
-          padding: 0
+          position: absolute
+          top: 100%
           margin: 0
+          padding: 0
           li
             a
+              margin: 5px 0
               display: block
   .mob-activat
     background: #f8f8f8
@@ -174,29 +179,38 @@ body
 
   .menu-b
     display: flex
+    top: 60px
+    width: 100%
+    flex-wrap: wrap
     justify-content: center
     background: #000b38
-    overflow: hidden
-    width: 100%
-    z-index: 6
-    ul
-      padding: 0
-      margin: 0
-      list-style-type: none
-      overflow: hidden
-      li
-        float: left
-        a
-          display: block
-          padding: 20px 31px
-          text-decoration: none
-          text-transform: uppercase
-          color: #f2eff6
-        a:hover
-          background: #aca717
+    list-style-type: none
+    z-index: 100
+    li
+      a
+        display: block
+        padding: 20px 31px
+        text-decoration: none
+        text-transform: uppercase
+        color: #f2eff6
+      a:hover
+        background: #aca717
+      ul
+        position: absolute
+        display: none
+        margin: 0
+        padding: 0
+        list-style-type: none
+        background: #000b38
+        li
+          a
+            display: block
+            text-transform: none
+          a:hover
+            background: #182938
+    li:hover ul
+      display: block
 
-      li:first-child
-        margin-left: 0
 
   .getting-start
     display: flex
@@ -584,31 +598,38 @@ body
           border-bottom: 1px solid
 
   .otherwise-menu-b
-    display: flex
-    justify-content: center
-    background: #000b38
-    overflow: hidden
-    width: 100%
-    z-index: 6
     position: fixed
     top: 60px
-    ul
-      padding: 0
-      margin: 0
-      list-style-type: none
-      overflow: hidden
-      li
-        float: left
-        a
-          display: block
-          padding: 20px 31px
-          text-decoration: none
-          text-transform: uppercase
-          color: #f2eff6
-        a:hover
-          background: #aca717
-      li:first-child
-        margin-left: 0
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    background: #000b38
+    list-style-type: none
+    li
+      a
+        display: block
+        padding: 20px 31px
+        text-decoration: none
+        text-transform: uppercase
+        color: #f2eff6
+      a:hover
+        background: #aca717
+      ul
+        position: absolute
+        display: none
+        margin: 0
+        padding: 0
+        list-style-type: none
+        background: #000b38
+        li
+          a
+            display: block
+            //text-transform: none
+          a:hover
+            background: #182938
+    li:hover ul
+      display: block
 
   .registration-menu
     display: flex
@@ -675,6 +696,41 @@ body
       justify-content: flex-start
       flex-wrap: wrap
 
+
+  .our-staff-content
+    max-width: 1170px
+    width: 100%
+    margin: 117px auto 124px
+    display: flex
+    flex-wrap: wrap
+    .subscribe
+      width: 585px
+      p
+        padding: 46px 60px 46px 34px
+        margin: 0
+    .video
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 585px
+      height: 365px
+      background: url("../images/our-staff/video/1.jpg") no-repeat
+    .staff-info
+      display: flex
+      flex-wrap: wrap
+      width: 585px
+      margin: 20px 0
+      .staff-info-subscribe
+        width: 50%
+        margin-left: 30px
+        p
+          color: #2d3d52
+        p:nth-child(1)
+          text-transform: uppercase
+          font-size: 18px
+          font-weight: bold
+        p:nth-child(2)
+          text-transform: uppercase
 
 
 
