@@ -18,9 +18,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function() {
-    $(".gallery").fancybox();
-});
+
 
 
 $(function(){
@@ -39,8 +37,12 @@ $(function(){
         }
 
     });
-    
-    
+
+    $(document).ready(function() {
+        $(".gallery").fancybox();
+    });
+
+
     $(window).scroll(function () {
         var top = $(document).scrollTop();
         if (top < 490) $(".menu-b").css({
