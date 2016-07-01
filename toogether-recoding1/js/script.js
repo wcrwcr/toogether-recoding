@@ -18,6 +18,10 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function() {
+    $(".gallery").fancybox();
+});
+
 
 $(function(){
     $(".mobile-button").click(function() {
