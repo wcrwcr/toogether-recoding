@@ -144,7 +144,7 @@ body
         margin-left: 4px
       .search-field
         width: 70%
-        border: 1px solid #3d3d3d
+        border: 1px solid #a9a9ab
         background: #f0eeee
         border-radius: 1px
         height: 31px
@@ -251,6 +251,7 @@ body
         color: #000b38
         text-transform: uppercase
         font-weight: bold
+        text-align: center
     .part-of-container:nth-child(1), .part-of-container:nth-child(2), .part-of-container:nth-child(5), .part-of-container:nth-child(6)
       h2
         color: #ffffff
@@ -295,6 +296,11 @@ body
             padding: 18px 0
             margin: 46px auto 0
             color: #333333
+            transition: all 0.5s
+          a:hover
+            background: #345396
+            transition: all 0.5s
+            color: #FFFFFF
     .right
       .right-inner
         padding-top: 120px
@@ -400,7 +406,6 @@ body
   .left-carousel-resp-img
     padding: 0
     .left-carousel
-      //width: 50%
       padding: 0
       .owl-carousel-b
         background: #3ea3c4
@@ -472,8 +477,6 @@ body
     background: #2e2e2e
     display: flex
     flex-wrap: wrap
-
-
     .left-contacts
       padding: 100px 92px
       width: 50%
@@ -507,11 +510,9 @@ body
         display: flex
         flex-wrap: wrap
         li
-          margin-left: 24px
+          margin: 0 25px 10px 0
           a
             display: block
-        li:first-child
-          margin: 0
 
 
     .right-links
@@ -547,50 +548,13 @@ body
     padding: 46px 92px
     a
       text-transform: uppercase
-      text-decoration: underline
+      text-decoration: none
+      border-bottom: 1px solid #FFFFFF
       color: #ffffff
       font-size: 16px
 
 
-  .apply-content
-    display: flex
-    flex-wrap: wrap
-    width: 100%
 
-    .left-calc, .right-summary
-      width: 50%
-      display: flex
-      flex-wrap: wrap
-      justify-content: center
-      h2
-        width: 100%
-        text-align: center
-        margin: 8vh 0
-      .program, .month
-        display: flex
-      select
-        border: 1px solid #e3e3e3
-        box-sizing: border-box
-        color: #555555
-        display: block
-        height: 40px
-        width: 15vw
-        margin-bottom: 20px
-      label
-        display: block
-        font-weight: 500
-        margin-right: 20px
-
-      .summary-cont
-        width: 70%
-        background: #f4f4f4
-        margin: 20vh 0
-        padding: 10%
-        p
-          font-size: 15px
-          font-weight: 600
-          padding: 10px 0
-          border-bottom: 1px solid
 
   .otherwise-menu-b
     position: fixed
@@ -601,7 +565,7 @@ body
     justify-content: center
     background: #000b38
     list-style-type: none
-    z-index: 100
+    z-index: 18
     li
       a
         display: block
@@ -647,213 +611,6 @@ body
         color: #195491
         border-bottom: 3px solid #195491
 
-
-  .request-content
-    display: flex
-    flex-wrap: wrap
-    width: 100%
-    .left-request-forms
-      width: 50%
-      display: flex
-      justify-content: flex-end
-      flex-wrap: wrap
-      form
-        width: 75%
-        margin: 50px 0
-        .form-group
-          width: 100%
-          display: flex
-          flex-wrap: wrap
-          input, select
-            width: 75%
-            border: 1px solid #e1e1e1
-            border-radius: 2px
-            height: 38px
-          label
-            width: 25%
-            line-height: 33px
-        .send-button
-          display: block
-          text-transform: uppercase
-          text-decoration: none
-          text-align: center
-          border: 1px solid #345396
-          border-radius: 2px
-          color: #345396
-          padding: 17px
-          transition: all 1s
-        .send-button:hover
-          background: #345396
-          color: #FFFFFF
-          transition: all 1s
-    .right-blurb
-      width: 50%
-      display: flex
-      justify-content: flex-start
-      flex-wrap: wrap
-
-
-  .our-staff-content
-    max-width: 1170px
-    width: 100%
-    margin: 117px auto 124px
-    display: flex
-    flex-wrap: wrap
-    .subscribe
-      width: 585px
-      p
-        padding: 46px 60px 46px 34px
-        margin: 0
-    .video
-      display: flex
-      justify-content: center
-      align-items: center
-      width: 585px
-      height: 365px
-      background: url("../images/our-staff/video/1.jpg") no-repeat
-    .staff-info
-      display: flex
-      flex-wrap: wrap
-      width: 585px
-      margin: 20px 0
-      .staff-info-subscribe
-        width: 50%
-        margin-left: 30px
-        p
-          color: #2d3d52
-        p:nth-child(1)
-          text-transform: uppercase
-          font-size: 18px
-          font-weight: bold
-        p:nth-child(2)
-          text-transform: uppercase
-
-
-  .main
-    display: flex
-    flex-flow: row wrap
-    justify-content: space-between
-    width: 70vw
-    max-width: 100%
-    margin: 50px auto 0
-    .information, .center-block, .another-info
-      width: 395px
-      margin: 0
-    .center-block
-      margin-bottom: 40px
-      .form-contact
-        background: #0b5d9d
-        padding: 27px
-        h4
-          text-transform: uppercase
-          font-size: 34px
-          color: #FFFFFF
-        input
-          width: 100%
-          height: 46px
-          margin-bottom: 15px
-        textarea
-          width: 100%
-        .form-contact-send
-          display: block
-          text-transform: uppercase
-          color: #FFFFFF
-          width: 100%
-          text-decoration: none
-          text-align: center
-          padding: 15px 0
-          border: 1px solid #FFFFFF
-          border-radius: 2px
-          margin-top: 20px
-      .subscribe-center-block
-        text-align: center
-        font-size: 16px
-        margin: 40px 0 27px
-      .form-contact-send-request
-        display: block
-        text-transform: uppercase
-        color: #0b5d9d
-        width: 90%
-        text-decoration: none
-        text-align: center
-        padding: 15px 0
-        border: 1px solid #0b5d9d
-        border-radius: 2px
-        margin: 20px auto 0
-    .another-info
-      .another-info-cont
-        width: 95%
-        padding: 0 2.5%
-        margin-bottom: 50px
-        .info-cont-img
-          position: relative
-          img
-            max-width: 100%
-            opacity: 0.5
-        .info-button
-          display: block
-          text-transform: uppercase
-          color: #0b5d9d
-          width: 90%
-          text-decoration: none
-          text-align: center
-          padding: 15px 0
-          border: 1px solid #0b5d9d
-          border-radius: 2px
-          position: absolute
-          top: 70%
-          left: 5%
-          transition: all 0.5s
-        .info-button:hover
-          transition: all 0.5s
-          background: #0b5d9d
-          color: #FFFFFF
-        h4
-          text-align: center
-          text-transform: uppercase
-          color: #0b5d9d
-          padding: 12px
-          border-top: solid #0b5d9d
-          border-bottom: solid #0b5d9d
-          margin: 0
-        .info-recall
-          background: #f0f0f0
-          margin-top: 100px
-          position: relative
-          width: 95%
-          padding: 100px 2.5% 0
-          img
-            display: block
-            margin: -50% auto 25px
-          .name
-            color: #0b5d9d
-            font-size: 16px
-            text-transform: uppercase
-            text-align: center
-          h3
-            text-align: center
-            text-transform: uppercase
-            font-size: 16px
-        .recall-link
-          text-align: center
-          display: block
-          color: #0b5d9d
-        .to-join
-          display: flex
-          flex-wrap: wrap
-          justify-content: center
-          list-style-type: none
-          margin: 0
-          padding: 26px 0
-          background: #0b5d9d
-          li
-            margin: 0 5px
-            a
-              display: block
-    .information
-      margin: 0
-      h2, p
-        padding: 0 10px
   .block-photo
     background: #a9a9ab
     display: flex
@@ -862,3 +619,16 @@ body
     height: 250px
     h2
       color: #FFFFFF
+
+  @import "apply"
+
+  @import "request"
+
+  @import "staff"
+
+  @import "contact"
+
+  @import "media-gallery"
+
+
+
