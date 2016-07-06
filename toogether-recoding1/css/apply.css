@@ -1,0 +1,180 @@
+/* line 1, ../sass/apply.sass */
+.apply-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 70vw;
+  margin: auto; }
+  /* line 6, ../sass/apply.sass */
+  .apply-content .left-calc, .apply-content .right-summary {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    /* line 11, ../sass/apply.sass */
+    .apply-content .left-calc .form-calc, .apply-content .right-summary .form-calc {
+      width: 100%; }
+      /* line 13, ../sass/apply.sass */
+      .apply-content .left-calc .form-calc h2, .apply-content .right-summary .form-calc h2 {
+        width: 100%;
+        margin: 70px 0 34px 0;
+        color: #4e4e4e;
+        font-weight: bold; }
+      /* line 18, ../sass/apply.sass */
+      .apply-content .left-calc .form-calc .calc-form-group, .apply-content .right-summary .form-calc .calc-form-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+        /* line 21, ../sass/apply.sass */
+        .apply-content .left-calc .form-calc .calc-form-group label, .apply-content .right-summary .form-calc .calc-form-group label {
+          width: 150px;
+          color: #4e4e4e;
+          font-weight: normal; }
+        /* line 25, ../sass/apply.sass */
+        .apply-content .left-calc .form-calc .calc-form-group input, .apply-content .right-summary .form-calc .calc-form-group input {
+          border: 1px solid #a9a9ab;
+          height: 38px;
+          width: 298px;
+          margin-bottom: 5px; }
+      /* line 30, ../sass/apply.sass */
+      .apply-content .left-calc .form-calc .left-calculate-button, .apply-content .right-summary .form-calc .left-calculate-button {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 67%; }
+        /* line 34, ../sass/apply.sass */
+        .apply-content .left-calc .form-calc .left-calculate-button .but, .apply-content .right-summary .form-calc .left-calculate-button .but {
+          display: block;
+          padding: 10px 0;
+          text-align: center;
+          text-transform: uppercase;
+          text-decoration: none;
+          border: 1px solid #0b5d9d;
+          color: #0b5d9d;
+          width: 200px;
+          margin: 23px 0 0 0;
+          -webkit-transition: all 0.3s;
+                  transition: all 0.3s; }
+        /* line 45, ../sass/apply.sass */
+        .apply-content .left-calc .form-calc .left-calculate-button .but:hover, .apply-content .right-summary .form-calc .left-calculate-button .but:hover {
+          -webkit-transition: all 0.3s;
+                  transition: all 0.3s;
+          background: #0b5d9d;
+          color: #FFFFFF; }
+    /* line 50, ../sass/apply.sass */
+    .apply-content .left-calc .summary-cont, .apply-content .right-summary .summary-cont {
+      width: 70%;
+      background: #f4f4f4;
+      margin: 100px 0 200px 0;
+      padding: 10%; }
+      /* line 55, ../sass/apply.sass */
+      .apply-content .left-calc .summary-cont p, .apply-content .right-summary .summary-cont p {
+        font-size: 15px;
+        font-weight: normal;
+        padding: 10px 0;
+        border-bottom: 1px solid #afafb1;
+        color: #4e4e4e; }
+      /* line 61, ../sass/apply.sass */
+      .apply-content .left-calc .summary-cont .total, .apply-content .right-summary .summary-cont .total {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-bottom: 4px solid #afafb1;
+        color: #4e4e4e; }
+      /* line 66, ../sass/apply.sass */
+      .apply-content .left-calc .summary-cont .button-start-reg, .apply-content .right-summary .summary-cont .button-start-reg {
+        padding: 10px 0;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid #0b5d9d;
+        color: #0b5d9d;
+        width: 200px;
+        margin: 26px 0 29px 0;
+        float: right;
+        display: block;
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s; }
+      /* line 78, ../sass/apply.sass */
+      .apply-content .left-calc .summary-cont .button-start-reg:hover, .apply-content .right-summary .summary-cont .button-start-reg:hover {
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+        background: #0b5d9d;
+        color: #FFFFFF; }
+
+/* line 84, ../sass/apply.sass */
+.registration-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 120px auto 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #dbdbdb;
+  overflow: hidden;
+  width: 70vw; }
+  /* line 94, ../sass/apply.sass */
+  .registration-menu li {
+    width: 269px; }
+    /* line 96, ../sass/apply.sass */
+    .registration-menu li a {
+      display: block;
+      color: #777777;
+      padding: 4.2105%;
+      text-decoration: none;
+      border-bottom: 3px solid #FFFFFF; }
+    /* line 102, ../sass/apply.sass */
+    .registration-menu li a:hover {
+      color: #195491;
+      border-bottom: 3px solid #195491; }
+    /* line 105, ../sass/apply.sass */
+    .registration-menu li .step-1 {
+      display: block;
+      color: #195491;
+      padding: 4.2105%;
+      text-decoration: none;
+      border-bottom: 3px solid #195491; }
+    /* line 111, ../sass/apply.sass */
+    .registration-menu li .step-2 {
+      display: block;
+      color: #195491;
+      padding: 4.2105%;
+      text-decoration: none;
+      border-bottom: 3px solid #195491; }
+    /* line 117, ../sass/apply.sass */
+    .registration-menu li .step-3 {
+      display: block;
+      color: #195491;
+      padding: 4.2105%;
+      text-decoration: none;
+      border-bottom: 3px solid #195491; }
+
+/*# sourceMappingURL=apply.css.map */

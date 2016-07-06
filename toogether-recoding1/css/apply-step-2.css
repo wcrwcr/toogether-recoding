@@ -1,0 +1,173 @@
+/* line 1, ../sass/apply-step-2.sass */
+.apply-stud-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 70vw;
+  margin: 0 auto; }
+  /* line 7, ../sass/apply-step-2.sass */
+  .apply-stud-info .ret-to-step-1 {
+    display: block;
+    color: #3176ac;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 35px; }
+  /* line 14, ../sass/apply-step-2.sass */
+  .apply-stud-info .ret-to-step-1:before {
+    content: url("../images/apply/step-2/arrow.png");
+    margin-right: 16px;
+    vertical-align: text-top; }
+  /* line 18, ../sass/apply-step-2.sass */
+  .apply-stud-info h2 {
+    color: #4e4e4e;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 32px; }
+  /* line 23, ../sass/apply-step-2.sass */
+  .apply-stud-info .info-col-left {
+    width: 35vw; }
+    /* line 25, ../sass/apply-step-2.sass */
+    .apply-stud-info .info-col-left .stud-info-form-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      /* line 28, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-left .stud-info-form-group label {
+        width: 150px;
+        color: #4e4e4e;
+        font-weight: normal; }
+      /* line 32, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-left .stud-info-form-group input {
+        border: 1px solid #a9a9ab;
+        height: 38px;
+        width: 298px;
+        margin-bottom: 5px; }
+      /* line 37, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-left .stud-info-form-group select {
+        border: 1px solid #a9a9ab;
+        height: 38px;
+        width: 298px;
+        margin-bottom: 5px; }
+  /* line 42, ../sass/apply-step-2.sass */
+  .apply-stud-info .info-col-right {
+    width: 35vw; }
+    /* line 44, ../sass/apply-step-2.sass */
+    .apply-stud-info .info-col-right .stud-info-form-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      /* line 47, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-right .stud-info-form-group label {
+        width: 150px;
+        color: #4e4e4e;
+        font-weight: normal; }
+      /* line 51, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-right .stud-info-form-group input {
+        border: 1px solid #a9a9ab;
+        height: 38px;
+        width: 298px;
+        margin-bottom: 5px; }
+      /* line 56, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-right .stud-info-form-group select {
+        border: 1px solid #a9a9ab;
+        height: 38px;
+        width: 298px;
+        margin-bottom: 5px; }
+  /* line 61, ../sass/apply-step-2.sass */
+  .apply-stud-info .info-col-center {
+    width: 100%;
+    margin-top: 40px; }
+    /* line 64, ../sass/apply-step-2.sass */
+    .apply-stud-info .info-col-center .apply-for {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      background: #b2ddee; }
+      /* line 69, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-center .apply-for .left-permit, .apply-stud-info .info-col-center .apply-for .right-visa {
+        margin: 25px 0 25px 45px; }
+      /* line 71, ../sass/apply-step-2.sass */
+      .apply-stud-info .info-col-center .apply-for label {
+        color: #4e4e4e;
+        font-weight: normal; }
+  /* line 74, ../sass/apply-step-2.sass */
+  .apply-stud-info .choose-option {
+    width: 100%;
+    margin: 40px 0 110px 0; }
+    /* line 77, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option label {
+      width: 300px;
+      color: #4e4e4e;
+      font-weight: normal; }
+    /* line 81, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option span {
+      margin-right: 15px; }
+    /* line 83, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option .native-lang, .apply-stud-info .choose-option .lang-level, .apply-stud-info .choose-option .opinion-about-toogether, .apply-stud-info .choose-option .terms {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      margin-top: 24px; }
+    /* line 89, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option .native-lang input {
+      border: 1px solid #a9a9ab;
+      height: 38px;
+      width: 298px;
+      margin-bottom: 5px; }
+    /* line 95, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option .lang-level input, .apply-stud-info .choose-option .opinion-about-toogether input {
+      margin-right: 40px; }
+    /* line 97, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option .choose-option-but {
+      display: block;
+      width: 200px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      border: 1px solid #0b5d9d;
+      color: #0b5d9d;
+      margin-top: 30px;
+      -webkit-transition: all 0.3s;
+              transition: all 0.3s; }
+    /* line 108, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option .choose-option-but:hover {
+      background: #0b5d9d;
+      color: #FFFFFF;
+      -webkit-transition: all 0.3s;
+              transition: all 0.3s; }
+
+/*# sourceMappingURL=apply-step-2.css.map */
