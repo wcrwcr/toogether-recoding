@@ -87,8 +87,8 @@
 
 
 <ul class="registration-menu">
-    <li><a href="#"><b>Step 1<span>:</span></b><span>Tuition Calculator</span></a></li>
-    <li><a href="apply-step-2.html"><b>Step 2<span>:</span></b><span>Student Information</span></a></li>
+    <li><a href="apply.html"><b>Step 1<span>:</span></b><span>Tuition Calculator</span></a></li>
+    <li><a href="#"><b>Step 2<span>:</span></b><span>Student Information</span></a></li>
     <li><a href="apply-step-3.html"><b>Step 3<span>:</span></b><span>Registration Confirmation</span></a></li>
 </ul>
 
@@ -142,39 +142,96 @@
 </ul>
 
 
-<div class="apply-content">
-    <div class="left-calc">
-        <form action="" method="post" class="form-calc">
-            <h2>Tuition Calculator</h2>
-            <div class="calc-form-group">
-                <label for="choose-type">Choose type</label>
-                <input type="text" id="choose-type" placeholder=" все формы с выбором">
-            </div>
-            <div class="calc-form-group">
-                <label for="sourse">Sourse</label>
-                <input type="text" id="sourse">
-            </div>
-            <div class="calc-form-group">
-                <label for="leng-level">Your lenguage level</label>
-                <input type="text" id="leng-level">
-            </div>
-            <div class="calc-form-group">
-                <label for="start-date">Starting date</label>
-                <input type="text" id="start-date">
-            </div>
-            <div class="left-calculate-button"><a href="#" class="but">calculate</a></div>
-        </form>
-    </div>
-    <div class="right-summary">
-        <div class="summary-cont">
-            <h3>Fees Summary</h3>
-            <p>Registration Fee:</p>
-            <p>Educational Resourses Fee:</p>
-            <p>Tuition:</p>
-            <p>Total:</p>
-            <a href="#" class="button-start-reg">start registration</a>
+<div class="apply-stud-info">
+    <a href="apply.html" class="ret-to-step-1">Return to Step 1</a>
+    <h2>Student Information</h2>
+    <form action="" class="info-col-left">
+        <div class="stud-info-form-group">
+            <label for="stud-first-name">First Name</label>
+            <input type="text" id="stud-first-name">
         </div>
-    </div>
+        <div class="stud-info-form-group">
+            <label for="stud-last-name">Last Name</label>
+            <input type="text" id="stud-last-name">
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-date-birth">Date of Birth</label>
+            <input type="text" id="stud-date-birth">
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-gender">Gender</label>
+            <select type="text" id="stud-gender"></select>
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-email">Email</label>
+            <input type="text" id="stud-email">
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-phone">Phone</label>
+            <input type="text" id="stud-phone">
+        </div>
+    </form>
+    <form action="" class="info-col-right">
+        <div class="stud-info-form-group">
+            <label for="stud-address">Street Address 1</label>
+            <input type="text" id="stud-address">
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-city">City</label>
+            <input type="text" id="stud-city">
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-zip-code">Zip/Postal Code</label>
+            <input type="text" id="stud-zip-code">
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-country">Country</label>
+            <select type="text" id="stud-country"></select>
+        </div>
+        <div class="stud-info-form-group">
+            <label for="stud-state">State/Province/Region</label>
+            <input type="text" id="stud-state">
+        </div>
+    </form>
+    <form action="" class="info-col-center">
+        <div class="apply-for">
+            <div class="right-visa">
+                <label>Apply for Student Visa</label>
+                <input type="radio" name="visa" value="no" checked="checked"> No
+                <input type="radio" name="visa" value="yes">Yes
+            </div>
+            <div class="left-permit">
+                <label>Apply for Resident permit</label>
+                <input type="radio" id="stud-permit" name="permit" value="no"> No
+                <input type="radio" id="stud-permit-a" name="permit" value="yes"> Yes
+            </div>
+        </div>
+    </form>
+    <form action="" class="choose-option">
+        <div class="native-lang">
+            <label for="native-lang">Native Language</label>
+            <input type="text" id="native-lang">
+        </div>
+        <div class="lang-level">
+            <label>Current Polish Level</label>
+            <span>Zero</span> <input type="radio" checked="checked" name="pol-level">
+            <span>Begginer</span> <input type="radio" name="pol-level">
+            <span>Medium</span> <input type="radio" name="pol-level">
+            <span>Adwansed</span> <input type="radio" name="pol-level">
+        </div>
+        <div class="opinion-about-toogether">
+            <label>How did you hear about Together?</label>
+            <span>Internet: Google</span> <input type="radio" checked="checked" name="opinion">
+            <span>Facebook</span> <input type="radio" name="opinion">
+            <span>Print Advertisement</span> <input type="radio" name="opinion">
+            <span>Bus/subway</span> <input type="radio" name="opinion">
+        </div>
+        <div class="terms">
+            <label for="terms">Terms of Service</label>
+            <input type="checkbox" checked="checked" name="terms" id="terms">
+        </div>
+        <a href="#" class="choose-option-but">finish registration</a>
+    </form>
 </div>
 
 <div class="footer">

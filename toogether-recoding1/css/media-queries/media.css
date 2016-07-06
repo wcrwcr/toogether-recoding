@@ -31,13 +31,14 @@
         width: 50%; }
     /* line 26, ../../sass/media.sass */
     body .apply-content .left-calc .summary-cont, body .apply-content .right-summary .summary-cont {
-      width: 90%; }
+      width: 100%;
+      padding: 0; }
 
-  /* line 28, ../../sass/media.sass */
+  /* line 29, ../../sass/media.sass */
   .program, .month {
     width: 90%; }
 
-  /* line 32, ../../sass/media.sass */
+  /* line 33, ../../sass/media.sass */
   body .request-content .left-request-forms, body .request-content .right-blurb {
     width: 100%;
     display: -webkit-box;
@@ -49,12 +50,63 @@
         -ms-flex-pack: center;
             justify-content: center; } }
 @media screen and (max-width: 570px) {
-  /* line 39, ../../sass/media.sass */
+  /* line 40, ../../sass/media.sass */
   body .our-staff-content .staff-info .staff-info-subscribe {
     width: 100%; }
 
-  /* line 43, ../../sass/media.sass */
+  /* line 44, ../../sass/media.sass */
   body .our-staff-content .staff-info img {
     margin: auto; } }
+@media (max-width: 900px) {
+  /* line 48, ../../sass/media.sass */
+  body .apply-stud-info .info-col-left {
+    width: 100%; }
+
+  /* line 50, ../../sass/media.sass */
+  body .apply-stud-info .info-col-right {
+    width: 100%;
+    margin-top: 35px; } }
+@media (max-width: 500px) {
+  /* line 54, ../../sass/media.sass */
+  body .apply-stud-info .info-col-center .apply-for .left-permit, body .apply-stud-info .info-col-center .apply-for .right-visa {
+    width: 100%;
+    margin-left: 0; }
+
+  /* line 57, ../../sass/media.sass */
+  body .apply-stud-info .info-col-center .apply-for label {
+    width: 50%; }
+
+  /* line 59, ../../sass/media.sass */
+  body .apply-stud-info .info-col-center .apply-for input {
+    width: 50%; }
+
+  /* line 61, ../../sass/media.sass */
+  body .apply-stud-info .choose-option .lang-level input, body .apply-stud-info .choose-option .opinion-about-toogether input {
+    width: 50%; }
+
+  /* line 63, ../../sass/media.sass */
+  body .apply-stud-info .choose-option span {
+    width: 25%; } }
+@media (max-width: 1250px) {
+  /* line 68, ../../sass/media.sass */
+  body .main-step-3 .affirmation,
+  body .main-step-3 .step-3-logo {
+    width: 100%; } }
+@media (max-width: 550px) {
+  /* line 73, ../../sass/media.sass */
+  body .main-step-3 .step-3-logo .logo img {
+    max-width: 100%; }
+
+  /* line 76, ../../sass/media.sass */
+  body .main-step-3 {
+    margin-bottom: 35px; } }
+@media (max-width: 660px) {
+  /* line 81, ../../sass/media.sass */
+  body .main-step-3 .affirmation .to-main-page-but {
+    width: 100%; } }
+@media (max-width: 400px) {
+  /* line 86, ../../sass/media.sass */
+  body .main-step-3 .affirmation h2 {
+    font-size: 24px; } }
 
 /*# sourceMappingURL=media.css.map */
