@@ -170,4 +170,9 @@
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
 
+/* line 113, ../sass/apply-step-2.sass */
+.iimg {
+  width: 250px;
+  height: 250px; }
+
 /*# sourceMappingURL=apply-step-2.css.map */

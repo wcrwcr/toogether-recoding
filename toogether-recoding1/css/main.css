@@ -1527,6 +1527,10 @@ body {
         color: #FFFFFF;
         -webkit-transition: all 0.3s;
                 transition: all 0.3s; }
+  /* line 113, ../sass/apply-step-2.sass */
+  body .iimg {
+    width: 250px;
+    height: 250px; }
   /* line 1, ../sass/apply-step-3.sass */
   body .main-step-3 {
     display: -webkit-box;
@@ -1590,4 +1594,5 @@ body {
       /* line 35, ../sass/apply-step-3.sass */
       body .main-step-3 .step-3-logo img {
         max-width: 100%; }
+
 /*# sourceMappingURL=main.css.map */
