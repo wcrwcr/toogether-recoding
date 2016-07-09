@@ -67,19 +67,25 @@
       border: 1px solid #0b5d9d;
       border-radius: 2px;
       margin: 20px auto 0; }
-  /* line 53, ../sass/contact.sass */
+    /* line 52, ../sass/contact.sass */
+    .contact-main .center-block .form-contact-send-request:hover {
+      -webkit-transition: all 0.5s;
+              transition: all 0.5s;
+      background: #0b5d9d;
+      color: #FFFFFF; }
+  /* line 57, ../sass/contact.sass */
   .contact-main .another-info .another-info-cont {
     width: 95%;
     padding: 0 2.5%;
     margin-bottom: 50px; }
-    /* line 57, ../sass/contact.sass */
+    /* line 61, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-cont-img {
       position: relative; }
-      /* line 59, ../sass/contact.sass */
+      /* line 63, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-cont-img img {
         max-width: 100%;
         opacity: 0.5; }
-    /* line 62, ../sass/contact.sass */
+    /* line 66, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-button {
       display: block;
       text-transform: uppercase;
@@ -95,13 +101,13 @@
       left: 5%;
       -webkit-transition: all 0.5s;
               transition: all 0.5s; }
-    /* line 76, ../sass/contact.sass */
+    /* line 80, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-button:hover {
       -webkit-transition: all 0.5s;
               transition: all 0.5s;
       background: #0b5d9d;
       color: #FFFFFF; }
-    /* line 80, ../sass/contact.sass */
+    /* line 84, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont h4 {
       text-align: center;
       text-transform: uppercase;
@@ -110,34 +116,34 @@
       border-top: solid #0b5d9d;
       border-bottom: solid #0b5d9d;
       margin: 0; }
-    /* line 88, ../sass/contact.sass */
+    /* line 92, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-recall {
       background: #f0f0f0;
       margin-top: 100px;
       position: relative;
       width: 95%;
       padding: 100px 2.5% 0; }
-      /* line 94, ../sass/contact.sass */
+      /* line 98, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-recall img {
         display: block;
         margin: -50% auto 25px; }
-      /* line 97, ../sass/contact.sass */
+      /* line 101, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-recall .name {
         color: #0b5d9d;
         font-size: 16px;
         text-transform: uppercase;
         text-align: center; }
-      /* line 102, ../sass/contact.sass */
+      /* line 106, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-recall h3 {
         text-align: center;
         text-transform: uppercase;
         font-size: 16px; }
-    /* line 106, ../sass/contact.sass */
+    /* line 110, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .recall-link {
       text-align: center;
       display: block;
       color: #0b5d9d; }
-    /* line 110, ../sass/contact.sass */
+    /* line 114, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .to-join {
       display: -webkit-box;
       display: -webkit-flex;
@@ -154,16 +160,16 @@
       margin: 0;
       padding: 26px 0;
       background: #0b5d9d; }
-      /* line 118, ../sass/contact.sass */
+      /* line 122, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .to-join li {
         margin: 0 5px; }
-        /* line 120, ../sass/contact.sass */
+        /* line 124, ../sass/contact.sass */
         .contact-main .another-info .another-info-cont .to-join li a {
           display: block; }
-  /* line 122, ../sass/contact.sass */
+  /* line 126, ../sass/contact.sass */
   .contact-main .information {
-    margin: 0; }
-    /* line 124, ../sass/contact.sass */
+    margin-bottom: 25px; }
+    /* line 128, ../sass/contact.sass */
     .contact-main .information h2, .contact-main .information p {
       padding: 0 10px; }
 

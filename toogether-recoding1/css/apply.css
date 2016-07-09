@@ -47,7 +47,7 @@
           color: #4e4e4e;
           font-weight: normal; }
         /* line 25, ../sass/apply.sass */
-        .apply-content .left-calc .form-calc .calc-form-group input, .apply-content .right-summary .form-calc .calc-form-group input {
+        .apply-content .left-calc .form-calc .calc-form-group select, .apply-content .right-summary .form-calc .calc-form-group select {
           border: 1px solid #a9a9ab;
           height: 38px;
           width: 298px;

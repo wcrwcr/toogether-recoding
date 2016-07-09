@@ -128,7 +128,7 @@
     .apply-stud-info .choose-option span {
       margin-right: 15px; }
     /* line 83, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .native-lang, .apply-stud-info .choose-option .lang-level, .apply-stud-info .choose-option .opinion-about-toogether, .apply-stud-info .choose-option .terms {
+    .apply-stud-info .choose-option .native-lang, .apply-stud-info .choose-option .native-lang-comment, .apply-stud-info .choose-option .lang-level, .apply-stud-info .choose-option .opinion-about-toogether, .apply-stud-info .choose-option .terms {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -147,10 +147,18 @@
       height: 38px;
       width: 298px;
       margin-bottom: 5px; }
-    /* line 95, ../sass/apply-step-2.sass */
+    /* line 94, ../sass/apply-step-2.sass */
+    .apply-stud-info .choose-option .native-lang-comment {
+      margin-top: 0; }
+      /* line 96, ../sass/apply-step-2.sass */
+      .apply-stud-info .choose-option .native-lang-comment textarea {
+        border: 1px solid #a9a9ab;
+        width: 298px;
+        margin-bottom: 5px; }
+    /* line 101, ../sass/apply-step-2.sass */
     .apply-stud-info .choose-option .lang-level input, .apply-stud-info .choose-option .opinion-about-toogether input {
       margin-right: 40px; }
-    /* line 97, ../sass/apply-step-2.sass */
+    /* line 103, ../sass/apply-step-2.sass */
     .apply-stud-info .choose-option .choose-option-but {
       display: block;
       width: 200px;
@@ -163,14 +171,14 @@
       margin-top: 30px;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
-    /* line 108, ../sass/apply-step-2.sass */
+    /* line 114, ../sass/apply-step-2.sass */
     .apply-stud-info .choose-option .choose-option-but:hover {
       background: #0b5d9d;
       color: #FFFFFF;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
 
-/* line 113, ../sass/apply-step-2.sass */
+/* line 119, ../sass/apply-step-2.sass */
 .iimg {
   width: 250px;
   height: 250px; }

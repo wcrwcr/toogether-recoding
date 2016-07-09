@@ -71,15 +71,16 @@
         /* line 50, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .photo-ic, .media-main .video-gallery .gallery .gallery-bg .photo-ic {
           position: absolute;
-          top: 35%;
-          left: 35%; }
-      /* line 54, ../sass/media-gallery.sass */
+          top: 34%;
+          left: 39%;
+          width: 21%; }
+      /* line 55, ../sass/media-gallery.sass */
       .media-main .photo-gallery .gallery .gallery-bg:hover, .media-main .video-gallery .gallery .gallery-bg:hover {
         background: #8cb3d1; }
-      /* line 56, ../sass/media-gallery.sass */
+      /* line 57, ../sass/media-gallery.sass */
       .media-main .photo-gallery .gallery .gallery-bg:hover .gallery-img, .media-main .video-gallery .gallery .gallery-bg:hover .gallery-img {
         opacity: 0.3; }
-      /* line 58, ../sass/media-gallery.sass */
+      /* line 59, ../sass/media-gallery.sass */
       .media-main .photo-gallery .gallery .subscribe-gallery, .media-main .video-gallery .gallery .subscribe-gallery {
         text-align: center; }
 

@@ -142,19 +142,50 @@
             <h2>Tuition Calculator</h2>
             <div class="calc-form-group">
                 <label for="choose-type">Choose type</label>
-                <input type="text" id="choose-type" placeholder=" все формы с выбором">
+                <select type="text" id="choose-type">
+                    <option value="choose-type"> --Select</option>
+                    <option value="Intensive">Intensive</option>
+                    <option value="Semestr">Semestr</option>
+                    <option value="Yearlong-Standart">Yearlong Standart</option>
+                    <option value="Yearlong-Standart-Max">Yearlong Standart Max</option>
+                    <option value="Yearlong-Standart-Extra-Max">Yearlong Standart Extra Max</option>
+                    <option value="Student-course">Student  course</option>
+                </select>
             </div>
             <div class="calc-form-group">
-                <label for="sourse">Sourse</label>
-                <input type="text" id="sourse">
+                <label for="sours">Sourse</label>
+                <select type="text" id="sours">
+                    <option value="sours"> --Select</option>
+                    <option value="lang-polish">Polish</option>
+                    <option value="lang-english">English</option>
+                </select>
             </div>
             <div class="calc-form-group">
-                <label for="leng-level">Your lenguage level</label>
-                <input type="text" id="leng-level">
+                <label for="lang-level">Your language level</label>
+                <select type="text" id="lang-level">
+                    <option value="lang-level"> --Select</option>
+                    <option value="langlev-zero">Zero</option>
+                    <option value="langlev-begginer">Beggine</option>r
+                    <option value="langlev-medium">Medium</option>
+                    <option value="langlev-advanced">Advansed</option>
+                </select>
             </div>
             <div class="calc-form-group">
                 <label for="start-date">Starting date</label>
-                <input type="text" id="start-date">
+                <select type="text" id="start-date">
+                    <option value="start-date"> --Select</option>
+                    <option value="date-February">February</option>
+                    <option value="date-March">March</option>
+                    <option value="date-April">April</option>
+                    <option value="date-May">May</option>
+                    <option value="date-June">June</option>
+                    <option value="date-July">July</option>
+                    <option value="date-August">August</option>
+                    <option value="date-September">September</option>
+                    <option value="date-October">October</option>
+                    <option value="date-November">November</option>
+                    <option value="date-December">December</option>
+                </select>
             </div>
             <div class="left-calculate-button"><a href="#" class="but">calculate</a></div>
         </form>
