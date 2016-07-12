@@ -247,9 +247,9 @@ body
       display: flex
       justify-content: center
       align-items: center
-      //width: 50%
       height: 340px
       background: #aca717
+      text-decoration: none
       h2
         color: #000b38
         text-transform: uppercase
@@ -367,6 +367,48 @@ body
           margin: 5px 7px
           width: 23px
 
+  .four-part-block
+    display: flex
+    flex-wrap: wrap
+    .block-cover
+      width: 50%
+      height: 340px
+      position: relative
+      .block-inner
+        width: 100%
+        height: 340px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        background: rgba(255, 255, 255, 0.30)
+        h2
+          color: #091a59
+          text-transform: uppercase
+          margin: 0
+          font-weight: bold
+          text-align: center
+        .bg
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+          background: rgba(255, 255, 255, 0.30)
+    .block-cover:nth-child(1)
+      background: #022f96
+    .block-cover:nth-child(2)
+      background: url("../images/content/six-part/second-part-a.png") no-repeat center
+      background-size: cover
+    .block-cover:nth-child(3)
+      background: url("../images/content/six-part/third-part.png") no-repeat center
+      background-size: cover
+    .block-cover:nth-child(4)
+      background: #cb555b
+
+
+
+
   .resp-img
     background: #565656
     width: 100%
@@ -405,79 +447,6 @@ body
         a
           display: block
 
-
-  .left-carousel-resp-img
-    display: flex
-    flex-flow: row wrap
-    padding: 0
-    .left-carousel
-      width: 50%
-      padding: 0
-      .owl-carousel-b
-        background: #3ea3c4
-        height: 100% //274px
-        .owl-stage-outer
-          height: inherit
-          .owl-stage
-            z-index: 2
-            color: white
-            height: inherit
-            .first-slide-owl
-              height: inherit
-              display: flex
-              justify-content: center
-              .img-name-img
-                width: 150px
-                padding-top: 82px
-                p
-                  text-align: center
-                  font-weight: bold
-                  color: #ffffff
-                  margin-top: 46px
-              .subscribe-of-img
-                margin: 138px 0 0 80px
-                font-weight: bold
-        .owl-controls
-          display: flex
-          .owl-dot
-            display: inline-block
-          .active
-            span
-              background: #ffffff none repeat scroll 0 0
-        .owl-dots
-          left: 45%
-          position: absolute
-          top: 80%
-          z-index: 2
-          .owl-dot
-            span
-              background: #c7c7c2 none repeat scroll 0 0
-              border-radius: 20px
-              display: block
-              height: 23px
-              margin: 5px 7px
-              width: 23px
-        .owl-carousel-b-first
-          text-align: center
-          h2
-            text-transform: uppercase
-          p
-            width: 100%
-
-    .resp-img-b
-      width: 50%
-      background: #565656
-      overflow: hidden
-      padding-left: 20px
-      .grid
-        .grid-item
-          float: left
-          width: 140px
-          height: 127px
-          margin: 5px
-          img
-            width: inherit
-            height: inherit
 
   .footer
     width: 100%
@@ -599,14 +568,27 @@ body
       display: block
 
 
-  .block-photo
+  .photo-block
     background: #a9a9ab
     display: flex
+    flex-wrap: wrap
     justify-content: center
     align-items: center
     height: 250px
-    h2
-      color: #FFFFFF
+    margin-top: 120px
+    color: #FFFFFF
+    text-transform: uppercase
+    font-size: 28px
+    font-weight: bold
+    position: relative
+    .photo
+      width: 100%
+      text-align: center
+    .subscribe
+      position: absolute
+      top: 75%
+      left: 20%
+
 
   @import "apply"
 
@@ -621,6 +603,8 @@ body
   @import "apply-step-2"
 
   @import "apply-step-3"
+
+  @import "test"
 
 
 

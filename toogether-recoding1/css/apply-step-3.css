@@ -14,17 +14,31 @@
   width: 70vw;
   margin: 70px auto 295px; }
   /* line 7, ../sass/apply-step-3.sass */
+  .main-step-3 .ret-to-step-1 {
+    display: block;
+    color: #3176ac;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 35px;
+    width: 100%; }
+  /* line 15, ../sass/apply-step-3.sass */
+  .main-step-3 .ret-to-step-1:before {
+    content: url("../images/apply/step-2/arrow.png");
+    margin-right: 16px;
+    vertical-align: text-top; }
+  /* line 19, ../sass/apply-step-3.sass */
   .main-step-3 .affirmation {
     width: 50%; }
-    /* line 9, ../sass/apply-step-3.sass */
+    /* line 21, ../sass/apply-step-3.sass */
     .main-step-3 .affirmation h2 {
       color: #4e4e4e;
       text-transform: uppercase;
       margin: 0; }
-    /* line 13, ../sass/apply-step-3.sass */
+    /* line 25, ../sass/apply-step-3.sass */
     .main-step-3 .affirmation p {
       margin: 70px 0 64px 0; }
-    /* line 15, ../sass/apply-step-3.sass */
+    /* line 27, ../sass/apply-step-3.sass */
     .main-step-3 .affirmation .to-main-page-but {
       display: block;
       width: 486px;
@@ -37,13 +51,13 @@
       border: 1px solid #0b5d9d;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
-    /* line 26, ../sass/apply-step-3.sass */
+    /* line 38, ../sass/apply-step-3.sass */
     .main-step-3 .affirmation .to-main-page-but:hover {
       -webkit-transition: all 0.3s;
               transition: all 0.3s;
       background: #0b5d9d;
       color: #FFFFFF; }
-  /* line 30, ../sass/apply-step-3.sass */
+  /* line 42, ../sass/apply-step-3.sass */
   .main-step-3 .step-3-logo {
     width: 50%;
     display: -webkit-box;
@@ -58,7 +72,7 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 35, ../sass/apply-step-3.sass */
+    /* line 47, ../sass/apply-step-3.sass */
     .main-step-3 .step-3-logo img {
       max-width: 100%; }
 
