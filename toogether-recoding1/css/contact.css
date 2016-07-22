@@ -13,32 +13,34 @@
           justify-content: space-between;
   width: 70vw;
   max-width: 100%;
-  margin: 170px auto 0; }
-  /* line 8, ../sass/contact.sass */
+  margin: 170px auto 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s; }
+  /* line 9, ../sass/contact.sass */
   .contact-main .information, .contact-main .center-block, .contact-main .another-info {
     width: 395px;
     margin: 0; }
-  /* line 11, ../sass/contact.sass */
+  /* line 12, ../sass/contact.sass */
   .contact-main .center-block {
     margin-bottom: 40px; }
-    /* line 13, ../sass/contact.sass */
+    /* line 14, ../sass/contact.sass */
     .contact-main .center-block .form-contact {
       background: #0b5d9d;
       padding: 27px; }
-      /* line 16, ../sass/contact.sass */
+      /* line 17, ../sass/contact.sass */
       .contact-main .center-block .form-contact h4 {
         text-transform: uppercase;
         font-size: 34px;
         color: #FFFFFF; }
-      /* line 20, ../sass/contact.sass */
+      /* line 21, ../sass/contact.sass */
       .contact-main .center-block .form-contact input {
         width: 100%;
         height: 46px;
         margin-bottom: 15px; }
-      /* line 24, ../sass/contact.sass */
+      /* line 25, ../sass/contact.sass */
       .contact-main .center-block .form-contact textarea {
         width: 100%; }
-      /* line 26, ../sass/contact.sass */
+      /* line 27, ../sass/contact.sass */
       .contact-main .center-block .form-contact .form-contact-send {
         display: block;
         text-transform: uppercase;
@@ -50,12 +52,12 @@
         border: 1px solid #FFFFFF;
         border-radius: 2px;
         margin-top: 20px; }
-    /* line 37, ../sass/contact.sass */
+    /* line 38, ../sass/contact.sass */
     .contact-main .center-block .subscribe-center-block {
       text-align: center;
       font-size: 16px;
       margin: 40px 0 27px; }
-    /* line 41, ../sass/contact.sass */
+    /* line 42, ../sass/contact.sass */
     .contact-main .center-block .form-contact-send-request {
       display: block;
       text-transform: uppercase;
@@ -67,25 +69,25 @@
       border: 1px solid #0b5d9d;
       border-radius: 2px;
       margin: 20px auto 0; }
-    /* line 52, ../sass/contact.sass */
+    /* line 53, ../sass/contact.sass */
     .contact-main .center-block .form-contact-send-request:hover {
       -webkit-transition: all 0.5s;
               transition: all 0.5s;
       background: #0b5d9d;
       color: #FFFFFF; }
-  /* line 57, ../sass/contact.sass */
+  /* line 58, ../sass/contact.sass */
   .contact-main .another-info .another-info-cont {
     width: 95%;
     padding: 0 2.5%;
     margin-bottom: 50px; }
-    /* line 61, ../sass/contact.sass */
+    /* line 62, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-cont-img {
       position: relative; }
-      /* line 63, ../sass/contact.sass */
+      /* line 64, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-cont-img img {
         max-width: 100%;
         opacity: 0.5; }
-    /* line 66, ../sass/contact.sass */
+    /* line 67, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-button {
       display: block;
       text-transform: uppercase;
@@ -101,13 +103,13 @@
       left: 5%;
       -webkit-transition: all 0.5s;
               transition: all 0.5s; }
-    /* line 80, ../sass/contact.sass */
+    /* line 81, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-button:hover {
       -webkit-transition: all 0.5s;
               transition: all 0.5s;
       background: #0b5d9d;
       color: #FFFFFF; }
-    /* line 84, ../sass/contact.sass */
+    /* line 85, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont h4 {
       text-align: center;
       text-transform: uppercase;
@@ -116,34 +118,34 @@
       border-top: solid #0b5d9d;
       border-bottom: solid #0b5d9d;
       margin: 0; }
-    /* line 92, ../sass/contact.sass */
+    /* line 93, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .info-recall {
       background: #f0f0f0;
       margin-top: 100px;
       position: relative;
       width: 95%;
       padding: 100px 2.5% 0; }
-      /* line 98, ../sass/contact.sass */
+      /* line 99, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-recall img {
         display: block;
         margin: -50% auto 25px; }
-      /* line 101, ../sass/contact.sass */
+      /* line 102, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-recall .name {
         color: #0b5d9d;
         font-size: 16px;
         text-transform: uppercase;
         text-align: center; }
-      /* line 106, ../sass/contact.sass */
+      /* line 107, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .info-recall h3 {
         text-align: center;
         text-transform: uppercase;
         font-size: 16px; }
-    /* line 110, ../sass/contact.sass */
+    /* line 111, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .recall-link {
       text-align: center;
       display: block;
       color: #0b5d9d; }
-    /* line 114, ../sass/contact.sass */
+    /* line 115, ../sass/contact.sass */
     .contact-main .another-info .another-info-cont .to-join {
       display: -webkit-box;
       display: -webkit-flex;
@@ -160,16 +162,16 @@
       margin: 0;
       padding: 26px 0;
       background: #0b5d9d; }
-      /* line 122, ../sass/contact.sass */
+      /* line 123, ../sass/contact.sass */
       .contact-main .another-info .another-info-cont .to-join li {
         margin: 0 5px; }
-        /* line 124, ../sass/contact.sass */
+        /* line 125, ../sass/contact.sass */
         .contact-main .another-info .another-info-cont .to-join li a {
           display: block; }
-  /* line 126, ../sass/contact.sass */
+  /* line 127, ../sass/contact.sass */
   .contact-main .information {
     margin-bottom: 25px; }
-    /* line 128, ../sass/contact.sass */
+    /* line 129, ../sass/contact.sass */
     .contact-main .information h2, .contact-main .information p {
       padding: 0 10px; }
 

@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px)
+@media (max-width: 700px)
   body .menu-top-a
     display: none
   body .menu-b
@@ -25,9 +25,17 @@
     margin: -100px auto 25px
 
 
-@media screen and (max-width: 780px)
-  body .mob-activat .mobile-button
+@media (max-width: 1050px)
+  body .menu-top-a .language-top
+    display: none
+  body .mob-activat, .mobile-button
     display: block
+    width: auto
+
+  body .menu-top-a, body .mob-activat, .mobile-button
+    float: left
+
+@media (max-width: 780px)
   body .footer .left-contacts, body .footer .right-links
     width: 100%
     padding: 10px 20px
@@ -47,6 +55,36 @@
     display: flex
     justify-content: center
 
+@media (max-width: 1200px)
+  body .footer .foot-cont .foot-contacts
+    //width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  body .footer .foot-cont
+    justify-content: center
+    width: 100%
+  body .footer .foot-cont .foot-soc-icons
+    width: 100%
+    justify-content: center
+    margin: 50px 0
+  body .footer .foot-cont .links
+    flex-wrap: wrap
+
+@media (max-width: 1330px)
+  body .menu-top-a
+    justify-content: space-around
+  body .menu-top-a .logo,
+  body .menu-top-a .phone-mail,
+  body .menu-top-a .form-search,
+  body .menu-top-a .right-menu,
+  body .menu-top-a .language-top
+    margin: 0
+  body .menu-top-a .phone-mail li:first-child:after
+    margin: 0 5px 0 5px
+  body .menu-top-a .right-menu li a
+    margin-right: 10px
+
 
 @media screen and (max-width: 570px)
   body .our-staff-content .staff-info
@@ -65,6 +103,8 @@
 @media (max-width: 992px)
   body .four-part-block .block-cover
     width: 100%
+  body .menu-top-a .right-menu
+    display: none
 
 @media (max-width: 500px)
   body .apply-stud-info .info-col-center .apply-for .left-permit, body .apply-stud-info .info-col-center .apply-for .right-visa
@@ -88,6 +128,15 @@
   body .our-staff-content .video,
   body .our-staff-content .staff-info
     width: 100%
+
+
+@media (max-width: 1050px)
+  body .apply-stud-info
+    width: 70vw
+    margin: auto
+  body .apply-stud-info .contact-info, body .apply-stud-info .residence-address, body .apply-stud-info .mailing-address
+    width: 45%
+
 
 
 @media (max-width: 1565px)
@@ -115,8 +164,6 @@
     font-size: 24px
 
 @media (max-width: 1700px)
-  //body .contact-main
-
   body .contact-main .information,
   body .contact-main .center-block,
   body .contact-main .another-info
@@ -125,23 +172,21 @@
 
 @media (max-width: 1285px)
   body .contact-main
-    justify-content: flex-start
-  body .contact-main .information,
-  body .contact-main .center-block
-    width: 50%
-  body .contact-main .another-info,
-  body .contact-main .another-info .another-info-cont,
-  body .contact-main .another-info .another-info-cont .info-cont-img img
-    width: 100%
-  body .contact-main .another-info .another-info-cont .info-button
-    width: 70%
-    left: 15%
-    top: 80%
+    justify-content: space-between
+    width: 90%
+    margin: 170px auto 0
+    transition: all 0.5s
 
-@media (max-width: 900px)
+
+@media (max-width: 685px)
   body .contact-main .information,
-  body .contact-main .center-block
+  body .contact-main .center-block,
+  body .contact-main .another-info
+    margin: 0 auto 40px
+  body .apply-stud-info .contact-info, body .apply-stud-info .residence-address, body .apply-stud-info .mailing-address
     width: 100%
+    margin: 0
+
 
 
 

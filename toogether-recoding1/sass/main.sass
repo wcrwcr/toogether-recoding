@@ -10,110 +10,95 @@ a:focus
 
 body
   font-family: Helvetica,"Helvetica-custom",Arial, sans-serif
-
   .menu-top-a
-    background: #ffffff
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
     position: fixed
     width: 100%
-    z-index: 19
-    left: 0
+    height: 60px
+    background: #FFFFFF
     top: 0
-    .menu-top-a-inner
-      width: 70vw
-      max-width: 100%
-      height: 60px
-      margin: auto
-      overflow: hidden
-      .logotype
-        width: 147px
-        height: 52px
-        background: url("../images/logtype/logo-together.png") no-repeat
-        float: left
-        margin-top: 7px
+    z-index: 6
+    .logo
+      background: url("../images/logtype/logo-together.png")no-repeat center
+      width: 147px
+      height: 52px
+      margin-right: 35px
+    .phone-mail
+      display: flex
+      flex-wrap: wrap
+      list-style-type: none
+      margin: 0 100px 0 0
+      padding: 0
+      li:first-child:before
+        content: url("../images/header/phone.png")
+        margin-right: 9px
+      li:first-child:after
+        content: "|"
+        margin: 0 23px 0 30px
+    .form-search
+      display: flex
+      flex-wrap: wrap
+      margin-right: 75px
+      .search-btn
+        width: 18px
+        height: 18px
+      .search-field
+        width: 106px
+        border: 1px solid #a9a9ab
+        background: #f0eeee
+        border-radius: 1px
+        height: 31px
+        margin-right: 2px
+    .right-menu
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      list-style-type: none
+      margin: 0 45px 0 0
+      padding: 0
+      li
         a
           display: block
-      .contacts
+          text-decoration: none
+          text-transform: uppercase
+          color: #393432
+          margin-right: 35px
+    .language-top
+      width: 29px
+      height: 29px
+      background: url("../images/header/flag.png") no-repeat
+      .language_arrow
         float: left
-        padding-top: 17px
-        margin-left: 36px
-        p
-          float: left
-        p:first-child:after
-          content: "|"
-          margin-right: 34px
-          margin-left: 37px
-        p:first-child:before
-          content: url("../images/header/phone.png")
-          display: block
-          float: left
-      .form-search
-        overflow: hidden
-        padding-top: 12px
-        margin-left: 98px
-        float: left
-        input
-          float: left
-        .search-btn
-          margin-top: 8px
-          margin-left: 4px
-        .search-field
-          width: 106px
-          border: 1px solid #a9a9ab
-          background: #f0eeee
-          border-radius: 1px
-          height: 31px
-      .menu-a
-        overflow: hidden
-        float: left
-        margin-left: 76px
-        padding-top: 17px
-        ul
-          list-style-type: none
-          margin: 0
-          padding: 0
-          li
-            float: left
-            a
-              display: block
-              text-decoration: none
-              text-transform: uppercase
-              color: #393432
-          li:nth-child(2n)
-            margin: 0 35px
-      .language-top
-        width: 29px
-        height: 29px
-        background: url("../images/header/flag.png") no-repeat
-        float: left
-        margin-left: 47px
-        margin-top: 12px
-        .language_arrow
-          float: left
-          display: block
-          width: 15px
-          height: 10px
-          margin-left: 31px
-          margin-top: 14px
-          background: url("../images/header/search-arrow.png")
-        #dropDownLanguage
-          display: none
-          list-style-type: none
-          position: absolute
-          top: 100%
-          margin: 0
-          padding: 0
-          li
-            a
-              margin: 5px 0
-              display: block
+        display: block
+        width: 15px
+        height: 10px
+        margin-left: 31px
+        margin-top: 14px
+        background: url("../images/header/search-arrow.png")
+      #dropDownLanguage
+        display: none
+        list-style-type: none
+        position: absolute
+        top: 100%
+        margin: 0
+        padding: 0
+        li
+          a
+            margin: 5px 0
+            display: block
+
   .mob-activat
     background: #f8f8f8
     width: 100%
     height: 60px
     position: fixed
     top: 0
-    left: 0
+    right: 0
     z-index: 18
+    display: none
     .mobile-button
       font-size: 24px
       text-decoration: none
@@ -133,6 +118,7 @@ body
     right: -70%
     height: 100vh
     transition: all 1.5s
+    top: 60px
     .form-search
       overflow: hidden
       float: left
@@ -187,7 +173,7 @@ body
     justify-content: center
     background: #000b38
     list-style-type: none
-    z-index: 100
+    z-index: 17
     li
       a
         display: block
@@ -447,90 +433,96 @@ body
         a
           display: block
 
-
   .footer
     width: 100%
+    padding: 60px 0 0 0
     background: #2e2e2e
     display: flex
-    flex-wrap: wrap
-    .left-contacts
-      padding: 100px 92px
-      width: 50%
-      .foot-logo
-        width: 100%
-        height: 90px
-        background: url("../images/footer/foot-logo/foot-logo.png") no-repeat
-        margin-bottom: 68px
-      .foot-cont
+    justify-content: center
+    .foot-cont
+      display: flex
+      flex-wrap: wrap
+      .foot-contacts
+        width: 277px
         display: flex
-        flex-wrap: wrap
+        flex-flow: column wrap
+        margin-right: 55px
+        .foot-logo
+          img
+            max-width: 95%
+        .foot-button
+          display: block
+          width: 224px
+          background: #FFFFFF
+          text-transform: uppercase
+          text-decoration: none
+          text-align: center
+          padding: 22px 0
+          color: #2e2e2e
+          border-radius: 2px
+          margin: 60px 0
         p
-          color: #ffffff
-          font-size: 24px
           width: 100%
-        p:first-child:before
+          color: #FFFFFF
+          font-size: 16px
+        p:nth-child(3):before
           content: url("../images/footer/foot-phone.png")
-          display: block
-          float: left
-          margin-right: 18px
-
-        p:last-child:before
+          margin-right: 8.30%  //23px
+        p:nth-child(4):before
           content: url("../images/footer/foot-mail.png")
-          display: block
-          float: left
-          margin-right: 18px
-      ul
-        list-style-type: none
-        margin: 78px 0 0 0
-        padding: 0
+          margin-right: 8.30%
+      .foot-soc-icons
+        width: 300px
         display: flex
-        flex-wrap: wrap
-        li
-          margin: 0 25px 10px 0
-          a
-            display: block
-
-
-    .right-links
-      width: 50%
-      .foot-menu
-        margin: 0
+        flex-flow: row wrap
         list-style-type: none
-        padding: 140px 0 0 0
-        .bl
-          float: left
-          width: 30%
+        align-content: baseline
+        margin: 0 50px 0 0
+        padding: 0
+        li
+          margin-right: 30px
+          margin-bottom: 60px
+      .links
+        display: flex
+        width: 500px
+        justify-content: space-between
+        .links-content
+          width: 150px
           ul
+            margin: 0 0 80px 0
+            list-style-type: none
             padding: 0
             li
               a
-                color: #ffffff
+                color: #878686
                 text-decoration: none
-              .big-link
-                text-transform: uppercase
-                font-size: 16px
-                font-weight: bold
-        .up-link
-          text-transform: uppercase
-          margin-top: 60px
-          ul
+            li:nth-child(1)
+              text-transform: uppercase
+              color: #f1f1f1
+          .prog
+            margin-bottom: 115px
+          .upper-links
             li
               a
-                text-decoration: underline
+                text-transform: uppercase
+                color: #f1f1f1
+                border-bottom: 1px solid #f1f1f1
+                line-height: 2
 
   .copyright
     background: #211f1f
     overflow: hidden
-    padding: 11px 92px
+    display: flex
     a
       text-transform: uppercase
       text-decoration: none
       border-bottom: 1px solid #FFFFFF
       color: #ffffff
+      width: 70vw
+      margin: auto
       font-size: 16px
-
-
-
+      padding: 11px 0
+      display: block
 
   .otherwise-menu-b
     position: fixed
@@ -541,7 +533,7 @@ body
     justify-content: center
     background: #000b38
     list-style-type: none
-    z-index: 18
+    z-index: 15
     li
       a
         display: block
@@ -597,6 +589,8 @@ body
   @import "staff"
 
   @import "contact"
+
+  @import "contact-step-2"
 
   @import "media-gallery"
 

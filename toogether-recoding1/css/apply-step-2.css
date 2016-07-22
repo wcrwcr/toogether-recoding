@@ -1,203 +1,163 @@
 /* line 1, ../sass/apply-step-2.sass */
-.apply-stud-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.apply-nav {
   width: 70vw;
-  margin: 0 auto; }
-  /* line 7, ../sass/apply-step-2.sass */
-  .apply-stud-info .ret-to-step-1 {
+  margin: auto; }
+  /* line 4, ../sass/apply-step-2.sass */
+  .apply-nav .ret-to-step-1 {
     display: block;
     color: #3176ac;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
-    margin-top: 35px; }
-  /* line 14, ../sass/apply-step-2.sass */
-  .apply-stud-info .ret-to-step-1:before {
+    margin-top: 17px; }
+  /* line 11, ../sass/apply-step-2.sass */
+  .apply-nav .ret-to-step-1:before {
     content: url("../images/apply/step-2/arrow.png");
     margin-right: 16px;
     vertical-align: text-top; }
-  /* line 18, ../sass/apply-step-2.sass */
-  .apply-stud-info h2 {
-    color: #4e4e4e;
-    font-weight: bold;
-    width: 100%;
-    margin-bottom: 32px; }
+  /* line 15, ../sass/apply-step-2.sass */
+  .apply-nav h2 {
+    margin-top: 25px; }
+
+/* line 18, ../sass/apply-step-2.sass */
+.apply-stud-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: baseline;
+      -ms-flex-line-pack: baseline;
+          align-content: baseline;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
   /* line 23, ../sass/apply-step-2.sass */
-  .apply-stud-info .info-col-left {
-    width: 35vw; }
-    /* line 25, ../sass/apply-step-2.sass */
-    .apply-stud-info .info-col-left .stud-info-form-group {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
-      /* line 28, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-left .stud-info-form-group label {
-        width: 150px;
-        color: #4e4e4e;
-        font-weight: normal;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-      /* line 34, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-left .stud-info-form-group input {
-        border: 1px solid #a9a9ab;
-        height: 38px;
-        width: 298px;
-        margin-bottom: 5px; }
-      /* line 39, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-left .stud-info-form-group select {
-        border: 1px solid #a9a9ab;
-        height: 38px;
-        width: 298px;
-        margin-bottom: 5px; }
-  /* line 44, ../sass/apply-step-2.sass */
-  .apply-stud-info .info-col-right {
-    width: 35vw; }
-    /* line 46, ../sass/apply-step-2.sass */
-    .apply-stud-info .info-col-right .stud-info-form-group {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
-      /* line 49, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-right .stud-info-form-group label {
-        width: 150px;
-        color: #4e4e4e;
-        font-weight: normal;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-      /* line 55, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-right .stud-info-form-group input {
-        border: 1px solid #a9a9ab;
-        height: 38px;
-        width: 298px;
-        margin-bottom: 5px; }
-      /* line 60, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-right .stud-info-form-group select {
-        border: 1px solid #a9a9ab;
-        height: 38px;
-        width: 298px;
-        margin-bottom: 5px; }
-  /* line 65, ../sass/apply-step-2.sass */
-  .apply-stud-info .info-col-center {
-    width: 100%;
-    margin-top: 40px; }
-    /* line 68, ../sass/apply-step-2.sass */
-    .apply-stud-info .info-col-center .apply-for {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-flex-flow: row wrap;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      background: #b2ddee; }
-      /* line 73, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-center .apply-for .left-permit, .apply-stud-info .info-col-center .apply-for .right-visa {
-        margin: 25px 0 25px 45px; }
-      /* line 75, ../sass/apply-step-2.sass */
-      .apply-stud-info .info-col-center .apply-for label {
-        color: #4e4e4e;
-        font-weight: normal;
-        margin-right: 10px; }
-  /* line 79, ../sass/apply-step-2.sass */
-  .apply-stud-info .choose-option {
-    width: 100%;
-    margin: 40px 0 110px 0; }
-    /* line 82, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option label {
-      width: 300px;
-      color: #4e4e4e;
-      font-weight: normal; }
-    /* line 86, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option span {
-      margin-right: 15px; }
-    /* line 88, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .native-lang, .apply-stud-info .choose-option .native-lang-comment, .apply-stud-info .choose-option .lang-level, .apply-stud-info .choose-option .opinion-about-toogether, .apply-stud-info .choose-option .terms {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-flex-flow: row wrap;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      margin-top: 24px; }
-    /* line 94, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .native-lang input {
+  .apply-stud-info .contact-info, .apply-stud-info .residence-address, .apply-stud-info .mailing-address {
+    width: 15.62vw;
+    margin-right: 115px; }
+    /* line 26, ../sass/apply-step-2.sass */
+    .apply-stud-info .contact-info .remark, .apply-stud-info .residence-address .remark, .apply-stud-info .mailing-address .remark {
+      border-radius: 0 0 50px;
+      background: #0b5d9d;
+      margin: 30px 0 15px -20px;
+      padding: 10px 20px;
+      color: #FFFFFF; }
+    /* line 32, ../sass/apply-step-2.sass */
+    .apply-stud-info .contact-info .remark-green, .apply-stud-info .residence-address .remark-green, .apply-stud-info .mailing-address .remark-green {
+      border-radius: 0 0 50px;
+      background: #3b9d0b;
+      margin: 30px 0 15px -20px;
+      padding: 10px 20px;
+      color: #FFFFFF; }
+    /* line 38, ../sass/apply-step-2.sass */
+    .apply-stud-info .contact-info label, .apply-stud-info .residence-address label, .apply-stud-info .mailing-address label {
+      color: #717171;
+      font-weight: normal;
+      margin-top: 15px; }
+    /* line 42, ../sass/apply-step-2.sass */
+    .apply-stud-info .contact-info select, .apply-stud-info .residence-address select, .apply-stud-info .mailing-address select {
+      width: 100%;
+      box-sizing: content-box;
       border: 1px solid #a9a9ab;
-      height: 38px;
+      height: 40px; }
+    /* line 47, ../sass/apply-step-2.sass */
+    .apply-stud-info .contact-info input, .apply-stud-info .residence-address input, .apply-stud-info .mailing-address input {
+      width: 100%;
+      box-sizing: content-box;
+      border: 1px solid #a9a9ab;
+      height: 40px; }
+
+/* line 53, ../sass/apply-step-2.sass */
+.apply-for {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #b2ddee;
+  width: 70vw;
+  margin: 45px auto 0; }
+  /* line 61, ../sass/apply-step-2.sass */
+  .apply-for .left-permit, .apply-for .right-visa {
+    margin: 25px 0 25px 45px; }
+    /* line 63, ../sass/apply-step-2.sass */
+    .apply-for .left-permit label, .apply-for .right-visa label {
+      color: #4e4e4e;
+      font-weight: normal;
+      margin-right: 10px; }
+
+/* line 67, ../sass/apply-step-2.sass */
+.choose-option {
+  width: 70vw;
+  margin: 40px 0 110px 0; }
+  /* line 70, ../sass/apply-step-2.sass */
+  .choose-option label {
+    width: 300px;
+    color: #4e4e4e;
+    font-weight: normal; }
+  /* line 74, ../sass/apply-step-2.sass */
+  .choose-option span {
+    margin-right: 15px; }
+  /* line 76, ../sass/apply-step-2.sass */
+  .choose-option .native-lang, .choose-option .native-lang-comment, .choose-option .lang-level, .choose-option .opinion-about-toogether, .choose-option .terms {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-top: 24px; }
+  /* line 82, ../sass/apply-step-2.sass */
+  .choose-option .native-lang input {
+    border: 1px solid #a9a9ab;
+    height: 38px;
+    width: 298px;
+    margin-bottom: 5px; }
+  /* line 87, ../sass/apply-step-2.sass */
+  .choose-option .native-lang-comment {
+    margin-top: 0; }
+    /* line 89, ../sass/apply-step-2.sass */
+    .choose-option .native-lang-comment textarea {
+      border: 1px solid #a9a9ab;
       width: 298px;
       margin-bottom: 5px; }
-    /* line 99, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .native-lang-comment {
-      margin-top: 0; }
-      /* line 101, ../sass/apply-step-2.sass */
-      .apply-stud-info .choose-option .native-lang-comment textarea {
-        border: 1px solid #a9a9ab;
-        width: 298px;
-        margin-bottom: 5px; }
-    /* line 106, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .lang-level input, .apply-stud-info .choose-option .opinion-about-toogether input {
-      margin-right: 40px; }
-    /* line 108, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .choose-option-but {
-      display: block;
-      width: 200px;
-      padding: 10px 20px;
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
-      border: 1px solid #0b5d9d;
-      color: #0b5d9d;
-      margin-top: 30px;
-      -webkit-transition: all 0.3s;
-              transition: all 0.3s; }
-    /* line 119, ../sass/apply-step-2.sass */
-    .apply-stud-info .choose-option .choose-option-but:hover {
-      background: #0b5d9d;
-      color: #FFFFFF;
-      -webkit-transition: all 0.3s;
-              transition: all 0.3s; }
-
-/* line 124, ../sass/apply-step-2.sass */
-.iimg {
-  width: 250px;
-  height: 250px; }
+  /* line 94, ../sass/apply-step-2.sass */
+  .choose-option .lang-level input, .choose-option .opinion-about-toogether input {
+    margin-right: 40px; }
+  /* line 96, ../sass/apply-step-2.sass */
+  .choose-option .choose-option-but {
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #0b5d9d;
+    color: #0b5d9d;
+    margin-top: 30px;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+    float: left; }
+  /* line 108, ../sass/apply-step-2.sass */
+  .choose-option .choose-option-but:hover {
+    background: #0b5d9d;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
 
 /*# sourceMappingURL=apply-step-2.css.map */

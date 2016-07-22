@@ -52,6 +52,20 @@
           top: 34%
           left: 39%
           width: 21%
+        img
+          transition: top 0.5s
+        img:hover
+          transition: top 0.5s
+          top: 30%
+        img:hover + .subscribe-img
+          display: block
+        .subscribe-img
+          display: none
+          position: absolute
+          top: 62%
+          left: 44%
+          width: 21%
+          color: #FFFFFF
       .gallery-bg:hover
         background: #8cb3d1
       .gallery-bg:hover .gallery-img
