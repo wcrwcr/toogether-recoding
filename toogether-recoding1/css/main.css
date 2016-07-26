@@ -33,7 +33,7 @@ body {
     height: 60px;
     background: #FFFFFF;
     top: 0;
-    z-index: 6; }
+    z-index: 19; }
     /* line 24, ../sass/main.sass */
     body .menu-top-a .logo {
       background: url("../images/logtype/logo-together.png") no-repeat center;
@@ -139,7 +139,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 18;
+    z-index: 19;
     display: none; }
     /* line 102, ../sass/main.sass */
     body .mob-activat .mobile-button {
@@ -1759,5 +1759,23 @@ body {
         border: 1px solid #a8a8a8;
         background: #cbcbcb;
         margin-bottom: 275px; }
+  /* line 6, ../sass/search.sass */
+  body .contact-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 70vw;
+    max-width: 100%;
+    margin: 170px auto 0;
+    -webkit-transition: all 0.5s;
+            transition: all 0.5s; }
 
 /*# sourceMappingURL=main.css.map */
