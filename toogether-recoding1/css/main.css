@@ -1139,32 +1139,39 @@ body {
     max-width: 100%;
     margin: 170px auto 0;
     -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
-    /* line 9, ../sass/contact.sass */
+            transition: all 0.5s;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+    /* line 11, ../sass/contact.sass */
     body .contact-main .information, body .contact-main .center-block, body .contact-main .another-info {
       width: 395px;
       margin: 0; }
-    /* line 12, ../sass/contact.sass */
+    /* line 14, ../sass/contact.sass */
     body .contact-main .center-block {
       margin-bottom: 40px; }
-      /* line 14, ../sass/contact.sass */
+      /* line 16, ../sass/contact.sass */
       body .contact-main .center-block .form-contact {
         background: #0b5d9d;
         padding: 27px; }
-        /* line 17, ../sass/contact.sass */
+        /* line 19, ../sass/contact.sass */
         body .contact-main .center-block .form-contact h4 {
           text-transform: uppercase;
           font-size: 34px;
           color: #FFFFFF; }
-        /* line 21, ../sass/contact.sass */
+        /* line 23, ../sass/contact.sass */
         body .contact-main .center-block .form-contact input {
           width: 100%;
           height: 46px;
           margin-bottom: 15px; }
-        /* line 25, ../sass/contact.sass */
+        /* line 27, ../sass/contact.sass */
         body .contact-main .center-block .form-contact textarea {
           width: 100%; }
-        /* line 27, ../sass/contact.sass */
+        /* line 29, ../sass/contact.sass */
         body .contact-main .center-block .form-contact .form-contact-send {
           display: block;
           text-transform: uppercase;
@@ -1176,12 +1183,12 @@ body {
           border: 1px solid #FFFFFF;
           border-radius: 2px;
           margin-top: 20px; }
-      /* line 38, ../sass/contact.sass */
+      /* line 40, ../sass/contact.sass */
       body .contact-main .center-block .subscribe-center-block {
         text-align: center;
         font-size: 16px;
         margin: 40px 0 27px; }
-      /* line 42, ../sass/contact.sass */
+      /* line 44, ../sass/contact.sass */
       body .contact-main .center-block .form-contact-send-request {
         display: block;
         text-transform: uppercase;
@@ -1193,25 +1200,25 @@ body {
         border: 1px solid #0b5d9d;
         border-radius: 2px;
         margin: 20px auto 0; }
-      /* line 53, ../sass/contact.sass */
+      /* line 55, ../sass/contact.sass */
       body .contact-main .center-block .form-contact-send-request:hover {
         -webkit-transition: all 0.5s;
                 transition: all 0.5s;
         background: #0b5d9d;
         color: #FFFFFF; }
-    /* line 58, ../sass/contact.sass */
+    /* line 60, ../sass/contact.sass */
     body .contact-main .another-info .another-info-cont {
       width: 95%;
       padding: 0 2.5%;
       margin-bottom: 50px; }
-      /* line 62, ../sass/contact.sass */
+      /* line 64, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont .info-cont-img {
         position: relative; }
-        /* line 64, ../sass/contact.sass */
+        /* line 66, ../sass/contact.sass */
         body .contact-main .another-info .another-info-cont .info-cont-img img {
           max-width: 100%;
           opacity: 0.5; }
-      /* line 67, ../sass/contact.sass */
+      /* line 69, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont .info-button {
         display: block;
         text-transform: uppercase;
@@ -1227,13 +1234,13 @@ body {
         left: 5%;
         -webkit-transition: all 0.5s;
                 transition: all 0.5s; }
-      /* line 81, ../sass/contact.sass */
+      /* line 83, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont .info-button:hover {
         -webkit-transition: all 0.5s;
                 transition: all 0.5s;
         background: #0b5d9d;
         color: #FFFFFF; }
-      /* line 85, ../sass/contact.sass */
+      /* line 87, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont h4 {
         text-align: center;
         text-transform: uppercase;
@@ -1242,34 +1249,34 @@ body {
         border-top: solid #0b5d9d;
         border-bottom: solid #0b5d9d;
         margin: 0; }
-      /* line 93, ../sass/contact.sass */
+      /* line 95, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont .info-recall {
         background: #f0f0f0;
         margin-top: 100px;
         position: relative;
         width: 95%;
         padding: 100px 2.5% 0; }
-        /* line 99, ../sass/contact.sass */
+        /* line 101, ../sass/contact.sass */
         body .contact-main .another-info .another-info-cont .info-recall img {
           display: block;
           margin: -50% auto 25px; }
-        /* line 102, ../sass/contact.sass */
+        /* line 104, ../sass/contact.sass */
         body .contact-main .another-info .another-info-cont .info-recall .name {
           color: #0b5d9d;
           font-size: 16px;
           text-transform: uppercase;
           text-align: center; }
-        /* line 107, ../sass/contact.sass */
+        /* line 109, ../sass/contact.sass */
         body .contact-main .another-info .another-info-cont .info-recall h3 {
           text-align: center;
           text-transform: uppercase;
           font-size: 16px; }
-      /* line 111, ../sass/contact.sass */
+      /* line 113, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont .recall-link {
         text-align: center;
         display: block;
         color: #0b5d9d; }
-      /* line 115, ../sass/contact.sass */
+      /* line 117, ../sass/contact.sass */
       body .contact-main .another-info .another-info-cont .to-join {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1286,16 +1293,16 @@ body {
         margin: 0;
         padding: 26px 0;
         background: #0b5d9d; }
-        /* line 123, ../sass/contact.sass */
+        /* line 125, ../sass/contact.sass */
         body .contact-main .another-info .another-info-cont .to-join li {
           margin: 0 5px; }
-          /* line 125, ../sass/contact.sass */
+          /* line 127, ../sass/contact.sass */
           body .contact-main .another-info .another-info-cont .to-join li a {
             display: block; }
-    /* line 127, ../sass/contact.sass */
+    /* line 129, ../sass/contact.sass */
     body .contact-main .information {
       margin-bottom: 25px; }
-      /* line 129, ../sass/contact.sass */
+      /* line 131, ../sass/contact.sass */
       body .contact-main .information h2, body .contact-main .information p {
         padding: 0 10px; }
   /* line 2, ../sass/contact-step-2.sass */
@@ -1759,23 +1766,201 @@ body {
         border: 1px solid #a8a8a8;
         background: #cbcbcb;
         margin-bottom: 275px; }
-  /* line 6, ../sass/search.sass */
-  body .contact-main {
+  /* line 1, ../sass/programs.sass */
+  body .programs-content {
+    width: 52.8%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 70vw;
-    max-width: 100%;
-    margin: 170px auto 0;
-    -webkit-transition: all 0.5s;
-            transition: all 0.5s; }
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    /* line 5, ../sass/programs.sass */
+    body .programs-content .programs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column wrap;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      width: 100%;
+      color: #636161;
+      margin: 0 0 65px; }
+      /* line 11, ../sass/programs.sass */
+      body .programs-content .programs h2 {
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #4aa513;
+        padding: 14px 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        margin: 0 0 25px; }
+      /* line 22, ../sass/programs.sass */
+      body .programs-content .programs .orange {
+        background: #fa9901; }
+      /* line 24, ../sass/programs.sass */
+      body .programs-content .programs .programs-text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin: 0 0 40px;
+        font-size: 16px; }
+        /* line 31, ../sass/programs.sass */
+        body .programs-content .programs .programs-text p {
+          width: 70%; }
+        /* line 33, ../sass/programs.sass */
+        body .programs-content .programs .programs-text .program-button {
+          display: block;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #0b5d9d;
+          border: 2px solid #0b5d9d;
+          text-align: center;
+          padding: 16px 0;
+          width: 20%;
+          -webkit-transition: all 0.5s;
+                  transition: all 0.5s; }
+        /* line 43, ../sass/programs.sass */
+        body .programs-content .programs .programs-text .program-button:hover {
+          background: #0b5d9d;
+          color: #FFFFFF;
+          -webkit-transition: all 0.5s;
+                  transition: all 0.5s; }
+      /* line 47, ../sass/programs.sass */
+      body .programs-content .programs ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        background: #efeded; }
+        /* line 54, ../sass/programs.sass */
+        body .programs-content .programs ul li {
+          padding: 22px 30px;
+          text-align: center; }
+        /* line 57, ../sass/programs.sass */
+        body .programs-content .programs ul li:nth-child(odd) {
+          background: #dad5d5; }
+  /* line 1, ../sass/example.sass */
+  body .programs-content {
+    width: 52.8%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    /* line 5, ../sass/example.sass */
+    body .programs-content .programs {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column wrap;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      width: 100%;
+      color: #636161;
+      margin: 0 0 65px; }
+      /* line 11, ../sass/example.sass */
+      body .programs-content .programs h2 {
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #4aa513;
+        padding: 14px 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 24px;
+        margin: 0 0 25px; }
+      /* line 22, ../sass/example.sass */
+      body .programs-content .programs .orange {
+        background: #fa9901; }
+      /* line 24, ../sass/example.sass */
+      body .programs-content .programs .programs-text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        margin: 0 0 40px;
+        font-size: 16px; }
+        /* line 31, ../sass/example.sass */
+        body .programs-content .programs .programs-text p {
+          width: 70%; }
+        /* line 33, ../sass/example.sass */
+        body .programs-content .programs .programs-text .program-button {
+          display: block;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #0b5d9d;
+          border: 2px solid #0b5d9d;
+          text-align: center;
+          padding: 16px 0;
+          width: 20%;
+          -webkit-transition: all 0.5s;
+                  transition: all 0.5s; }
+        /* line 43, ../sass/example.sass */
+        body .programs-content .programs .programs-text .program-button:hover {
+          background: #0b5d9d;
+          color: #FFFFFF;
+          -webkit-transition: all 0.5s;
+                  transition: all 0.5s; }
+      /* line 47, ../sass/example.sass */
+      body .programs-content .programs ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        background: #efeded; }
+        /* line 54, ../sass/example.sass */
+        body .programs-content .programs ul li {
+          padding: 22px 30px;
+          text-align: center; }
+        /* line 57, ../sass/example.sass */
+        body .programs-content .programs ul li:nth-child(odd) {
+          background: #dad5d5; }
 
 /*# sourceMappingURL=main.css.map */

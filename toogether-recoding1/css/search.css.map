@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AAKA,aAAa;EACX,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,QAAQ;EACnB,eAAe,EAAE,aAAa;EAC9B,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,YAAY;EACpB,UAAU,EAAE,QAAQ",
-"sources": ["../sass/search.sass"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "search.css"
 }
