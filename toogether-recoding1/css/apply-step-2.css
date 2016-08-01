@@ -12,7 +12,7 @@
     margin-top: 17px; }
   /* line 11, ../sass/apply-step-2.sass */
   .apply-nav .ret-to-step-1:before {
-    content: url("../images/apply/step-2/arrow.png");
+    content: url("..//assets/images/apply/step-2/arrow.png");
     margin-right: 16px;
     vertical-align: text-top; }
   /* line 15, ../sass/apply-step-2.sass */
