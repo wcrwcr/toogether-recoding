@@ -1,29 +1,25 @@
 <div class="menu-top-a">
-    <div class="menu-top-a-inner">
-        <a href="/"><div class="logotype"></div></a>
-        <div class="contacts">
-            <p>+ 48 22 111 50 64</p>
-            <p>biuro@together-school.pl</p>
-        </div>
-        <form class="form-search" method="get" name="search">
-            <input id="search" class="search-field" type="search" placeholder="  search">
-            <input type="image" src="/assets/images/header/search.png" class="search-btn">
-        </form>
-        <div class="menu-a">
-            <ul>
-                <li><a href="#">polish test</a></li>
-                <li><a href="#">get a quote</a></li>
-                <li><a href="#">blog</a></li>
-            </ul>
-        </div>
-        <div class="language-top">
-            <a href="#" class="language_arrow"></a>
-            <ul id="dropDownLanguage">
-                <li><a href="#"><img src="/assets/images/header/flag.png" alt=""></a></li>
-                <li><a href="#"><img src="/assets/images/header/russian.png" alt=""></a></li>
-                <li><a href="#"><img src="/assets/images/header/english.png" alt=""></a></li>
-            </ul>
-        </div>
+    <div class="logo"></div>
+    <ul class="phone-mail">
+        <li>+48 22 111 50 64</li>
+        <li>biuro@together-school.pl</li>
+    </ul>
+    <form class="form-search" method="get" name="search">
+        <input id="search" class="search-field" type="search" placeholder="  search">
+        <a href="search.html" class="search-btn"><img src="/assets/images/header/search.png" alt="img"></a>
+    </form>
+    <ul class="right-menu">
+        <li><a href="#">get tests</a></li>
+        <li><a href="#">get a quote</a></li>
+        <li><a href="#">blog</a></li>
+    </ul>
+    <div class="language-top">
+        <a href="#" class="language_arrow"></a>
+        <ul id="dropDownLanguage">
+            <li><a href="#"><img src="/assets/images/header/flag.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/header/russian.png" alt=""></a></li>
+            <li><a href="#"><img src="/assets/images/header/english.png" alt=""></a></li>
+        </ul>
     </div>
 </div>
 
@@ -61,3 +57,6 @@
 
 
 <div class="block-banner"></div>
+
+
+
