@@ -658,10 +658,10 @@ body {
             -ms-flex-flow: row wrap;
                 flex-flow: row wrap;
         list-style-type: none;
-        -webkit-align-content: baseline;
-            -ms-flex-line-pack: baseline;
-                align-content: baseline;
-        margin: 0 50px 0 0;
+        -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+                align-content: center;
+        margin: -100px 50px 0 0;
         padding: 0; }
         /* line 482, ../sass/main.sass */
         body .footer .foot-cont .foot-soc-icons li {
