@@ -32,7 +32,7 @@
             align-items: center;
     width: 50%;
     height: 365px;
-    background: url("..//assets/images/our-staff/video/1.jpg") no-repeat; }
+    background: url("/assets/images/our-staff/video/1.jpg") no-repeat; }
   /* line 18, ../sass/staff.sass */
   .our-staff-content .staff-info {
     display: -webkit-box;

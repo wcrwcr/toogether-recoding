@@ -24,7 +24,7 @@
     width: 100%; }
   /* line 15, ../sass/apply-step-3.sass */
   .main-step-3 .ret-to-step-1:before {
-    content: url("..//assets/images/apply/step-2/arrow.png");
+    content: url("/assets/images/apply/step-2/arrow.png");
     margin-right: 16px;
     vertical-align: text-top; }
   /* line 19, ../sass/apply-step-3.sass */
