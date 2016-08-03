@@ -56,7 +56,7 @@
 </div>
 
 
-<div class="block-banner"></div>
+
 
 
 

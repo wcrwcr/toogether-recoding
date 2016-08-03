@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <base href="[[++site_url]]"/>
     <meta charset="UTF-8">
     <title>[[+seoPro.title]]</title>
     <meta name="description" content="[[*description]]">

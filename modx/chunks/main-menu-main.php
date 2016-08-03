@@ -1,4 +1,9 @@
-<ul class="menu-b">
+<ul class="[[!If?
+   &subject=`[[+className]]`
+   &operator=`empty`
+   &then=`menu-b`
+   &else=`[[+className]]`
+]]">
     <li><a href="#">programs</a>
         <ul>
             <li><a href="#">Programs</a></li>
@@ -35,7 +40,7 @@
             <li><a href="#">About Us</a></li>
             <li><a href="#">Our Philosophy</a></li>
             <li><a href="#">Why Together?</a></li>
-            <li><a href="staff.html">Our staff</a></li>
+            <li><a href="[[~10]]">Our staff</a></li>
             <li><a href="#">Our Partners</a></li>
             <li><a href="#">Careers</a></li>
             <li><a href="media-gallery.html">Media Gallery</a></li>
