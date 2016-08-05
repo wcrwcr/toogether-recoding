@@ -60,5 +60,11 @@ $(function(){
         $("#dropDownLanguage").toggle()
     });
 });
+$(function () {
+    $('.form-contact-send').click(function() {
+        $('.center-block-b').show();
+        $('.center-block').toggle();
+    });
+});
 
 

@@ -7,12 +7,12 @@
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 70vw;
-  margin: 70px auto 295px; }
+  margin: 70px auto 0; }
   /* line 7, ../sass/apply-step-3.sass */
   .main-step-3 .ret-to-step-1 {
     display: block;
@@ -58,22 +58,107 @@
       background: #0b5d9d;
       color: #FFFFFF; }
   /* line 42, ../sass/apply-step-3.sass */
-  .main-step-3 .step-3-logo {
-    width: 50%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    /* line 47, ../sass/apply-step-3.sass */
-    .main-step-3 .step-3-logo img {
-      max-width: 100%; }
+  .main-step-3 .another-info {
+    width: 395px;
+    margin: 0; }
+    /* line 45, ../sass/apply-step-3.sass */
+    .main-step-3 .another-info .another-info-cont {
+      width: 95%;
+      padding: 0 2.5%;
+      margin-bottom: 50px; }
+      /* line 49, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont .info-cont-img {
+        position: relative; }
+        /* line 51, ../sass/apply-step-3.sass */
+        .main-step-3 .another-info .another-info-cont .info-cont-img img {
+          max-width: 100%;
+          opacity: 0.5; }
+      /* line 54, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont .info-button {
+        display: block;
+        text-transform: uppercase;
+        color: #0b5d9d;
+        width: 90%;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 0;
+        border: 1px solid #0b5d9d;
+        border-radius: 2px;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        -webkit-transition: all 0.5s;
+                transition: all 0.5s; }
+      /* line 68, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont .info-button:hover {
+        -webkit-transition: all 0.5s;
+                transition: all 0.5s;
+        background: #0b5d9d;
+        color: #FFFFFF; }
+      /* line 72, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont h4 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #0b5d9d;
+        padding: 12px;
+        border-top: solid #0b5d9d;
+        border-bottom: solid #0b5d9d;
+        margin: 0; }
+      /* line 80, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont .info-recall {
+        background: #f0f0f0;
+        margin-top: 100px;
+        position: relative;
+        width: 95%;
+        padding: 100px 2.5% 0; }
+        /* line 86, ../sass/apply-step-3.sass */
+        .main-step-3 .another-info .another-info-cont .info-recall .quotes {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin: 38px 0 0 25px; }
+        /* line 91, ../sass/apply-step-3.sass */
+        .main-step-3 .another-info .another-info-cont .info-recall img {
+          display: block;
+          margin: -50% auto 25px; }
+        /* line 94, ../sass/apply-step-3.sass */
+        .main-step-3 .another-info .another-info-cont .info-recall .name {
+          color: #0b5d9d;
+          font-size: 16px;
+          text-transform: uppercase;
+          text-align: center; }
+        /* line 99, ../sass/apply-step-3.sass */
+        .main-step-3 .another-info .another-info-cont .info-recall h3 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 16px; }
+      /* line 103, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont .recall-link {
+        text-align: center;
+        display: block;
+        color: #0b5d9d; }
+      /* line 107, ../sass/apply-step-3.sass */
+      .main-step-3 .another-info .another-info-cont .to-join {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 26px 0;
+        background: #0b5d9d; }
+        /* line 115, ../sass/apply-step-3.sass */
+        .main-step-3 .another-info .another-info-cont .to-join li {
+          margin: 0 5px; }
+          /* line 117, ../sass/apply-step-3.sass */
+          .main-step-3 .another-info .another-info-cont .to-join li a {
+            display: block; }
 
 /*# sourceMappingURL=apply-step-3.css.map */

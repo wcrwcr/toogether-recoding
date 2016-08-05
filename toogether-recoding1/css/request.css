@@ -1,16 +1,30 @@
 /* line 1, ../sass/request.sass */
-.request-content {
+.request {
+  margin-top: 160px !important; }
+
+/* line 3, ../sass/request.sass */
+.contact-main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  width: 100%;
-  margin-top: 120px; }
-  /* line 6, ../sass/request.sass */
-  .request-content .left-request-forms {
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70vw;
+  max-width: 100%;
+  margin: 170px auto 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  /* line 13, ../sass/request.sass */
+  .contact-main .left-request-forms {
     width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -23,12 +37,12 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-    /* line 11, ../sass/request.sass */
-    .request-content .left-request-forms form {
+    /* line 18, ../sass/request.sass */
+    .contact-main .left-request-forms form {
       width: 75%;
-      margin: 50px 0; }
-      /* line 14, ../sass/request.sass */
-      .request-content .left-request-forms form .form-group {
+      margin: 0; }
+      /* line 21, ../sass/request.sass */
+      .contact-main .left-request-forms form .form-group {
         width: 100%;
         display: -webkit-box;
         display: -webkit-flex;
@@ -37,18 +51,18 @@
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; }
-        /* line 18, ../sass/request.sass */
-        .request-content .left-request-forms form .form-group input, .request-content .left-request-forms form .form-group select {
+        /* line 25, ../sass/request.sass */
+        .contact-main .left-request-forms form .form-group input, .contact-main .left-request-forms form .form-group select {
           width: 75%;
           border: 1px solid #e1e1e1;
           border-radius: 2px;
           height: 38px; }
-        /* line 23, ../sass/request.sass */
-        .request-content .left-request-forms form .form-group label {
+        /* line 30, ../sass/request.sass */
+        .contact-main .left-request-forms form .form-group label {
           width: 25%;
           line-height: 33px; }
-      /* line 26, ../sass/request.sass */
-      .request-content .left-request-forms form .send-button {
+      /* line 33, ../sass/request.sass */
+      .contact-main .left-request-forms form .send-button {
         display: block;
         text-transform: uppercase;
         text-decoration: none;
@@ -59,14 +73,14 @@
         padding: 17px;
         -webkit-transition: all 1s;
                 transition: all 1s; }
-      /* line 36, ../sass/request.sass */
-      .request-content .left-request-forms form .send-button:hover {
+      /* line 43, ../sass/request.sass */
+      .contact-main .left-request-forms form .send-button:hover {
         background: #345396;
         color: #FFFFFF;
         -webkit-transition: all 1s;
                 transition: all 1s; }
-  /* line 40, ../sass/request.sass */
-  .request-content .right-blurb {
+  /* line 47, ../sass/request.sass */
+  .contact-main .right-blurb {
     width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
