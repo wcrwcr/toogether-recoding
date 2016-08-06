@@ -52,12 +52,14 @@
           top: 34%
           left: 39%
           width: 21%
-        img
+          img
+            max-width: 100%
+        .photo-ic
           transition: top 0.5s
-        img:hover
+        .photo-ic:hover
           transition: top 0.5s
-          top: 30%
-        img:hover + .subscribe-img
+          top: 25%
+        .photo-ic:hover + .subscribe-img
           display: block
         .subscribe-img
           display: none
@@ -66,6 +68,18 @@
           left: 44%
           width: 21%
           color: #FFFFFF
+        .ic-video
+          background: url("../images/media/foto/3.png")center no-repeat
+          background-size: cover
+          margin: 0
+          width: 60px
+          height: 52px
+        .ic-photo
+          background: url("../images/media/foto/4.png")center no-repeat
+          background-size: cover
+          width: 60px
+          height: 49px
+          margin: 0
       .gallery-bg:hover
         background: #8cb3d1
       .gallery-bg:hover .gallery-img

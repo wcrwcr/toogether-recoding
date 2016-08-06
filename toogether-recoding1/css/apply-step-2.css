@@ -54,24 +54,53 @@
       padding: 10px 20px;
       color: #FFFFFF; }
     /* line 38, ../sass/apply-step-2.sass */
+    .apply-stud-info .contact-info .remark-green-bottom, .apply-stud-info .residence-address .remark-green-bottom, .apply-stud-info .mailing-address .remark-green-bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 0 0 50px;
+      background: #3b9d0b;
+      padding: 5px 20px;
+      color: #FFFFFF;
+      margin: 50px 0 15px -20px;
+      width: 365px;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      /* line 48, ../sass/apply-step-2.sass */
+      .apply-stud-info .contact-info .remark-green-bottom .green-bottom-but, .apply-stud-info .residence-address .remark-green-bottom .green-bottom-but, .apply-stud-info .mailing-address .remark-green-bottom .green-bottom-but {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 10px;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        width: 50px; }
+    /* line 58, ../sass/apply-step-2.sass */
     .apply-stud-info .contact-info label, .apply-stud-info .residence-address label, .apply-stud-info .mailing-address label {
       color: #717171;
       font-weight: normal;
       margin-top: 15px; }
-    /* line 42, ../sass/apply-step-2.sass */
+    /* line 62, ../sass/apply-step-2.sass */
     .apply-stud-info .contact-info select, .apply-stud-info .residence-address select, .apply-stud-info .mailing-address select {
       width: 100%;
       box-sizing: content-box;
       border: 1px solid #a9a9ab;
       height: 40px; }
-    /* line 47, ../sass/apply-step-2.sass */
+    /* line 67, ../sass/apply-step-2.sass */
     .apply-stud-info .contact-info input, .apply-stud-info .residence-address input, .apply-stud-info .mailing-address input {
       width: 100%;
       box-sizing: content-box;
       border: 1px solid #a9a9ab;
       height: 40px; }
 
-/* line 53, ../sass/apply-step-2.sass */
+/* line 73, ../sass/apply-step-2.sass */
 .apply-for {
   display: -webkit-box;
   display: -webkit-flex;
@@ -87,28 +116,28 @@
   background: #b2ddee;
   width: 70vw;
   margin: 45px auto 0; }
-  /* line 61, ../sass/apply-step-2.sass */
+  /* line 81, ../sass/apply-step-2.sass */
   .apply-for .left-permit, .apply-for .right-visa {
     margin: 25px 0 25px 45px; }
-    /* line 63, ../sass/apply-step-2.sass */
+    /* line 83, ../sass/apply-step-2.sass */
     .apply-for .left-permit label, .apply-for .right-visa label {
       color: #4e4e4e;
       font-weight: normal;
       margin-right: 10px; }
 
-/* line 67, ../sass/apply-step-2.sass */
+/* line 87, ../sass/apply-step-2.sass */
 .choose-option {
   width: 70vw;
   margin: 40px 0 110px 0; }
-  /* line 70, ../sass/apply-step-2.sass */
+  /* line 90, ../sass/apply-step-2.sass */
   .choose-option label {
     width: 300px;
     color: #4e4e4e;
     font-weight: normal; }
-  /* line 74, ../sass/apply-step-2.sass */
+  /* line 94, ../sass/apply-step-2.sass */
   .choose-option span {
     margin-right: 15px; }
-  /* line 76, ../sass/apply-step-2.sass */
+  /* line 96, ../sass/apply-step-2.sass */
   .choose-option .native-lang, .choose-option .native-lang-comment, .choose-option .lang-level, .choose-option .opinion-about-toogether, .choose-option .terms {
     display: -webkit-box;
     display: -webkit-flex;
@@ -122,24 +151,24 @@
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     margin-top: 24px; }
-  /* line 82, ../sass/apply-step-2.sass */
+  /* line 102, ../sass/apply-step-2.sass */
   .choose-option .native-lang input {
     border: 1px solid #a9a9ab;
     height: 38px;
     width: 298px;
     margin-bottom: 5px; }
-  /* line 87, ../sass/apply-step-2.sass */
+  /* line 107, ../sass/apply-step-2.sass */
   .choose-option .native-lang-comment {
     margin-top: 0; }
-    /* line 89, ../sass/apply-step-2.sass */
+    /* line 109, ../sass/apply-step-2.sass */
     .choose-option .native-lang-comment textarea {
       border: 1px solid #a9a9ab;
       width: 298px;
       margin-bottom: 5px; }
-  /* line 94, ../sass/apply-step-2.sass */
+  /* line 114, ../sass/apply-step-2.sass */
   .choose-option .lang-level input, .choose-option .opinion-about-toogether input {
     margin-right: 40px; }
-  /* line 96, ../sass/apply-step-2.sass */
+  /* line 116, ../sass/apply-step-2.sass */
   .choose-option .choose-option-but {
     display: block;
     width: 200px;
@@ -153,7 +182,7 @@
     -webkit-transition: all 0.3s;
             transition: all 0.3s;
     float: left; }
-  /* line 108, ../sass/apply-step-2.sass */
+  /* line 128, ../sass/apply-step-2.sass */
   .choose-option .choose-option-but:hover {
     background: #0b5d9d;
     color: #FFFFFF;

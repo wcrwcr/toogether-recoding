@@ -58,10 +58,10 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         width: 67%; }
         /* line 34, ../sass/apply.sass */
         .apply-content .left-calc .form-calc .left-calculate-button .but, .apply-content .right-summary .form-calc .left-calculate-button .but {
@@ -84,7 +84,7 @@
           color: #FFFFFF; }
     /* line 50, ../sass/apply.sass */
     .apply-content .left-calc .summary-cont, .apply-content .right-summary .summary-cont {
-      width: 70%;
+      width: 570px;
       background: #f4f4f4;
       margin: 100px 0 200px 0;
       padding: 10%; }
@@ -111,7 +111,7 @@
         color: #0b5d9d;
         width: 200px;
         margin: 26px 0 29px 0;
-        float: right;
+        float: left;
         display: block;
         -webkit-transition: all 0.3s;
                 transition: all 0.3s; }
@@ -135,7 +135,7 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin: 120px auto 0;
+  margin: 30px auto 0;
   padding: 0;
   list-style-type: none;
   border-bottom: 1px solid #dbdbdb;

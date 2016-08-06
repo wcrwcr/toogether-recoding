@@ -7,7 +7,6 @@
   margin: 170px auto 0
   transition: all 0.5s
   align-content: center
-  align-items: baseline
   .information, .center-block, .another-info
     width: 395px
     margin: 0
@@ -40,7 +39,7 @@
     .subscribe-center-block
       text-align: center
       font-size: 16px
-      margin: 40px 0 27px
+      margin: 27px 0
     .form-contact-send-request
       display: block
       text-transform: uppercase
@@ -56,11 +55,44 @@
       transition: all 0.5s
       background: #0b5d9d
       color: #FFFFFF
+  .center-block-b
+    width: 395px
+    margin: 0
+    display: none
+    .sent
+      background: #0b5d9d
+      padding: 60px 0
+      h1
+        margin: 0
+        text-transform: uppercase
+        text-align: center
+        color: #FFFFFF
+        font-size: 25px
+    .info
+      padding: 65px
+      p
+        text-align: center
+        color: #2e2e2e
+    .button
+      display: block
+      text-transform: uppercase
+      color: #FFFFFF
+      width: 90%
+      text-decoration: none
+      background: #0b5d9d
+      text-align: center
+      padding: 15px 0
+      border: 1px solid #0b5d9d
+      border-radius: 2px
+      margin: 20px auto 0
   .another-info
     .another-info-cont
       width: 95%
       padding: 0 2.5%
       margin-bottom: 50px
+      .info-cont-photo
+        margin: 25px auto -44px
+        text-align: center
       .info-cont-img
         position: relative
         img
@@ -94,13 +126,16 @@
         margin: 0
       .info-recall
         background: #f0f0f0
-        margin-top: 100px
         position: relative
         width: 95%
         padding: 100px 2.5% 0
-        img
-          display: block
-          margin: -50% auto 25px
+        z-index: -1
+        .quotes
+          position: absolute
+          top: 0
+          left: 0
+          margin: 38px 0 0 25px
+
         .name
           color: #0b5d9d
           font-size: 16px

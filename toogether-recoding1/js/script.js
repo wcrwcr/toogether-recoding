@@ -42,6 +42,9 @@ $(function(){
         $(".gallery").fancybox();
     });
 
+    $(document).ready(function() {
+        $(".gallery-photo").fancybox();
+    });
 
     $(window).scroll(function () {
         var top = $(document).scrollTop();
@@ -58,6 +61,12 @@ $(function(){
 
     $(".language_arrow").click(function () {
         $("#dropDownLanguage").toggle()
+    });
+});
+$(function () {
+    $('.form-contact-send').click(function() {
+        $('.center-block-b').show();
+        $('.center-block').toggle();
     });
 });
 
