@@ -1,4 +1,4 @@
-/* line 1, ../sass/example.sass */
+/* line 1, ../sass/programs.sass */
 .programs-content {
   width: 52.8%;
   display: -webkit-box;
@@ -8,7 +8,7 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  /* line 5, ../sass/typography.sass */
+  /* line 5, ../sass/programs.sass */
   .programs-content .programs {
     display: -webkit-box;
     display: -webkit-flex;
@@ -20,7 +20,7 @@
     width: 100%;
     color: #636161;
     margin: 0 0 65px; }
-    /* line 11, ../sass/typography.sass */
+    /* line 11, ../sass/programs.sass */
     .programs-content .programs h2 {
       width: 100%;
       display: block;
@@ -32,10 +32,10 @@
       text-align: center;
       font-size: 24px;
       margin: 0 0 25px; }
-    /* line 22, ../sass/typography.sass */
+    /* line 22, ../sass/programs.sass */
     .programs-content .programs .orange {
       background: #fa9901; }
-    /* line 24, ../sass/typography.sass */
+    /* line 24, ../sass/programs.sass */
     .programs-content .programs .programs-text {
       display: -webkit-box;
       display: -webkit-flex;
@@ -54,10 +54,10 @@
               align-items: flex-start;
       margin: 0 0 40px;
       font-size: 16px; }
-      /* line 31, ../sass/typography.sass */
+      /* line 31, ../sass/programs.sass */
       .programs-content .programs .programs-text p {
         width: 70%; }
-      /* line 33, ../sass/typography.sass */
+      /* line 33, ../sass/programs.sass */
       .programs-content .programs .programs-text .program-button {
         display: block;
         text-transform: uppercase;
@@ -69,13 +69,13 @@
         width: 20%;
         -webkit-transition: all 0.5s;
                 transition: all 0.5s; }
-      /* line 43, ../sass/typography.sass */
+      /* line 43, ../sass/programs.sass */
       .programs-content .programs .programs-text .program-button:hover {
         background: #0b5d9d;
         color: #FFFFFF;
         -webkit-transition: all 0.5s;
                 transition: all 0.5s; }
-    /* line 47, ../sass/typography.sass */
+    /* line 47, ../sass/programs.sass */
     .programs-content .programs ul {
       list-style-type: none;
       margin: 0;
@@ -89,12 +89,12 @@
           -ms-flex-pack: justify;
               justify-content: space-between;
       background: #efeded; }
-      /* line 54, ../sass/typography.sass */
+      /* line 54, ../sass/programs.sass */
       .programs-content .programs ul li {
         padding: 22px 30px;
         text-align: center; }
-      /* line 57, ../sass/typography.sass */
+      /* line 57, ../sass/programs.sass */
       .programs-content .programs ul li:nth-child(odd) {
         background: #dad5d5; }
 
-/*# sourceMappingURL=example.css.map */
+/*# sourceMappingURL=programs.css.map */
