@@ -1,6 +1,7 @@
 /* line 1, ../sass/programs.sass */
-.programs-content {
-  width: 52.8%;
+.programs-main {
+  max-width: 1170px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8,11 +9,17 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start; }
-  /* line 6, ../sass/programs.sass */
-  .programs-content .programs {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto 0; }
+  /* line 9, ../sass/programs.sass */
+  .programs-main .programs {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -20,11 +27,11 @@
     -webkit-flex-flow: column wrap;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    width: 100%;
+    width: 710px;
     color: #636161;
     margin: 0 0 65px; }
-    /* line 12, ../sass/programs.sass */
-    .programs-content .programs h2 {
+    /* line 15, ../sass/programs.sass */
+    .programs-main .programs h2 {
       width: 100%;
       display: block;
       text-transform: uppercase;
@@ -35,11 +42,11 @@
       text-align: center;
       font-size: 24px;
       margin: 0 0 25px; }
-    /* line 23, ../sass/programs.sass */
-    .programs-content .programs .orange {
+    /* line 26, ../sass/programs.sass */
+    .programs-main .programs .orange {
       background: #fa9901; }
-    /* line 25, ../sass/programs.sass */
-    .programs-content .programs .programs-text {
+    /* line 28, ../sass/programs.sass */
+    .programs-main .programs .programs-text {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -57,11 +64,11 @@
               align-items: flex-start;
       margin: 0 0 40px;
       font-size: 16px; }
-      /* line 32, ../sass/programs.sass */
-      .programs-content .programs .programs-text p {
+      /* line 35, ../sass/programs.sass */
+      .programs-main .programs .programs-text p {
         width: 70%; }
-      /* line 34, ../sass/programs.sass */
-      .programs-content .programs .programs-text .program-button {
+      /* line 37, ../sass/programs.sass */
+      .programs-main .programs .programs-text .program-button {
         display: block;
         text-transform: uppercase;
         text-decoration: none;
@@ -72,14 +79,14 @@
         width: 20%;
         -webkit-transition: all 0.5s;
                 transition: all 0.5s; }
-      /* line 44, ../sass/programs.sass */
-      .programs-content .programs .programs-text .program-button:hover {
+      /* line 47, ../sass/programs.sass */
+      .programs-main .programs .programs-text .program-button:hover {
         background: #0b5d9d;
         color: #FFFFFF;
         -webkit-transition: all 0.5s;
                 transition: all 0.5s; }
-    /* line 48, ../sass/programs.sass */
-    .programs-content .programs ul {
+    /* line 51, ../sass/programs.sass */
+    .programs-main .programs ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -92,12 +99,16 @@
           -ms-flex-pack: justify;
               justify-content: space-between;
       background: #efeded; }
-      /* line 55, ../sass/programs.sass */
-      .programs-content .programs ul li {
+      /* line 58, ../sass/programs.sass */
+      .programs-main .programs ul li {
         padding: 22px 30px;
         text-align: center; }
-      /* line 58, ../sass/programs.sass */
-      .programs-content .programs ul li:nth-child(odd) {
+      /* line 61, ../sass/programs.sass */
+      .programs-main .programs ul li:nth-child(odd) {
         background: #dad5d5; }
+
+/* line 65, ../sass/programs.sass */
+.programs-photo {
+  background: url("../images/typography/typography-photo-block.jpg") no-repeat center; }
 
 /*# sourceMappingURL=programs.css.map */

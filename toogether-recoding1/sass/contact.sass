@@ -2,14 +2,15 @@
   display: flex
   flex-flow: row wrap
   justify-content: space-between
-  width: 70vw
-  max-width: 100%
-  margin: 170px auto 0
+  max-width: 1180px
+  width: 100%
+  margin: 50px auto 0
   transition: all 0.5s
-  align-content: center
-  .information, .center-block, .another-info
-    width: 395px
+  .center-block, .another-info
+    width: 385px
     margin: 0
+  .information
+    width: 280px
   .center-block
     margin-bottom: 40px
     .form-contact
@@ -36,6 +37,12 @@
         border: 1px solid #FFFFFF
         border-radius: 2px
         margin-top: 20px
+        background: #0b5d9d
+        transition: all 0.4s
+      .form-contact-send:hover
+        color: #0b5d9d
+        background: #ffffff
+        transition: all 0.4s
     .subscribe-center-block
       text-align: center
       font-size: 16px
@@ -85,83 +92,11 @@
       border: 1px solid #0b5d9d
       border-radius: 2px
       margin: 20px auto 0
-  .another-info
-    .another-info-cont
-      width: 95%
-      padding: 0 2.5%
-      margin-bottom: 50px
-      .info-cont-photo
-        margin: 25px auto -44px
-        text-align: center
-      .info-cont-img
-        position: relative
-        img
-          max-width: 100%
-          opacity: 0.5
-      .info-button
-        display: block
-        text-transform: uppercase
-        color: #0b5d9d
-        width: 90%
-        text-decoration: none
-        text-align: center
-        padding: 15px 0
-        border: 1px solid #0b5d9d
-        border-radius: 2px
-        position: absolute
-        top: 70%
-        left: 5%
-        transition: all 0.5s
-      .info-button:hover
-        transition: all 0.5s
-        background: #0b5d9d
-        color: #FFFFFF
-      h4
-        text-align: center
-        text-transform: uppercase
-        color: #0b5d9d
-        padding: 12px
-        border-top: solid #0b5d9d
-        border-bottom: solid #0b5d9d
-        margin: 0
-      .info-recall
-        background: #f0f0f0
-        position: relative
-        width: 95%
-        padding: 100px 2.5% 0
-        z-index: -1
-        .quotes
-          position: absolute
-          top: 0
-          left: 0
-          margin: 38px 0 0 25px
 
-        .name
-          color: #0b5d9d
-          font-size: 16px
-          text-transform: uppercase
-          text-align: center
-        h3
-          text-align: center
-          text-transform: uppercase
-          font-size: 16px
-      .recall-link
-        text-align: center
-        display: block
-        color: #0b5d9d
-      .to-join
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
-        list-style-type: none
-        margin: 0
-        padding: 26px 0
-        background: #0b5d9d
-        li
-          margin: 0 5px
-          a
-            display: block
   .information
     margin-bottom: 25px
     h2, p
       padding: 0 10px
+
+.contact-photo
+  background: url("../images/typography/typography-photo-block.jpg")no-repeat center

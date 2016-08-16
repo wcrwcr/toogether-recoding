@@ -61,6 +61,9 @@
           -webkit-transition: opacity 0.5s;
                   transition: opacity 0.5s; }
           /* line 43, ../sass/media-gallery.sass */
+          .media-main .photo-gallery .gallery .gallery-bg .gallery-img .passive, .media-main .video-gallery .gallery .gallery-bg .gallery-img .passive {
+            display: none; }
+          /* line 45, ../sass/media-gallery.sass */
           .media-main .photo-gallery .gallery .gallery-bg .gallery-img .gallery-img-bg, .media-main .video-gallery .gallery .gallery-bg .gallery-img .gallery-img-bg {
             background: rgba(0, 0, 0, 0.5);
             position: absolute;
@@ -68,28 +71,28 @@
             left: 0;
             width: 100%;
             height: 170px; }
-        /* line 50, ../sass/media-gallery.sass */
+        /* line 52, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .photo-ic, .media-main .video-gallery .gallery .gallery-bg .photo-ic {
           position: absolute;
           top: 34%;
           left: 39%;
           width: 21%; }
-          /* line 55, ../sass/media-gallery.sass */
+          /* line 57, ../sass/media-gallery.sass */
           .media-main .photo-gallery .gallery .gallery-bg .photo-ic img, .media-main .video-gallery .gallery .gallery-bg .photo-ic img {
             max-width: 100%; }
-        /* line 57, ../sass/media-gallery.sass */
+        /* line 59, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .photo-ic, .media-main .video-gallery .gallery .gallery-bg .photo-ic {
           -webkit-transition: top 0.5s;
                   transition: top 0.5s; }
-        /* line 59, ../sass/media-gallery.sass */
+        /* line 61, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .photo-ic:hover, .media-main .video-gallery .gallery .gallery-bg .photo-ic:hover {
           -webkit-transition: top 0.5s;
                   transition: top 0.5s;
           top: 25%; }
-        /* line 62, ../sass/media-gallery.sass */
+        /* line 64, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .photo-ic:hover + .subscribe-img, .media-main .video-gallery .gallery .gallery-bg .photo-ic:hover + .subscribe-img {
           display: block; }
-        /* line 64, ../sass/media-gallery.sass */
+        /* line 66, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .subscribe-img, .media-main .video-gallery .gallery .gallery-bg .subscribe-img {
           display: none;
           position: absolute;
@@ -97,28 +100,35 @@
           left: 44%;
           width: 21%;
           color: #FFFFFF; }
-        /* line 71, ../sass/media-gallery.sass */
+        /* line 73, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .ic-video, .media-main .video-gallery .gallery .gallery-bg .ic-video {
           background: url("../images/media/foto/3.png") center no-repeat;
           background-size: cover;
           margin: 0;
           width: 60px;
           height: 52px; }
-        /* line 77, ../sass/media-gallery.sass */
+        /* line 79, ../sass/media-gallery.sass */
         .media-main .photo-gallery .gallery .gallery-bg .ic-photo, .media-main .video-gallery .gallery .gallery-bg .ic-photo {
           background: url("../images/media/foto/4.png") center no-repeat;
           background-size: cover;
           width: 60px;
           height: 49px;
           margin: 0; }
-      /* line 83, ../sass/media-gallery.sass */
+      /* line 85, ../sass/media-gallery.sass */
       .media-main .photo-gallery .gallery .gallery-bg:hover, .media-main .video-gallery .gallery .gallery-bg:hover {
         background: #8cb3d1; }
-      /* line 85, ../sass/media-gallery.sass */
+      /* line 87, ../sass/media-gallery.sass */
       .media-main .photo-gallery .gallery .gallery-bg:hover .gallery-img, .media-main .video-gallery .gallery .gallery-bg:hover .gallery-img {
         opacity: 0.3; }
-      /* line 87, ../sass/media-gallery.sass */
+      /* line 89, ../sass/media-gallery.sass */
       .media-main .photo-gallery .gallery .subscribe-gallery, .media-main .video-gallery .gallery .subscribe-gallery {
         text-align: center; }
+
+/* line 92, ../sass/media-gallery.sass */
+.m-gallery-photo {
+  background: url("../images/typography/typography-photo-block.jpg") no-repeat center; }
+  /* line 94, ../sass/media-gallery.sass */
+  .m-gallery-photo .m-gallery-subscribe {
+    width: 70vw; }
 
 /*# sourceMappingURL=media-gallery.css.map */

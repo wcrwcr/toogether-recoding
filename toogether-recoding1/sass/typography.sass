@@ -3,19 +3,17 @@
 
 $type-color: #123554
 
-.contact-main
+.typograph
   display: flex
   flex-flow: row wrap
   justify-content: space-between
-  width: 70vw
-  max-width: 100%
+  max-width: 1170px
+  width: 100%
   margin: 70px auto 0
   transition: all 0.5s
   align-content: center
-.typograph
-  width: 60vw
   .left-content
-    width: 45.8%  //710px
+    width: 710px //45.8%
     display: flex
     align-content: flex-start
     flex-wrap: wrap
@@ -29,10 +27,14 @@ $type-color: #123554
       font-size: 22px
     .blue
       color: $type-color
+      width: 100%
     .contact-typogr
       list-style-type: none
       margin: 0
       padding: 0
+      li
+        a
+          text-decoration: underline
     .typogr-dot
       list-style-type: square
   .another-info

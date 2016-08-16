@@ -1,9 +1,5 @@
 /* line 1, ../sass/request.sass */
 .request {
-  margin-top: 160px !important; }
-
-/* line 3, ../sass/request.sass */
-.contact-main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,34 +11,30 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 70vw;
+  width: 1170px;
   max-width: 100%;
-  margin: 170px auto 0;
+  margin: 60px auto 0;
   -webkit-transition: all 0.5s;
           transition: all 0.5s;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center; }
-  /* line 13, ../sass/request.sass */
-  .contact-main .left-request-forms {
+  /* line 10, ../sass/request.sass */
+  .request .left-request-forms {
     width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-    /* line 18, ../sass/request.sass */
-    .contact-main .left-request-forms form {
-      width: 75%;
+    /* line 14, ../sass/request.sass */
+    .request .left-request-forms form {
+      width: 439px;
       margin: 0; }
-      /* line 21, ../sass/request.sass */
-      .contact-main .left-request-forms form .form-group {
+      /* line 17, ../sass/request.sass */
+      .request .left-request-forms form .form-group {
         width: 100%;
         display: -webkit-box;
         display: -webkit-flex;
@@ -51,18 +43,18 @@
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; }
-        /* line 25, ../sass/request.sass */
-        .contact-main .left-request-forms form .form-group input, .contact-main .left-request-forms form .form-group select {
-          width: 75%;
+        /* line 21, ../sass/request.sass */
+        .request .left-request-forms form .form-group input, .request .left-request-forms form .form-group select {
+          width: 100%;
           border: 1px solid #e1e1e1;
           border-radius: 2px;
           height: 38px; }
-        /* line 30, ../sass/request.sass */
-        .contact-main .left-request-forms form .form-group label {
-          width: 25%;
+        /* line 26, ../sass/request.sass */
+        .request .left-request-forms form .form-group label {
+          width: 100%;
           line-height: 33px; }
-      /* line 33, ../sass/request.sass */
-      .contact-main .left-request-forms form .send-button {
+      /* line 29, ../sass/request.sass */
+      .request .left-request-forms form .send-button {
         display: block;
         text-transform: uppercase;
         text-decoration: none;
@@ -73,14 +65,14 @@
         padding: 17px;
         -webkit-transition: all 1s;
                 transition: all 1s; }
-      /* line 43, ../sass/request.sass */
-      .contact-main .left-request-forms form .send-button:hover {
+      /* line 39, ../sass/request.sass */
+      .request .left-request-forms form .send-button:hover {
         background: #345396;
         color: #FFFFFF;
         -webkit-transition: all 1s;
                 transition: all 1s; }
-  /* line 47, ../sass/request.sass */
-  .contact-main .right-blurb {
+  /* line 43, ../sass/request.sass */
+  .request .right-blurb {
     width: 50%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -93,5 +85,9 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+
+/* line 49, ../sass/request.sass */
+.request-photo {
+  background: url("../images/typography/typography-photo-block.jpg") no-repeat center; }
 
 /*# sourceMappingURL=request.css.map */

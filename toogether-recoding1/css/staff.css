@@ -60,4 +60,11 @@
       .our-staff-content .staff-info .staff-info-subscribe p:nth-child(2) {
         text-transform: uppercase; }
 
+/* line 35, ../sass/staff.sass */
+.staff-photo {
+  background: url("../images/typography/typography-photo-block.jpg") no-repeat center; }
+  /* line 37, ../sass/staff.sass */
+  .staff-photo .staff-subscr {
+    width: 70vw; }
+
 /*# sourceMappingURL=staff.css.map */
