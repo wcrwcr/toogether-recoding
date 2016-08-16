@@ -1,0 +1,442 @@
+/* line 8, ../sass/apply.sass */
+.apply-main {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto 200px; }
+  /* line 13, ../sass/apply.sass */
+  .apply-main .registration-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin: 30px auto 0;
+    padding: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #dbdbdb;
+    overflow: hidden; }
+    /* line 22, ../sass/apply.sass */
+    .apply-main .registration-menu li {
+      color: #777777;
+      padding: 0 4.2105%;
+      text-decoration: none;
+      border-bottom: 3px solid #ffffff; }
+    /* line 27, ../sass/apply.sass */
+    .apply-main .registration-menu .step-1 {
+      border-bottom: 3px solid #195491; }
+  /* line 31, ../sass/apply.sass */
+  .apply-main .ret-to-step-1 {
+    display: none;
+    color: #3176ac;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 17px; }
+  /* line 38, ../sass/apply.sass */
+  .apply-main .ret-to-step-1:before {
+    content: url("/assets/images/apply/step-2/arrow.png");
+    margin-right: 16px;
+    vertical-align: text-top; }
+  /* line 44, ../sass/apply.sass */
+  .apply-main .apply-step-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    /* line 49, ../sass/apply.sass */
+    .apply-main .apply-step-1 .left-calculate {
+      width: 300px;
+      margin-top: 70px; }
+      /* line 52, ../sass/apply.sass */
+      .apply-main .apply-step-1 .left-calculate h1 {
+        font-size: 34px;
+        color: #4e4e4e;
+        margin: 0; }
+      /* line 56, ../sass/apply.sass */
+      .apply-main .apply-step-1 .left-calculate label {
+        color: #4e4e4e;
+        width: 100%;
+        margin-top: 20px; }
+      /* line 60, ../sass/apply.sass */
+      .apply-main .apply-step-1 .left-calculate select {
+        width: 100%;
+        height: 38px;
+        border: 1px solid #a9a9ab;
+        color: #717171; }
+      /* line 65, ../sass/apply.sass */
+      .apply-main .apply-step-1 .left-calculate .step-1-calc {
+        color: #0b5d9d;
+        border: 1px solid #0b5d9d;
+        width: 198px;
+        padding: 10px 0;
+        background: #FFFFFF;
+        font-size: 20px;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+        float: right;
+        margin-top: 40px; }
+      /* line 75, ../sass/apply.sass */
+      .apply-main .apply-step-1 .left-calculate .step-1-calc:hover {
+        background: #0b5d9d;
+        color: #FFFFFF;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s; }
+    /* line 79, ../sass/apply.sass */
+    .apply-main .apply-step-1 .right-summary {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 570px;
+      margin-top: 70px;
+      padding: 0 50px;
+      color: #4e4e4e;
+      font-size: 20px;
+      background: #f1f1f1; }
+      /* line 89, ../sass/apply.sass */
+      .apply-main .apply-step-1 .right-summary h2 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 40px;
+        width: 100%; }
+      /* line 95, ../sass/apply.sass */
+      .apply-main .apply-step-1 .right-summary .calc-right, .apply-main .apply-step-1 .right-summary .total-sum {
+        width: 100%;
+        padding-bottom: 12px;
+        margin-top: 28px;
+        border-bottom: 2px solid #c1c1c2; }
+      /* line 100, ../sass/apply.sass */
+      .apply-main .apply-step-1 .right-summary .total-sum {
+        text-transform: uppercase;
+        border-bottom: 4px solid #c1c1c2; }
+      /* line 103, ../sass/apply.sass */
+      .apply-main .apply-step-1 .right-summary .start-registr {
+        font-size: 20px;
+        color: #0b5d9d;
+        background: #FFFFFF;
+        border: 1px solid #0b5d9d;
+        padding: 12px 0;
+        width: 200px;
+        margin-top: 55px;
+        float: right;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s; }
+        /* line 113, ../sass/apply.sass */
+        .apply-main .apply-step-1 .right-summary .start-registr .start-arrow {
+          font-size: 15px; }
+      /* line 115, ../sass/apply.sass */
+      .apply-main .apply-step-1 .right-summary .start-registr:hover {
+        background: #0b5d9d;
+        color: #FFFFFF;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s; }
+  /* line 121, ../sass/apply.sass */
+  .apply-main .apply-step-2 {
+    display: none;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    /* line 125, ../sass/apply.sass */
+    .apply-main .apply-step-2 .three-form-group {
+      width: 300px;
+      margin-top: 24px; }
+      /* line 128, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .remark {
+        border-radius: 0 0 50px;
+        background: #0b5d9d;
+        padding: 10px 20px;
+        color: #FFFFFF;
+        margin-bottom: 15px; }
+      /* line 134, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .rem-green {
+        background: #3b9d0b; }
+      /* line 136, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .residence-info {
+        margin: 40px 0 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 15px;
+        padding: 2px 0 2px 20px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+      /* line 142, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .residence-but {
+        display: block;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        width: 48px;
+        padding: 5px 0;
+        text-align: center;
+        margin-left: 15px;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s; }
+      /* line 153, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .residence-but:hover {
+        background: #ffffff;
+        color: #3b9d0b;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+        cursor: pointer; }
+      /* line 158, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .hidden-form {
+        display: none; }
+      /* line 160, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .resid-arrow {
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        width: 48px;
+        padding: 4px 0;
+        margin-left: 15px;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+        display: none;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center; }
+      /* line 172, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group label {
+        color: #717171;
+        width: 100%;
+        margin-top: 15px; }
+      /* line 176, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .lab-active {
+        color: #d8462e; }
+      /* line 178, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group .inp-active {
+        border: 1px solid #d8462e; }
+      /* line 180, ../sass/apply.sass */
+      .apply-main .apply-step-2 .three-form-group select, .apply-main .apply-step-2 .three-form-group input {
+        width: 100%;
+        height: 38px;
+        border: 1px solid #a9a9ab;
+        color: #717171; }
+    /* line 185, ../sass/apply.sass */
+    .apply-main .apply-step-2 .applies {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 25px 0 25px 45px;
+      background: #b2ddee;
+      width: 100%;
+      margin: 44px 0 36px; }
+      /* line 194, ../sass/apply.sass */
+      .apply-main .apply-step-2 .applies .app span {
+        margin-right: 24px; }
+      /* line 196, ../sass/apply.sass */
+      .apply-main .apply-step-2 .applies .app input {
+        margin-right: 5px; }
+      /* line 198, ../sass/apply.sass */
+      .apply-main .apply-step-2 .applies .visa {
+        margin-right: 93px; }
+    /* line 200, ../sass/apply.sass */
+    .apply-main .apply-step-2 .native {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 100%;
+      margin-bottom: 25px; }
+      /* line 206, ../sass/apply.sass */
+      .apply-main .apply-step-2 .native label {
+        width: 235px;
+        color: #717171; }
+      /* line 209, ../sass/apply.sass */
+      .apply-main .apply-step-2 .native input {
+        width: 298px;
+        height: 38px;
+        border: 1px solid #a9a9ab;
+        color: #717171; }
+    /* line 214, ../sass/apply.sass */
+    .apply-main .apply-step-2 .current, .apply-main .apply-step-2 .hear-about, .apply-main .apply-step-2 .agree {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 100%;
+      margin-bottom: 25px; }
+      /* line 220, ../sass/apply.sass */
+      .apply-main .apply-step-2 .current label, .apply-main .apply-step-2 .hear-about label, .apply-main .apply-step-2 .agree label {
+        width: 250px;
+        color: #717171; }
+      /* line 223, ../sass/apply.sass */
+      .apply-main .apply-step-2 .current span, .apply-main .apply-step-2 .hear-about span, .apply-main .apply-step-2 .agree span {
+        margin-right: 15px;
+        color: #4e4e4e; }
+      /* line 226, ../sass/apply.sass */
+      .apply-main .apply-step-2 .current input, .apply-main .apply-step-2 .hear-about input, .apply-main .apply-step-2 .agree input {
+        margin-right: 42px; }
+    /* line 230, ../sass/apply.sass */
+    .apply-main .apply-step-2 .finish-registr {
+      font-size: 20px;
+      color: #0b5d9d;
+      background: #FFFFFF;
+      border: 1px solid #0b5d9d;
+      padding: 12px 0;
+      width: 200px;
+      margin: auto;
+      -webkit-transition: all 0.4s;
+              transition: all 0.4s; }
+      /* line 239, ../sass/apply.sass */
+      .apply-main .apply-step-2 .finish-registr .start-arrow {
+        font-size: 15px; }
+    /* line 241, ../sass/apply.sass */
+    .apply-main .apply-step-2 .finish-registr:hover {
+      background: #0b5d9d;
+      color: #FFFFFF;
+      -webkit-transition: all 0.4s;
+              transition: all 0.4s; }
+  /* line 247, ../sass/apply.sass */
+  .apply-main .apply-step-3 {
+    display: none;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 0 0 0; }
+    /* line 252, ../sass/apply.sass */
+    .apply-main .apply-step-3 .accept-registration {
+      width: 50%; }
+      /* line 254, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration h1 {
+        font-size: 34px;
+        text-transform: uppercase;
+        color: #0b5d9d;
+        margin: 0 0 70px 0; }
+      /* line 259, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration p {
+        font-size: 16px;
+        color: #4e4e4e;
+        width: 500px; }
+      /* line 264, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration .agree label {
+        width: 250px;
+        color: #ff2400; }
+      /* line 267, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration .agree span {
+        margin: 0;
+        color: #4e4e4e; }
+      /* line 270, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration .agree input {
+        margin-right: 35px; }
+      /* line 272, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration .agree-butt {
+        font-size: 20px;
+        color: #0b5d9d;
+        background: #FFFFFF;
+        border: 1px solid #0b5d9d;
+        padding: 12px 0;
+        width: 100%;
+        margin-top: 60px;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s; }
+        /* line 281, ../sass/apply.sass */
+        .apply-main .apply-step-3 .accept-registration .agree-butt .start-arrow {
+          font-size: 15px; }
+      /* line 283, ../sass/apply.sass */
+      .apply-main .apply-step-3 .accept-registration .agree-butt:hover {
+        background: #0b5d9d;
+        color: #FFFFFF;
+        -webkit-transition: all 0.4s;
+                transition: all 0.4s; }
+  /* line 288, ../sass/apply.sass */
+  .apply-main .popup {
+    width: 100%;
+    text-align: center;
+    background: #ececec;
+    overflow: hidden;
+    display: none; }
+    /* line 294, ../sass/apply.sass */
+    .apply-main .popup h1 {
+      text-transform: uppercase;
+      color: #0b5d9d;
+      font-size: 44px;
+      margin-top: 118px; }
+    /* line 299, ../sass/apply.sass */
+    .apply-main .popup img {
+      max-width: 100%;
+      margin: 50px 0 65px; }
+    /* line 302, ../sass/apply.sass */
+    .apply-main .popup p:nth-child(1) {
+      margin-bottom: 35px; }
+    /* line 304, ../sass/apply.sass */
+    .apply-main .popup .popup-but {
+      display: block;
+      width: 338px;
+      margin: 60px auto 120px;
+      text-align: center;
+      color: #0b5d9d;
+      border: 1px solid #0b5d9d;
+      text-transform: uppercase;
+      padding: 10px 0;
+      text-decoration: none;
+      -webkit-transition: all 0.4s;
+              transition: all 0.4s; }
+    /* line 315, ../sass/apply.sass */
+    .apply-main .popup .popup-but:hover {
+      background: #0b5d9d;
+      color: #FFFFFF;
+      -webkit-transition: all 0.4s;
+              transition: all 0.4s; }
+
+/*# sourceMappingURL=apply.css.map */
