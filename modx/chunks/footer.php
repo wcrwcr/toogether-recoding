@@ -1,10 +1,9 @@
 <div class="footer">
     <div class="foot-cont">
         <div class="foot-contacts">
-            <a href="index.html" class="foot-logo"> <img src="/assets/images/footer/foot-logo/foot-logo.png" alt="foot-logo"></a>
-            <a href="apply.html" class="foot-button">applay today</a>
             <p>+48 22 111 50 64</p>
             <p>biuro@together-school.pl</p>
+            <a href="apply.html" class="foot-button">applay today</a>
         </div>
         <ul class="foot-soc-icons">
             <li><a href="#"> <img src="/assets/images/footer/foot-soc-icons/facebook.png" alt="icon"> </a></li>
@@ -26,15 +25,6 @@
                     <li><a href="#">Conversation</a></li>
                     <li><a href="#">Cultural program</a></li>
                 </ul>
-                <ul>
-                    <li>students</li>
-                    <li><a href="#">Students Life</a></li>
-                    <li><a href="#">International Students</a></li>
-                    <li><a href="#">Medical Insurance</a></li>
-                    <li><a href="#">Housing</a></li>
-                    <li><a href="#">Form Downloads</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                </ul>
             </div>
             <div class="links-content">
                 <ul>
@@ -51,6 +41,17 @@
             </div>
             <div class="links-content">
                 <ul>
+                    <li>students</li>
+                    <li><a href="#">Students Life</a></li>
+                    <li><a href="#">International Students</a></li>
+                    <li><a href="#">Medical Insurance</a></li>
+                    <li><a href="#">Housing</a></li>
+                    <li><a href="#">Form Downloads</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="links-content last">
+                <ul>
                     <li>About us</li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Our Philosophy</a></li>
@@ -63,16 +64,13 @@
                     <li><a href="#">Career</a></li>
                     <li><a href="#">Media Gallery</a></li>
                 </ul>
-                <ul class="upper-links">
-                    <li><a href="#">get a quote</a></li>
-                    <li><a href="#">take an polish test</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
             </div>
         </div>
     </div>
 </div>
 
 <div class="copyright">
-    <a href="#">copyright©cjtogether | private policy</a>
+   <div class="copyright-cont">
+       <span>COPYRIGHT©CJTogether</span><a href="#">Private policy</a>
+   </div>
 </div>

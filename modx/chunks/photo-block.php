@@ -1,4 +1,3 @@
-<div class="photo-block">
-    <div class="photo"></div>
-    <div class="subscribe">photo</div>
+<div class="photo-block staff-photo">
+    <div class="subscribe staff-subscr">[[*pagetitle]]</div>
 </div>

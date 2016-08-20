@@ -4,4 +4,3 @@
 <script src="/assets/js/fancybox/jquery.fancybox.pack.js"></script>
 <script src="/assets/js/fancybox/jquery.fancybox-buttons.js"></script>
 <script src="/assets/js/script.js"></script>
-</body>
