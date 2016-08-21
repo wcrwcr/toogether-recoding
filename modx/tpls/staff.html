@@ -1,0 +1,17 @@
+[[$header]]
+<body>
+[[$top-menu-main]]
+[[$main-menu-main? &className=`otherwise-menu-b`]]
+[[$photo-block]]
+
+<div class="our-staff-content">
+    <div class="subscribe">
+        [[*content]]
+    </div>
+    <div class="video">[[*stuff-video]]</div>
+    [[!getResources:default=`No results found`? &showHidden=`1` &showUnpublished = `1` &includeTVs=`1` &processTVs=`1` &tpl = `tpl-stuff`  &includeContent=`1`]]
+</div>
+[[$footer]]
+[[$script-block-end]]
+</body>
+</html>
