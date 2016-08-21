@@ -1,0 +1,37 @@
+[[$header]]
+<body>
+[[$top-menu-main]]
+[[$main-menu-main? &className=`otherwise-menu-b`]]
+[[$photo-block]]
+
+<div class="contact-main">
+    <div class="information">
+    	[[*content]]
+    </div>
+    <div class="center-block">
+        <form action="" method="post" class="form-contact">
+            <h4>Задайте вопрос</h4>
+            <input type="text" name="second-name" placeholder=" Фамилия">
+            <input type="text" name="first-name" placeholder=" Имя">
+            <input type="text" name="email" placeholder=" Email">
+            <input type="text" name="telephone" placeholder=" Телефон">
+            <textarea name="your-message" id="" rows="10" placeholder=" Ваше сообщение"></textarea>
+            <button type="submit" class="form-contact-send">Отправить</button>
+        </form>
+        [[*textblock1]]
+        <a href="#" class="form-contact-send-request">Отправить запрос</a>
+    </div>
+    [[$form-contacts-popup]]
+    <div class="another-info">
+		[[$sidebar-bucklet]]
+		[[$sidebar-events]]
+		[[$sidebar-testimonial]]
+		[[$sidebar-join]]
+		[[$sidebar-links]]
+    </div>
+</div>
+
+[[$footer]]
+[[$script-block-end]]
+</body>
+</html>

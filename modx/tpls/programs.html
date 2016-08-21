@@ -1,0 +1,24 @@
+[[$header]]
+<body>
+[[$top-menu-main]]
+[[$main-menu-main? &className=`otherwise-menu-b`]]
+[[$photo-block]]
+
+<div class="programs-main">
+    <div class="programs-content">
+    	[[!getResources:default=`No results found`? &showHidden=`1` &showUnpublished = `1` &includeTVs=`1` &processTVs=`1` &tpl = `tpl-program`  &includeContent=`1`]]
+    </div>
+
+    <div class="another-info">
+		[[$sidebar-bucklet]]
+		[[$sidebar-events]]
+		[[$sidebar-testimonial]]
+		[[$sidebar-join]]
+		[[$sidebar-links]]
+    </div>
+</div>
+
+[[$footer]]
+[[$script-block-end]]
+</body>
+</html>
