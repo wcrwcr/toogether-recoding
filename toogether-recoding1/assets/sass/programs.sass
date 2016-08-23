@@ -6,6 +6,9 @@
   align-items: flex-start
   justify-content: space-between
   margin: 30px auto 0
+  .programs:nth-child(2n)
+    h2
+      background: #fa9901
   .programs
     display: flex
     flex-flow: column wrap
@@ -23,8 +26,6 @@
       text-align: center
       font-size: 24px
       margin: 0 0 25px
-    .orange
-      background: #fa9901
     .programs-text
       display: flex
       flex-wrap: wrap
@@ -60,7 +61,3 @@
         text-align: center
       li:nth-child(odd)
         background: #dad5d5
-
-
-.programs-photo
-  background: url("/assets/images/typography/typography-photo-block.jpg")no-repeat center

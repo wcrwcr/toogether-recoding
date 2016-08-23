@@ -7,12 +7,12 @@
 
 @font-face
   font-family: "FontAwesome"
-  src: url("/assets/fonts/font-awesome-4.6.3/fonts/FontAwesome.otf")
-  src: url("/assets/fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.svg")
-  src: url("/assets/fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.eot")
-  src: url("/assets/fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf")
-  src: url("/assets/fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff")
-  src: url("/assets/fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.woff2")
+  src: url("/assets/fonts/FontAwesome.otf")
+  src: url("/assets/fonts/fontawesome-webfont.svg")
+  src: url("/assets/fonts/fontawesome-webfont.eot")
+  src: url("/assets/fonts/fontawesome-webfont.ttf")
+  src: url("/assets/fonts/fontawesome-webfont.woff")
+  src: url("/assets/fonts/fontawesome-webfont.woff2")
 
 a:focus
   outline: none
@@ -65,8 +65,8 @@ body
       align-items: center
       margin-right: 75px
       .search-btn
-        width: 18px
-        height: 18px
+        border: none
+        background: #FFFFFF
       .search-field
         width: 106px
         border: 1px solid #3d3d3d
@@ -166,6 +166,8 @@ body
       .search-btn
         margin-top: 8px
         margin-left: 4px
+        border: none
+        background: #FFFFFF
       .search-field
         width: 70%
         border: 1px solid #a9a9ab
@@ -654,24 +656,20 @@ body
 
 
   .photo-block
-    background: #a9a9ab
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    align-items: flex-end
-    height: 250px
-    margin-top: 100px
-    color: #FFFFFF
-    text-transform: uppercase
-    font-size: 28px
-    font-weight: normal
-    position: relative
+    display: block
+    overflow: hidden
     width: 100%
-    text-align: center
+    height: 300px
+    margin-top: 120px
     .subscribe
-      width: 1170px
-      text-align: left
-      margin-bottom: 32px
+      display: block
+      color: #FFFFFF
+      text-transform: uppercase
+      font-size: 28px
+      font-weight: normal
+      margin: 230px auto 0
+      max-width: 1170px
+      width: 100%
 
   .another-info
     .another-info-cont
@@ -783,3 +781,6 @@ body
   @import "staff"
   @import "test"
   @import "typography"
+
+
+@import "media"
