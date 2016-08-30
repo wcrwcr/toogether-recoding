@@ -4,8 +4,10 @@ $(document).ready(function(){
         items: 1,
         loop: true,
         dots: true,
-        dotsEach: true
+        dotsEach: true,
+        nav: true
     });
+    $(".owl-carousel").css({"display": "flex", "align-items": "center"});
 });
 
 $(document).ready(function(){
@@ -36,15 +38,18 @@ $(function (){
     });
 
     $(document).ready(function() {
-        $(".gallery").fancybox();
-    });
-
-    $(document).ready(function() {
-        $(".gallery-img").fancybox(
-            autoScale = true,
-            cyclic = true,
-            showCloseButton = true
-        );
+        $(".gallery").fancybox({
+                autoScale: true,
+                cyclic: true,
+                showCloseButton: true
+        });
+        $(".gallery").on("click", function(){
+            $.fancybox({
+                href: this.href,
+                type: "iframe"
+            }); // fancybox
+            return false
+        }); // on
     });
 
     $(window).scroll(function () {
@@ -137,3 +142,8 @@ $(function netherSwitch() {
     });
 });
 
+$(function htmlGallery () {
+    $(".icon-to-group-video").click(function(){
+        $(this).closest(".html5gallery").children(".html5gallery-toolbox-0").click();
+    });
+});

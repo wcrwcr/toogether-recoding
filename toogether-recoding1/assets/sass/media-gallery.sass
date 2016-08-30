@@ -1,95 +1,108 @@
 .media-main
-  width: 70vw
+  width: 100%
   margin: auto
-  max-width: 100%
+  max-width: 1170px
   .menu-media
     list-style-type: none
     margin: 0
     padding: 0
     display: flex
     flex-flow: row wrap
+    cursor: default
     li
-      a
-        display: block
-        color: #a9a9ab
-        text-decoration: none
-        font-size: 16px
+      display: block
+      color: #a9a9ab
+      text-decoration: none
+      font-size: 16px
     li:first-child
       margin: 0 39px 0 0
-  .photo-gallery, .video-gallery
+
+  .media-gallery
     display: flex
-    flex-flow: row wrap
+    flex-wrap: wrap
+    justify-content: space-between
     h2
       width: 100%
-      color: #2e2e2e
-      text-transform: uppercase
+      margin: 60px 0 65px
       font-size: 24px
-    .gallery
-      width: 274px
-      height: auto
-      margin: 10px 10px 10px 0
-      .gallery-bg
-        background: #1b5085
-        height: 170px
-        width: 100%
+      text-transform: uppercase
+    .gallery-items
+      width: 270px
+      text-align: center
+      position: relative
+      .items-content:hover
+        background: rgba(102,156,198,1)
         transition: background 0.5s
+      .items-content
+        width: 100%
+        height: 170px
+        background: rgba(140,179,209,1)
         position: relative
-        .gallery-img
-          width: 100%
-          height: 100%
-          cursor: pointer
-          opacity: 0.6
-          transition: opacity 0.5s
-          .passive
-            display: none
-          .gallery-img-bg
-            background: rgba(0,0,0,0.5)
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 170px
-        .photo-ic
-          position: absolute
-          top: 34%
-          left: 39%
-          width: 21%
-          img
-            max-width: 100%
-        .photo-ic
-          transition: top 0.5s
-        .photo-ic:hover
-          transition: top 0.5s
-          top: 25%
-        .photo-ic:hover + .subscribe-img
-          display: block
-        .subscribe-img
-          display: none
-          position: absolute
-          top: 62%
-          left: 44%
-          width: 21%
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        transition: background 0.5s
+        .icon-to-group
           color: #FFFFFF
-        .ic-video
-          background: url("/assets/images/media/foto/3.png")center no-repeat
-          background-size: cover
-          margin: 0
-          width: 60px
-          height: 52px
-        .ic-photo
-          background: url("/assets/images/media/foto/4.png")center no-repeat
-          background-size: cover
-          width: 60px
-          height: 49px
-          margin: 0
-      .gallery-bg:hover
-        background: #8cb3d1
-      .gallery-bg:hover .gallery-img
-        opacity: 0.3
-      .subscribe-gallery
-        text-align: center
+          cursor: pointer
+          font-size: 40px
+      .items-subscribe
+        margin: 15px 0 20px
+    .icon-to-group-video
+      color: #FFFFFF
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      font-size: 40px
+      height: 170px
+      width: 100%
+      position: absolute
+      z-index: 10
+      top: 0
+      left: 0
+      text-decoration: none
+      background: rgba(140,179,209,0.5)
+      transition: background 0.5s
+    .icon-to-group-video:hover
+      background: rgba(102,156,198,0.7)
+      transition: background 0.5s
+    .html5gallery
+      max-width: 270px
+      max-height: 170px
+      .html5gallery-container-0,
+      .html5gallery-container-1,.html5gallery-container-2,
+      .html5gallery-container-3,.html5gallery-container-4,
+      .html5gallery-container-5,.html5gallery-container-6,
+      .html5gallery-container-7
+        box-shadow: none
+        height: 170px
+        width: 270px
+        left: 0
+        top: 0
+        .html5gallery-box-0,
+        .html5gallery-box-1,
+        .html5gallery-box-2,
+        .html5gallery-box-3,
+        .html5gallery-box-4,
+        .html5gallery-box-5,
+        .html5gallery-box-6,
+        .html5gallery-box-7
+          left: 0
+          top: 0
+      .html5gallery-car-0,
+      .html5gallery-car-1,
+      .html5gallery-car-2,
+      .html5gallery-car-3,
+      .html5gallery-car-4,
+      .html5gallery-car-5,
+      .html5gallery-car-6,
+      .html5gallery-car-7
+        display: none
 
-.m-gallery-photo
-  background: url("/assets/images/typography/typography-photo-block.jpg")no-repeat center
-  .m-gallery-subscribe
-    width: 70vw
+
+
+
+
+

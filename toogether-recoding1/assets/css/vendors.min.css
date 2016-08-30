@@ -36,7 +36,7 @@
 .owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}
 .owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;-webkit-background-size:contain;-moz-background-size:contain;-o-background-size:contain;background-size:contain;-webkit-transition:opacity 400ms ease;-moz-transition:opacity 400ms ease;-ms-transition:opacity 400ms ease;-o-transition:opacity 400ms ease;transition:opacity 400ms ease}
 .owl-carousel .owl-video-frame{position:relative;z-index:1}
-body:after{content:url(/assets/images/close.png) url(/assets/images/loading.gif) url(/assets/images/prev.png) url(/assets/images/next.png);display:none}
+body:after{content:url(images/close.png) url(images/loading.gif) url(images/prev.png) url(images/next.png);display:none}
 body.lb-disable-scrolling{overflow:hidden}
 .lightboxOverlay{position:absolute;top:0;left:0;z-index:9999;background-color:#000;filter:alpha(Opacity=80);opacity:.8;display:none}
 .lightbox{position:absolute;left:0;width:100%;z-index:10000;text-align:center;line-height:0;font-weight:400}
@@ -46,14 +46,14 @@ body.lb-disable-scrolling{overflow:hidden}
 .lb-outerContainer:after{content:"";display:table;clear:both}
 .lb-container{padding:4px}
 .lb-loader{position:absolute;top:43%;left:0;height:25%;width:100%;text-align:center;line-height:0}
-.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(..//assets/images/lightbox/loading.gif) no-repeat}
+.lb-cancel{display:block;width:32px;height:32px;margin:0 auto;background:url(images/lightbox/loading.gif) no-repeat}
 .lb-nav{position:absolute;top:0;left:0;height:100%;width:100%;z-index:10}
 .lb-container>.nav{left:0}
 .lb-nav a{outline:0;background-image:url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)}
 .lb-next,.lb-prev{height:100%;cursor:pointer;display:block}
-.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(..//assets/images/lightbox/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
+.lb-nav a.lb-prev{width:34%;left:0;float:left;background:url(images/lightbox/prev.png) left 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
 .lb-nav a.lb-prev:hover{filter:alpha(Opacity=100);opacity:1}
-.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(..//assets/images/lightbox/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
+.lb-nav a.lb-next{width:64%;right:0;float:right;background:url(images/lightbox/next.png) right 48% no-repeat;filter:alpha(Opacity=0);opacity:0;-webkit-transition:opacity .6s;-moz-transition:opacity .6s;-o-transition:opacity .6s;transition:opacity .6s}
 .lb-nav a.lb-next:hover{filter:alpha(Opacity=100);opacity:1}
 .lb-dataContainer{margin:0 auto;padding-top:5px;*zoom:1;width:100%;-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;border-bottom-left-radius:4px;-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;border-bottom-right-radius:4px}
 .lb-dataContainer:after{content:"";display:table;clear:both}
@@ -61,7 +61,7 @@ body.lb-disable-scrolling{overflow:hidden}
 .lb-data .lb-details{width:85%;float:left;text-align:left;line-height:1.1em}
 .lb-data .lb-caption{font-size:13px;font-weight:700;line-height:1em}
 .lb-data .lb-number{display:block;clear:left;padding-bottom:1em;font-size:12px;color:#999}
-.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(..//assets/images/lightbox/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
+.lb-data .lb-close{display:block;float:right;width:30px;height:30px;background:url(images/lightbox/close.png) top right no-repeat;text-align:right;outline:0;filter:alpha(Opacity=70);opacity:.7;-webkit-transition:opacity .2s;-moz-transition:opacity .2s;-o-transition:opacity .2s;transition:opacity .2s}
 .lb-data .lb-close:hover{cursor:pointer;filter:alpha(Opacity=100);opacity:1}
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-image,.fancybox-inner,.fancybox-nav,.fancybox-nav span,.fancybox-outer,.fancybox-skin,.fancybox-tmp,.fancybox-wrap,.fancybox-wrap iframe,.fancybox-wrap object{padding:0;margin:0;border:0;outline:0;vertical-align:top}
