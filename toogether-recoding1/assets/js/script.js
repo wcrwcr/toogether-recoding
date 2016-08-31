@@ -5,18 +5,16 @@ $(document).ready(function(){
         loop: true,
         dots: true,
         dotsEach: true,
-        nav: true
+        nav: true,
+        navText: [
+
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>"
+
+        ]
     });
     $(".owl-carousel").css({"display": "flex", "align-items": "center"});
-});
 
-$(document).ready(function(){
-    $(".owl-carousel-b").owlCarousel({
-        items: 1,
-        loop: true,
-        dots: true,
-        dotsEach: true
-    });
 });
 
 $(function (){
@@ -38,18 +36,16 @@ $(function (){
     });
 
     $(document).ready(function() {
-        $(".gallery").fancybox({
-                autoScale: true,
-                cyclic: true,
-                showCloseButton: true
+        $(".gallery").fancybox();
+        $(".photo-group").fancybox({
+            overlayShow : true
         });
-        $(".gallery").on("click", function(){
-            $.fancybox({
-                href: this.href,
-                type: "iframe"
-            }); // fancybox
-            return false
-        }); // on
+        $(".video-group").fancybox({
+           helpers: {
+               media: {}
+           }
+        });
+
     });
 
     $(window).scroll(function () {
@@ -142,8 +138,4 @@ $(function netherSwitch() {
     });
 });
 
-$(function htmlGallery () {
-    $(".icon-to-group-video").click(function(){
-        $(this).closest(".html5gallery").children(".html5gallery-toolbox-0").click();
-    });
-});
+

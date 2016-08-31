@@ -17,6 +17,8 @@
     li:first-child
       margin: 0 39px 0 0
 
+  .media-gallery:last-child
+    margin-bottom: 60px
   .media-gallery
     display: flex
     flex-wrap: wrap
@@ -30,13 +32,9 @@
       width: 270px
       text-align: center
       position: relative
-      .items-content:hover
-        background: rgba(102,156,198,1)
-        transition: background 0.5s
       .items-content
         width: 100%
         height: 170px
-        background: rgba(140,179,209,1)
         position: relative
         display: flex
         align-items: center
@@ -45,61 +43,31 @@
         transition: background 0.5s
         .icon-to-group
           color: #FFFFFF
+          display: flex
+          justify-content: center
+          align-items: center
           cursor: pointer
           font-size: 40px
+          height: 170px
+          width: 102%
+          position: absolute
+          z-index: 10
+          top: 0
+          left: 0
+          text-decoration: none
+          background: rgba(140,179,209,0.5)
+          transition: background 0.5s
+        .icon-to-group:hover
+          background: rgba(102,156,198,0.7)
+          transition: background 0.5s
+        .media-group
+          z-index: -1
+          width: 100%
+          .hide
+            display: none
       .items-subscribe
         margin: 15px 0 20px
-    .icon-to-group-video
-      color: #FFFFFF
-      display: flex
-      justify-content: center
-      align-items: center
-      cursor: pointer
-      font-size: 40px
-      height: 170px
-      width: 100%
-      position: absolute
-      z-index: 10
-      top: 0
-      left: 0
-      text-decoration: none
-      background: rgba(140,179,209,0.5)
-      transition: background 0.5s
-    .icon-to-group-video:hover
-      background: rgba(102,156,198,0.7)
-      transition: background 0.5s
-    .html5gallery
-      max-width: 270px
-      max-height: 170px
-      .html5gallery-container-0,
-      .html5gallery-container-1,.html5gallery-container-2,
-      .html5gallery-container-3,.html5gallery-container-4,
-      .html5gallery-container-5,.html5gallery-container-6,
-      .html5gallery-container-7
-        box-shadow: none
-        height: 170px
-        width: 270px
-        left: 0
-        top: 0
-        .html5gallery-box-0,
-        .html5gallery-box-1,
-        .html5gallery-box-2,
-        .html5gallery-box-3,
-        .html5gallery-box-4,
-        .html5gallery-box-5,
-        .html5gallery-box-6,
-        .html5gallery-box-7
-          left: 0
-          top: 0
-      .html5gallery-car-0,
-      .html5gallery-car-1,
-      .html5gallery-car-2,
-      .html5gallery-car-3,
-      .html5gallery-car-4,
-      .html5gallery-car-5,
-      .html5gallery-car-6,
-      .html5gallery-car-7
-        display: none
+
 
 
 
