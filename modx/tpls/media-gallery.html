@@ -1,0 +1,24 @@
+[[$header]]
+<body>
+[[$top-menu-main]]
+[[$main-menu-main? &className=`otherwise-menu-b`]]
+[[$photo-block]]
+
+
+<div class="media-main">
+    <div class="media-gallery">
+        <h2>наши фотоальбомы</h2>
+		[[!getResources:default=`No results found`? &parents=`23` &limit = `0` &includeTVs=`1` &processTVs=`1` &debug=`1` &tpl = `tpl-dev-media-photo-root` ]]
+    </div>
+
+    <div class="media-gallery">
+        <h2>наши видео</h2>
+		[[!getResources:default=`No results found`? &parents=`24`  &limit = `0` &includeTVs=`1` &processTVs=`1` &debug=`1` &tpl = `tpl-dev-media-video-root` ]]
+    </div>
+</div>
+
+[[$footer]]
+[[$script-block-end]]
+</body>
+</html>
+
