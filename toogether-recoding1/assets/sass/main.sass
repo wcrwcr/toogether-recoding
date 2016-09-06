@@ -14,13 +14,10 @@
   src: url("/assets/fonts/fontawesome-webfont.woff")
   src: url("/assets/fonts/fontawesome-webfont.woff2")
 
-a:focus
-  outline: none
-input:focus
+a:focus, input:focus
   outline: none
 h1,h2,h3
   cursor: default
-
 
 
 body
@@ -283,6 +280,7 @@ body
             padding: 12px 15px
           a:hover
             background: #182938
+
     li:hover ul
       display: block
 
@@ -604,6 +602,8 @@ body
               a
                 color: #878686
                 text-decoration: none
+              .active
+                color: #FFFFFF
             li:nth-child(1)
               text-transform: uppercase
               color: #f1f1f1
@@ -789,6 +789,13 @@ body
           margin-bottom: 20px
           a
             text-decoration: underline
+
+  .activeLink
+    color: #182938
+    background: #aca717
+  .activeLink:hover
+    background: #aca717
+
 
   @import "apply"
   @import "contact"
