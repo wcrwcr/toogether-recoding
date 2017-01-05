@@ -10,35 +10,39 @@ $type-color: #123554
   transition: all 0.5s
   align-content: center
   .left-content
-    width: 710px //45.8%
+    font-family: helveticaLight
+    width: 710px
     display: flex
     align-content: flex-start
-    flex-wrap: wrap
+    flex-flow: column wrap
     font-size: 16px
     h1
       color: $type-color
       text-transform: uppercase
-      margin: 0 0 35px 0
-      font-size: 22px
-    ul
-      list-style-type: none
       margin: 0
+      font-size: 22px
+      font-weight: bold
+      font-family: helveticaRegular
+    h2
+      font-size: 16px
+      font-weight: bold
+      color: #123554
+      margin: 43px 0 0
+    p
+      color: #3d3d3d
+      margin-top: 30px
+    .list-1
+      list-style-type: none
+      margin: 25px 0 0
       padding: 0
       li
-        margin-top: 15px
-        a
-          text-decoration: underline
-        ol
-          list-style-type: square
-          margin-top: 24px
-          li
-            font-weight: normal
-            margin: 0
-            color: black
-            padding-left: 10px
-          li:nth-child(1)
-            color: black
-            font-weight: normal
-      li:nth-child(1)
-        color: $type-color
-        font-weight: bold
+        span
+          margin-right: 6px
+    .list-2
+      padding-left: 40px
+      list-style-type: square
+      margin-top: 23px
+      li
+        padding-left: 5px
+        span
+          margin-right: 6px

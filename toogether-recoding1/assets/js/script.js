@@ -110,9 +110,7 @@ var formTution  = {
 	        $(".step-3").css("border-bottom", "3px solid #195491");
         }
         return false;
-	} 
-	
-	
+	}
 };
 $(function (){
     $(".owl-carousel").owlCarousel({
