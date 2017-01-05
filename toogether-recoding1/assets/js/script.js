@@ -1,5 +1,120 @@
+var formTution  = {
+	resultHolder: {},
+	buttons: {
+		step1 : ".start-registr",
+		step2 : ".finish-registr",
+		final : ".agree-butt"  
+	},
+	step1FormSelector: "#apply-step-1",
+	step2FormSelector: "#apply-step-2",
+	step3FormSelector: "#apply-step-3",
+	_ajaxOut : function() {
+		$.ajax({
+		    type: "POST",
+		    url: $__GLOBALS.applyUrl,
+		    data: JSON.stringify({ data: this.resultHolder }),
+		    contentType: "application/json; charset=utf-8",
+		    dataType: "json",
+		    success: function(data) {
+		        $(".apply-step-3").hide();
+		        $(".ret-to-step-1").hide();
+		        $(".registration-menu").hide();
+		        $(".popup").show();
+		    },
+		    failure: function(errMsg) {
+		        alert(errMsg);
+		    }
+		});
+	},
+	_serializeResult: function($form, $step) {
+		var za = {}
+		za[$step] = $form.serializeArray();
+		this.resultHolder = $.extend( this.resultHolder, za);
+		console.log(this.resultHolder);
+		return this;
+	},
+	form1Submit: function(e) {
+        e.preventDefault();
+        var $form = $(this.step1FormSelector),
+				fee1 =parseFloat($('#r_fee').data('value')),
+				fee2 =parseFloat($('#p_fee').data('value')),
+				$tution =$('#t_fee b'),
+				$total =$('#total_fee b');
 
-$(document).ready(function(){
+        if (!($form.validate())) {
+        	return false;
+        }
+        
+        this._serializeResult($form, 'step1');
+        var price = parseFloat($('#choose-type option:selected').prop('value')),
+        		totalPrice = price + fee1 + fee2;
+        if (totalPrice == NaN) {
+        	totalPrice = 0;
+        }
+        $tution.text(price);
+        $total.text(totalPrice);
+        $(this.buttons.step1).data('on', 1)
+        return false;
+	},
+	form2Submit: function(e) {
+		e.preventDefault();
+        var $form = $(this.step2FormSelector);
+
+        if (!($form.validate())) {
+        	return false;
+        }
+        
+        this._serializeResult($form, 'step2');
+        return true;
+	},
+	formFinalSubmit: function(e) {
+		e.preventDefault();
+        var $form = $(this.step3FormSelector);
+
+        
+        if (!$('#terms-of').prop('checked')) {
+        	return false;
+        }
+        
+        this._serializeResult($form, 'final');
+        return true;
+	},
+	formAgreeSwitch: function(e) {
+		//final agree button pressed
+		e.preventDefault();
+		if (this.formFinalSubmit(e)){
+			this._ajaxOut();
+		}
+        return false;
+	},
+	form1Switch: function(e){
+		e.preventDefault();
+		this.form1Submit(e);
+		if ($(this.buttons.step1).data('on') == '1') {
+	        $(".apply-step-1").hide();
+	        $(".apply-step-2").show().css("display", "flex");
+
+	        $(".step-1").css("border-bottom", "3px solid #ffffff");
+	        $(".step-2").css("border-bottom", "3px solid #195491");
+		}
+        return false;
+	},
+	form2Switch: function(e) {
+        e.preventDefault();
+        if (this.form2Submit(e)){
+	        $(".apply-step-2").hide();
+	        $(".apply-step-3").show().css("display", "flex");
+	        $(".ret-to-step-1").toggle().css("display","block");
+	
+	        $(".step-2").css("border-bottom", "3px solid #ffffff");
+	        $(".step-3").css("border-bottom", "3px solid #195491");
+        }
+        return false;
+	} 
+	
+	
+};
+$(function (){
     $(".owl-carousel").owlCarousel({
         items: 1,
         loop: true,
@@ -15,37 +130,25 @@ $(document).ready(function(){
     });
     $(".owl-carousel").css({"display": "flex", "align-items": "center"});
 
-});
-
-$(function (){
     $(".mobile-button").click(function() {
-
         var changeBut = $(".mobile-button").css("right");
-
         if(changeBut === "20px"){
-
             $(".mobile-button").css("right", "60%");
             $(".mobile-menu").css("margin-right", "60%");
-
         }else{
-
             $(".mobile-button").css("right", "20px");
             $(".mobile-menu").css("margin-right", "-50%");
-
         }
     });
 
-    $(document).ready(function() {
-        $(".gallery").fancybox();
-        $(".photo-group").fancybox({
-            overlayShow : true
-        });
-        $(".video-group").fancybox({
-           helpers: {
-               media: {}
-           }
-        });
-
+    $(".gallery").fancybox();
+    $(".photo-group").fancybox({
+        overlayShow : true
+    });
+    $(".video-group").fancybox({
+       helpers: {
+           media: {}
+       }
     });
 
     $(window).scroll(function () {
@@ -61,53 +164,36 @@ $(function (){
     });
 
 
-    $(".language_arrow").click(function () {
+    $(".language_arrow").hover(function () {
         $("#dropDownLanguage").slideToggle();
     });
-});
-
-$(function () {
-
-    $(".agree-butt").click(function (e) {
-        e.preventDefault();
-        $(".apply-step-3").hide();
-        $(".ret-to-step-1").hide();
-        $(".registration-menu").hide();
-        $(".popup").show();
-        return false;
-    });
-
-
-    $(".start-registr").click(function (e) {
-        e.preventDefault();
-        $(".apply-step-1").hide();
-        $(".apply-step-2").show().css("display", "flex");
-
-        $(".step-1").css("border-bottom", "3px solid #ffffff");
-        $(".step-2").css("border-bottom", "3px solid #195491");
-
-    });
+    
+    /*============ tution =================*/
+    $(formTution.step1FormSelector).submit(function(e){
+    	e.preventDefault();
+    	formTution.form1Submit(e);
+    	return false;
+	});
+    $(formTution.buttons.step1).click(function(e){
+    	return formTution.form1Switch(e);
+	});
+    $(formTution.buttons.step2).click(function (e) {
+    	return formTution.form2Switch(e);
+	});
+    $(formTution.buttons.final).click(function(e){
+    	return formTution.formAgreeSwitch(e);
+	});
 
 
-    $(".finish-registr").click(function (e) {
-        e.preventDefault();
-        $(".apply-step-2").hide();
-        $(".apply-step-3").show().css("display", "flex");
-        $(".ret-to-step-1").toggle().css("display","block");
 
-        $(".step-2").css("border-bottom", "3px solid #ffffff");
-        $(".step-3").css("border-bottom", "3px solid #195491");
-    });
 
     $(".form-contact-send").click(function (e) {
         e.preventDefault();
         $('.center-block-b').show();
         $('.center-block').hide();
     });
-});
 
-$(function () {
-   $(".residence-but").click(function () {
+    $(".residence-but").click(function () {
        $(".hidden-form").slideToggle("slow");
        $(".residence-but").toggle().css("display", "none");
        $(".resid-arrow").toggle().css("display", "block");
@@ -144,50 +230,3 @@ $(function footLink () {
         function(){ $(this).removeClass('active') }
     );
 });
-
-/*$(function test () {
-   var questions = [
-       "Ile jest 20 + 4?", "Mam 34 __, a mój brat ma 14__.",
-       "Wiemy, że dzisiaj jest test z polskiego, ale Marta i Konrad o tym nie __.",
-       "Do szkoły jedziemy __, tam czytamy i __ teksty.",
-       "Zwykle do pracy __ tramwajem, ale dzisiaj __ taksówką.",
-       "Nie lubię __.",
-       "Andrzej i Romek __ codziennie smaczne kolacje w drogich restauracjach.",
-       "Andrzej: - Co __ robić __? Anna:- Nie wiem, jeszcze nie mam planów.",
-       "Kiedy będę bogaty, __ robić to, co __.",
-       "Co będziesz robić _ dwa lata?",
-       "Jestem nauczycielką i pracuję __.",
-       "Prognoza pogody: Dziś jest__, ale jutro będzie __.",
-       "Cieszę się, że nareszcie do mnie ____ - tak dawno nie rozmawialiśmy!",
-       "Marek: - Masz ____ ? Małgorzata: - Nie.",
-       "Antonim słowa „tradycyjny” to: ____.",
-       "Nauczyciele powinni być ____ .",
-       "____ muszą mieć wyższe wykształcenie.",
-       "Michał i Jagna są bardzo szczęśliwym małżeństwem.  Michał ____ z Jagną w 1982 roku.",
-       "Babcia urodziła się ____ .",
-       "Dzień Matki jest w Polsce ____ .",
-       " ____ zacznę bez problemu swoją pierwszą w życiu pracę.",
-       "Jutro mam wolny dzień, bo ____ .",
-       "Mateuszek ma 193 cm wzrostu. Krzysztof ma 184 cm wzrostu.",
-       "Żelisława mówi dobrze po polsku. Sędzisława mówi bardzo dobrze po polsku.",
-       "5 mln. Polaków ____ .",
-       "– Halo. Dzień dobry, ____ rozmawiać z Małgorzatą?",
-       "Ufam całkowicie ____ . Mogę jej powiedzieć o wszystkich moich problemach.",
-       "Przemysław: - Ten rogal jest nieświeży. Szczepan: - ____",
-       "To jest ten rower, ____ rodzice nie mogą mi kupić.",
-       "Protestuje przeciw ____,  żeby dzieci oglądały filmy pornograficzne.",
-       "Uwaga piesi! Ten wpis oznacza, że:",
-       "Po odejściu od kasy reklamacje nie będą uwzględniane! Ten napis można spokać:",
-       "Kobiety w ciężarne poza kolejnością Ten napis ozncza, że:",
-       "WC dla personelu! Ten napis oznacza:",
-       "Zmiana organizacji ruchu! Ten napis oznacza, że:",
-       "Obrazy 65-letniego malara z Radomska wiszą w galeriach Europy, USA i w wielu miastach Polski, ale nie w mieście, w którym żyje i tworzy. W zeszłym tygodniu władze miasta postanowiły kupić dla radomszczańskiego muzem 30 obrazów lokalnego artysty. Ten tekst informuje o:",
-       "Telepraca to niższe koszty za wynajmowanie biura oraz mniej pieniędzy na jego wyposażenie. A na dodatek – bardziej zadowoleni, tańsi i bardziej wydajni pracownicy. Marzenia? Niekoniecznie; to coraz bardziej popularna forma pracy w Polsce i na całym świecie. Z tekstu wynika, że:",
-       "Zwiększającą się liczbę turystów z Polski w Wielkiej Brytani zauważyło wiele instytucji. W słynnym muzeum Beatlesów w Liverpoolu nagrano polskojęzyczną wersję przewodnika, którą niedługo będzie można usłyszeć w słuchawkach. Z tekstu dowiadujemy się, że:",
-       "Były prezydent Polski, 64-letni Lech Wałęsa, wciąż żonaty z Danutą, dzieli teraz swój czas miedzy rodzinę, fundację swego imienia i częste podróże do Stanów Zjednoczonych na wykłady, na których, jak można usłyszeć, nieźle zarabia. Z tego tesktu wynika, że:",
-       "Bezrobocie w Polsce spada, ale to nie dlatego, że powstają nowe miejsca pracy, lecz głównie za sprawą zagraniznych wyjazdów o charakterze zarobkowym. Wyjeżdzają osoby z wyższym wykształceniem, robotnicy wykwalifikowani i niewykwalifikowani. Ten tekst informuje, że:"
-    ];
-    $.inArray("Nie lubię __.", questions);
-});*/
-
-
