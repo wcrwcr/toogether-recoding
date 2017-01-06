@@ -1,5 +1,5 @@
 <div id ='test-body-holder' style='display:none'>
-    <form method="post" class="english_test">
+    <form method="post" class="common_test">
     	<h1 id='test-name-holder'>English Test</h1>
         <div class="questions">
             <h2 class="test_title">Question</h2>

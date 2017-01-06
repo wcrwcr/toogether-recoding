@@ -202,6 +202,25 @@ $(function (){
         $(".residence-but").toggle().css("display", "block");
         $(".resid-arrow").toggle().css("display", "none");
     });
+    
+    $('.test-runner').click(function(e){
+    	e.preventDefault();
+    	var $this = $(this),
+    			$testBody = $('#test-body-holder'),
+    			$testTop = $('#test-top-holder'),
+    			url = '/assets' + $this.data('file')
+    	;
+    	$.ajax({
+            url: url,
+            dataType: 'script',
+            success: function() {
+            	mainAnswer(0);
+            	$testTop.hide();
+            	$testBody.show();
+            },
+            async: true
+        });
+    });
 });
 
 $(function netherSwitch() {
