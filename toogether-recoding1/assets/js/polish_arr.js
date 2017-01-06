@@ -89,4 +89,3 @@ var arrAnswers = [
     ["w Polsce jest coraz mniej osób bez pracy.", "w Polsce tworzy się dużo nowych miejsc pracy.", "Polacy wyjeżdzają, żeby zdobyć wykształcenie."]
 ];
 
-var rightAnswers = [2,2,4,2,3,1,3,2,2,3,2,1,1,1,2,3,3,1,3,1,3,3,3,2,1,1,3,1,2,1,3,1,3,1,1,1,3,3,2,1];
