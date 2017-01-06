@@ -1,14 +1,26 @@
 function mainAnswer(param) {
+	
+	if (typeof arrQuestions == 'undefined' || typeof arrAnswers == 'undefined') {
+		return false;
+	}
+	
     $(".answer").prop('checked', function () {
        return this.getAttribute('checked') == ('checked');
     });
     $(".test_title").html(arrQuestions[param]);
-    $("#answer1").html(arrAnswers[param][0]);
-    $("#answer2").html(arrAnswers[param][1]);
-    $("#answer3").html(arrAnswers[param][2]);
-    $("#answer4").html(arrAnswers[param][3]);
+    for (i=0;i<=3;i++) {
+    	var rel_i = i + 1, $el = $("#answer"+rel_i);
 
+    	if (typeof arrAnswers[param][i] == 'undefined') {
+    		$el.hide();
+    		$('.answer[data-rel='+rel_i+']').hide();
+    	} else {
+    		$el.show().html(arrAnswers[param][i]);
+    		$('.answer[data-rel='+rel_i+']').show();
+    	}
+    }
 }
+
 var answer = 0;
 
 var answerSave = [];

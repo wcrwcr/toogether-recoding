@@ -208,7 +208,7 @@ $(function (){
     	var $this = $(this),
     			$testBody = $('#test-body-holder'),
     			$testTop = $('#test-top-holder'),
-    			url = '/assets' + $this.data('file')
+    			url = '/assets/js/' + $this.data('file')
     	;
     	$.ajax({
             url: url,
@@ -216,7 +216,9 @@ $(function (){
             success: function() {
             	mainAnswer(0);
             	$testTop.hide();
+            	$('#test-name-holder').html($this.data('name'));
             	$testBody.show();
+            	
             },
             async: true
         });
