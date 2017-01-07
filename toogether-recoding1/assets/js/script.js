@@ -110,9 +110,7 @@ var formTution  = {
 	        $(".step-3").css("border-bottom", "3px solid #195491");
         }
         return false;
-	} 
-	
-	
+	}
 };
 $(function (){
     $(".owl-carousel").owlCarousel({
@@ -203,6 +201,27 @@ $(function (){
         $(".resid-arrow").slideToggle("slow");
         $(".residence-but").toggle().css("display", "block");
         $(".resid-arrow").toggle().css("display", "none");
+    });
+    
+    $('.test-runner').click(function(e){
+    	e.preventDefault();
+    	var $this = $(this),
+    			$testBody = $('#test-body-holder'),
+    			$testTop = $('#test-top-holder'),
+    			url = '/assets/js/' + $this.data('file')
+    	;
+    	$.ajax({
+            url: url,
+            dataType: 'script',
+            success: function() {
+            	mainAnswer(0);
+            	$testTop.hide();
+            	$('#test-name-holder').html($this.data('name'));
+            	$testBody.show();
+            	
+            },
+            async: true
+        });
     });
 });
 
