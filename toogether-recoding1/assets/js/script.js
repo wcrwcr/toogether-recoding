@@ -204,18 +204,11 @@ $(function (){
     });
 });
 
+/*=============== mobile menu ===============*/
+
 $(function netherSwitch() {
     $(".nether_arrow").click(function () {
-        $(".nether-drop").slideToggle();
-    });
-    $(".nether_arrow-b").click(function () {
-        $(".nether-drop-b").slideToggle();
-    });
-    $(".nether_arrow-c").click(function () {
-        $(".nether-drop-c").slideToggle();
-    });
-    $(".nether_arrow-d").click(function () {
-        $(".nether-drop-d").slideToggle();
+        $(this).next(".nether-drop").slideToggle();
     });
     $(".language_arrow").click(function () {
        $("#dropDownLanguage-mobile").slideToggle();
