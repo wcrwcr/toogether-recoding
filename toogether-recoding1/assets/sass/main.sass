@@ -1,8 +1,8 @@
 @font-face
-  font-family: Helvetica-custom
-  src: url("/assets/fonts/Helvetica.ttf")
-  src: url("/assets/fonts/Helvetica.eot")
-  src: url("/assets/fonts/Helvetica.woff")
+  font-family: helveticaRegular
+  src: url("/assets/fonts/HelveticaRegular.ttf")
+  src: url("/assets/fonts/HelveticaRegular.eot")
+  src: url("/assets/fonts/HelveticaRegular.woff")
 
 @font-face
   font-family: helveticaLight
@@ -11,19 +11,11 @@
   src: url("/assets/fonts/HelveticaLight.woff")
 
 @font-face
-  font-family: helveticaRegular
-  src: url("/assets/fonts/HelveticaRegular.ttf")
-  src: url("/assets/fonts/HelveticaRegular.eot")
-  src: url("/assets/fonts/HelveticaRegular.woff")
+  font-family: helveticaBold
+  src: url("/assets/fonts/HelveticaBold.ttf")
+  src: url("/assets/fonts/HelveticaBold.eot")
+  src: url("/assets/fonts/HelveticaBold.woff")
 
-@font-face
-  font-family: "FontAwesome"
-  src: url("/assets/fonts/FontAwesome.otf")
-  src: url("/assets/fonts/fontawesome-webfont.svg")
-  src: url("/assets/fonts/fontawesome-webfont.eot")
-  src: url("/assets/fonts/fontawesome-webfont.ttf")
-  src: url("/assets/fonts/fontawesome-webfont.woff")
-  src: url("/assets/fonts/fontawesome-webfont.woff2")
 
 a:focus, input:focus
   outline: none
@@ -32,7 +24,7 @@ h1,h2,h3
 
 
 body
-  font-family: Helvetica-custom
+  font-family: helveticaRegular
   .menu-top-a
     display: flex
     flex-wrap: wrap
@@ -82,6 +74,7 @@ body
         border-radius: 1px
         height: 31px
         margin-right: 2px
+        padding-left: 5px
     .right-menu
       display: flex
       flex-wrap: wrap
@@ -105,7 +98,7 @@ body
     .language-top
       width: 29px
       height: 29px
-      background: url("/assets/images/header/flag-b.png") no-repeat center
+      background: url("/assets/images/header/russian.png") no-repeat center
       .language_arrow
         float: left
         display: block
@@ -125,6 +118,14 @@ body
           a
             margin: 5px 0
             display: block
+          .polish-lang
+            background: url("/assets/images/header/flag-b.png") no-repeat center
+            width: 29px
+            height: 29px
+          .english-lang
+            background: url("/assets/images/header/english.png") no-repeat center
+            width: 29px
+            height: 29px
 
   .mob-button-back
     display: none
@@ -208,10 +209,7 @@ body
           flex-wrap: wrap
           a
             line-height: 35px
-          .nether_arrow,
-          .nether_arrow-b,
-          .nether_arrow-c,
-          .nether_arrow-d
+          .nether_arrow
             float: left
             display: block
             width: 15px
@@ -219,7 +217,7 @@ body
             margin-left: 5px
             margin-top: 12px
             background: url("/assets/images/header/search-arrow.png")
-          ul
+          .nether-drop
             display: none
             width: 100%
             margin-bottom: 20px
@@ -233,7 +231,7 @@ body
       height: 29px
       position: relative
       margin-top: 20px
-      background: url("/assets/images/header/flag-b.png") no-repeat center
+      background: url("/assets/images/header/russian.png") no-repeat center
       .language_arrow
         float: left
         display: block
@@ -252,6 +250,14 @@ body
           a
             margin: 5px 0
             display: block
+          .polish-lang
+            background: url("/assets/images/header/flag-b.png") no-repeat center
+            width: 29px
+            height: 29px
+          .english-lang
+            background: url("/assets/images/header/english.png") no-repeat center
+            width: 29px
+            height: 29px
 
 
   .block-banner
@@ -549,11 +555,13 @@ body
     .foot-cont
       display: flex
       flex-wrap: wrap
+      max-width: 1172px
+      width: 100%
       .foot-contacts
         width: 224px
         display: flex
         flex-flow: column wrap
-        margin-right: 80px
+        margin-right: 85px
         p
           width: 100%
           color: #FFFFFF
@@ -586,42 +594,58 @@ body
           background: #FFFFFF
           transition: all 0.5s
       .foot-soc-icons
-        width: 355px
+        max-width: 281px
+        width: 100%
         display: flex
         flex-flow: row wrap
         list-style-type: none
         align-content: flex-start
         padding: 0
-        margin-right: 24px
+        margin-right: 20px
         img
           max-width: 100%
+          width: 50px
+          height: 50px
         li
-          margin-right: 26px
+          margin-right: 27px
           margin-bottom: 43px
         li:nth-child(4), li:nth-child(8)
           margin-right: 0
       .links
         display: flex
         justify-content: space-between
+        font-family: helveticaLight
+        max-width: 552px
+        width: 100%
         .links-content
-          width: 120px
-          margin-right: 15px
           ul
             margin: 0 0 80px 0
             list-style-type: none
             padding: 0
             li
+              font-size: 13px
+              line-height: 1
+              margin-bottom: 7px
               a
                 color: #878686
                 text-decoration: none
+                font-size: 13px
               .active
                 color: #FFFFFF
             li:nth-child(1)
               text-transform: uppercase
               color: #f1f1f1
-
           .prog
             margin-bottom: 115px
+        .links-content:nth-child(1)
+          max-width: 100px
+          width: 100%
+        .links-content:nth-child(2)
+          max-width: 120px
+          width: 100%
+        .links-content:nth-child(3) + .links-content:nth-child(4)
+          max-width: 124px
+          width: 100%
 
   .copyright
     display: flex
@@ -629,7 +653,8 @@ body
     color: #ffffff
     padding: 12px 0 9px
     .copyright-cont
-      width: 65vw
+      width: 100%
+      max-width: 1172px
       margin: auto
       span:after
         content: "|"
@@ -802,10 +827,11 @@ body
           a
             text-decoration: underline
 
-  .activeLink
+  .here
     color: #182938
+    display: block
     background: #aca717
-  .activeLink:hover
+  .here:hover
     background: #aca717
 
 
