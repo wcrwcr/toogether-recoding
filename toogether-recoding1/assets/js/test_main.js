@@ -1,3 +1,4 @@
+
 function mainAnswer(param) {
 	
 	if (typeof arrQuestions == 'undefined' || typeof arrAnswers == 'undefined') {
