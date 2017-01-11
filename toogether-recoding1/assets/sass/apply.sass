@@ -20,12 +20,17 @@ $for-buttons: #0b5d9d
     border-bottom: 1px solid #dbdbdb
     overflow: hidden
     li
+      span:nth-child(2)
+        text-transform: capitalize
+        margin-left: 5px
+    li
       color: #777777
       padding: 0 4.2105%
       text-decoration: none
       border-bottom: 3px solid #ffffff
     .step-1
       border-bottom: 3px solid #195491
+
 
 
   .ret-to-step-1
@@ -105,8 +110,8 @@ $for-buttons: #0b5d9d
         color: $for-buttons
         background: #FFFFFF
         border: 1px solid $for-buttons
-        padding: 12px 0
-        width: 200px
+        padding: 12px 10px
+        width: auto
         margin-top: 55px
         float: right
         transition: all 0.4s
@@ -144,7 +149,6 @@ $for-buttons: #0b5d9d
         text-transform: uppercase
         color: #ffffff
         text-decoration: none
-        border: 1px solid #ffffff
         width: 48px
         padding: 5px 0
         text-align: center
@@ -232,8 +236,8 @@ $for-buttons: #0b5d9d
       color: $for-buttons
       background: #FFFFFF
       border: 1px solid $for-buttons
-      padding: 12px 0
-      width: 200px
+      padding: 12px 10px
+      width: auto
       margin: auto
       transition: all 0.4s
       .start-arrow
@@ -262,13 +266,14 @@ $for-buttons: #0b5d9d
         width: 500px
       .agree
         label
-          width: 250px
+          width: auto
           color: #ff2400
+          margin-right: 15px
         span
           margin: 0
           color: $for-span
         input
-          margin-right: 35px
+          margin-right: 25px
       .agree-butt
         font-size: 20px
         color: $for-buttons
