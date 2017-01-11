@@ -20,7 +20,7 @@ $for-buttons: #0b5d9d
     border-bottom: 1px solid #dbdbdb
     overflow: hidden
     li
-      span:nth-child(2)
+      span
         text-transform: capitalize
         margin-left: 5px
     li
@@ -151,6 +151,8 @@ $for-buttons: #0b5d9d
         text-decoration: none
         width: 48px
         padding: 5px 0
+        border: 1px solid #ffffff
+        border-radius: 0 0 50%
         text-align: center
         margin-left: 15px
         transition: all 0.4s
@@ -215,9 +217,9 @@ $for-buttons: #0b5d9d
         height: 38px
         border: 1px solid #a9a9ab
         color: $forms-color
-    .current, .hear-about, .agree
+    .current, .hear-about
       display: flex
-      flex-wrap: wrap
+      flex-wrap: nowrap
       align-items: flex-start
       width: 100%
       margin-bottom: 25px
@@ -265,6 +267,8 @@ $for-buttons: #0b5d9d
         color: $for-span
         width: 500px
       .agree
+        display: flex
+        flex-wrap: nowrap
         label
           width: auto
           color: #ff2400
