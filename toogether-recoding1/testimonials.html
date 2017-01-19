@@ -180,8 +180,37 @@
         <p>{{puff.comment}}</p>
         <div class="puff-date">Добавлено {{puff.pubdate | date : timezone}}</div>
     </div>
+    <ul class="bottom-navigation">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
 </div>
-
+<form action="" method="post" class="puff-form">
+    <div class="puff-inner">
+        <h2>Оставить отзыв:</h2>
+        <div class="puff-box">
+            <div class="puff-box-in-box">
+                <label for="puff-name">Имя</label>
+                <input type="text" id="puff-name">
+                <label for="puff-email">Email</label>
+                <input type="text" id="puff-email">
+                <label for="puff-site">Твой сайт</label>
+                <input type="text" id="puff-site">
+            </div>
+            <div class="puff-box-in-box">
+                <label for="puff-comment">Отзыв</label>
+                <textarea name="" id="puff-comment"></textarea>
+            </div>
+            <div class="puff-avatar">
+                <img src="/assets/images/testimonials/puff-form/Untitled-1.png" alt="img">
+            </div>
+        </div>
+        <button type="submit" class="puff-send">Отправить</button>
+    </div>
+</form>
 
 <div class="footer">
     <div class="foot-cont">

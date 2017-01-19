@@ -5,7 +5,7 @@
   display: flex
   flex-flow: row wrap
   justify-content: space-between
-  padding-bottom: 50px
+  //padding-bottom: 50px
   .add-puff
     width: 100%
     margin: 16px 0 65px
@@ -38,3 +38,89 @@
     .puff-date
       color: #bfbfbf
       float: right
+
+  .bottom-navigation
+    position: relative
+    list-style-type: none
+    margin: 29px auto 17px
+    padding: 0
+    display: flex
+    justify-content: center
+    max-width: 390px
+    width: 100%
+    li
+      margin-right: 20px
+      a
+        text-decoration: none
+        color: #c4c3c3
+  .bottom-navigation li:nth-child(1) a
+    color: #3176ac
+  .bottom-navigation:before
+    cursor: pointer
+    content: "\f060"
+    color: #c4c3c3
+    font-family: FontAwesome
+    position: absolute
+    left: 0
+  .bottom-navigation:after
+    cursor: pointer
+    content: "\f061"
+    color: #3176ac
+    font-family: FontAwesome
+    position: absolute
+    right: 0
+.puff-form
+  display: flex
+  flex-flow: column nowrap
+  width: 100%
+  background: #c4c3c3
+  padding-bottom: 222px
+  .puff-inner
+    max-width: 1327px
+    width: 100%
+    margin: auto
+    h2
+      color: #4e4e4e
+      font-size: 34px
+      font-weight: bolder
+      margin: 82px 0 89px
+    .puff-box
+      display: flex
+      max-width: 975px
+      width: 100%
+      margin: auto
+      align-items: flex-end
+      justify-content: space-between
+      .puff-box-in-box
+        display: flex
+        flex-flow: column nowrap
+        max-width: 300px
+        width: 100%
+        label, input, textarea
+          width: 100%
+        textarea
+          height: 203px
+        input
+          max-width: 298px
+          width: 100%
+          border: 1px solid #a9a9ab
+          height: 38px
+          padding-left: 10px
+        label
+          color: #4e4e4e
+          font-size: 15px
+          font-family: helveticaRegular
+          font-weight: lighter
+          margin: 15px 0 8px
+        label:first-child
+          margin-top: 0
+    .puff-send
+      display: block
+      width: auto
+      text-align: center
+      border: 1px solid #0b5d9d
+      color: #0b5d9d
+      background: none
+      padding: 10px 50px
+      margin: 62px auto 0
+
