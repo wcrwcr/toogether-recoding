@@ -44,26 +44,41 @@
       max-width: 1090px
       width: 100%
       margin-top: 100px
-    input[type="checkbox"]
-      display: none
-    input[type="checkbox"] + .st-label label:before
-      content: ""
-      position: absolute
-      display: block
-      left: -60px
-      top: 20px
-      width: 45px
-      height: 45px
-      border: 1px solid #a9a9ab
-    input[type="checkbox"] + .st-label label
-      color: red
-    input[type="checkbox"]:checked + .st-label label::before
-      background: gray
-    input[type="checkbox"]:checked + .st-label label
-      color: #3b9d0b
-    .st-label
-      width: 75%
-      label
-        position: relative
+      input[type="checkbox"]
+        display: none
+      input[type="checkbox"] + .st-label label:before
+        content: ""
+        position: absolute
+        display: block
+        left: -60px
+        top: 20px
+        width: 45px
+        height: 45px
+        border: 1px solid #a9a9ab
+      input[type="checkbox"] + .st-label label
+        color: red
+      input[type="checkbox"]:checked + .st-label label::before
+        background: gray
+      input[type="checkbox"]:checked + .st-label label
+        color: #0b5d9d
+      .st-label
+        width: 75%
+        label
+          position: relative
+    .test-send
+      background: none
+      border: 1px solid #0b5d9d
+      font-size: 20px
+      color: #0b5d9d
+      padding: 9px 12px
+      width: auto
+      margin-top: 30px
+      transition: all 0.5s
+      text-transform: capitalize
+    .test-send:hover
+      background: #0b5d9d
+      color: #ffffff
+
+
 
 

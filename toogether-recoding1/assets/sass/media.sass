@@ -339,3 +339,18 @@
     justify-content: space-around
 
 
+@media (max-width: 1530px)
+  body .blog-main
+    display: flex
+    flex-wrap: wrap
+    width: 98%
+    padding: 0 1%
+    .blog-content
+      margin: auto
+@media (max-width: 1000px)
+  body .blog-main .blog-content .recently .recently-feature
+        flex-direction: column
+        align-items: flex-start
+  body .blog-main .blog-content .recently .recently-feature .recently-feature-img
+    margin-top: 15px
+
