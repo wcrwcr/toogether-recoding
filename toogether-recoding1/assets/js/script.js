@@ -128,27 +128,6 @@ $(function (){
     });
     $(".owl-carousel").css({"display": "flex", "align-items": "center"});
 
-    $(".mobile-button").click(function() {
-        var changeBut = $(".mobile-button").css("right");
-        if(changeBut === "20px"){
-            $(".mobile-button").css("right", "60%");
-            $(".mobile-menu").css("margin-right", "60%");
-        }else{
-            $(".mobile-button").css("right", "20px");
-            $(".mobile-menu").css("margin-right", "-50%");
-        }
-    });
-
-    $(".gallery").fancybox();
-    $(".photo-group").fancybox({
-        overlayShow : true
-    });
-    $(".video-group").fancybox({
-       helpers: {
-           media: {}
-       }
-    });
-
     $(window).scroll(function () {
         var top = $(document).scrollTop();
         if (top < 490) $(".menu-b").css({
@@ -241,4 +220,37 @@ $(function footLink () {
         function(){ $(this).addClass('active') },
         function(){ $(this).removeClass('active') }
     );
+});
+
+/*=========== transition mobile menu =============*/
+
+$(".mobile-button").click(function() {
+    var changeBut = $(".mobile-button").css("right");
+    if(changeBut === "20px"){
+        $(".mobile-button").css("right", "60%");
+        $(".mobile-menu").css("margin-right", "60%");
+    }else{
+        $(".mobile-button").css("right", "20px");
+        $(".mobile-menu").css("margin-right", "-50%");
+    }
+});
+
+/*=============== FANCY BOX ================*/
+
+$(".gallery").fancybox();
+$(".photo-group").fancybox({
+    overlayShow : true,
+    helpers: {
+        overlay: {
+            locked: false
+        }
+    }
+});
+$(".video-group").fancybox({
+    helpers: {
+        media: {},
+        overlay: {
+            locked: false
+        }
+    }
 });

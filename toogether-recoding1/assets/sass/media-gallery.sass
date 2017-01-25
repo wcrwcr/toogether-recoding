@@ -40,7 +40,7 @@
         align-items: center
         justify-content: center
         cursor: pointer
-        transition: background 0.5s
+
         .icon-to-group
           color: #FFFFFF
           display: flex
@@ -49,20 +49,30 @@
           cursor: pointer
           font-size: 40px
           height: 170px
-          width: 102%
-          position: absolute
-          z-index: 10
+          width: 100%
+          position: relative
           top: 0
           left: 0
           text-decoration: none
-          background: rgba(140,179,209,0.5)
-          transition: background 0.5s
-        .icon-to-group:hover
-          background: rgba(102,156,198,0.7)
-          transition: background 0.5s
+
+          i
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            z-index: 10
+            background: rgba(140,179,209,0.5)
+            transition: background 0.5s
+          i:hover
+            background: rgba(102,156,198,0.7)
         .media-group
           z-index: -1
           width: 100%
+          display: none
           a:not(:nth-child(1))
             display: none
       .items-subscribe
