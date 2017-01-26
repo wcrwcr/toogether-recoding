@@ -1,3 +1,22 @@
+var ajaxedForm = {
+	transport: function($this, _success, _fail) {
+		var _url = $this.prop('action'), 
+		_data = $this.serialize();
+		$.ajax({
+			  url: _url,
+			  method: 'POST',
+			  data: _data,
+			  dataType: 'json'
+		}).done(function(data) {
+			if (data.success) {
+				_success($this, data);
+			} else {
+				_fail($this, data);
+			}
+		});
+	} 
+};
+
 var formTution  = {
 	resultHolder: {},
 	buttons: {
@@ -10,16 +29,19 @@ var formTution  = {
 	step3FormSelector: "#apply-step-3",
 	_ajaxOut : function() {
 		$.ajax({
-		    type: "POST",
-		    url: $__GLOBALS.applyUrl,
-		    data: JSON.stringify({ data: this.resultHolder }),
-		    contentType: "application/json; charset=utf-8",
+			method: 'POST',
+		    url: $(this.step1FormSelector).data('action'),
+		    data: { data: this.resultHolder, _a_form: 'apply' },
 		    dataType: "json",
 		    success: function(data) {
-		        $(".apply-step-3").hide();
-		        $(".ret-to-step-1").hide();
-		        $(".registration-menu").hide();
-		        $(".popup").show();
+		    	if (data.success) {
+			        $(".apply-step-3").hide();
+			        $(".ret-to-step-1").hide();
+			        $(".registration-menu").hide();
+			        $(".popup").show();
+		    	} else {
+		    		alert(data.message);
+		    	}
 		    },
 		    failure: function(errMsg) {
 		        alert(errMsg);
@@ -30,7 +52,6 @@ var formTution  = {
 		var za = {}
 		za[$step] = $form.serializeArray();
 		this.resultHolder = $.extend( this.resultHolder, za);
-		console.log(this.resultHolder);
 		return this;
 	},
 	form1Submit: function(e) {
@@ -59,8 +80,9 @@ var formTution  = {
 	form2Submit: function(e) {
 		e.preventDefault();
         var $form = $(this.step2FormSelector);
-
+        
         if (!($form.validate())) {
+        	console.log('fails');
         	return false;
         }
         
@@ -101,6 +123,7 @@ var formTution  = {
 	},
 	form2Switch: function(e) {
         e.preventDefault();
+        
         if (this.form2Submit(e)){
 	        $(".apply-step-2").hide();
 	        $(".apply-step-3").show().css("display", "flex");
@@ -175,20 +198,47 @@ $(function (){
     $(formTution.buttons.step1).click(function(e){
     	return formTution.form1Switch(e);
 	});
-    $(formTution.buttons.step2).click(function (e) {
-    	return formTution.form2Switch(e);
+    $(formTution.step2FormSelector).submit(function(e){
+    	e.preventDefault();
+    	formTution.form2Switch(e);
+    	return false;
 	});
+    
+    $(formTution.buttons.step2).click(function (e) {
+    	e.preventDefault();
+    	$('#validationform2').click();
+	});
+    
     $(formTution.buttons.final).click(function(e){
+    	e.preventDefault();
     	return formTution.formAgreeSwitch(e);
 	});
-
-
-
-
-    $(".form-contact-send").click(function (e) {
+    
+    //================request info ===============
+    
+    $('.form-request-info').submit(function(e){
         e.preventDefault();
-        $('.center-block-b').show();
-        $('.center-block').hide();
+        var $this = $(this);
+        ajaxedForm.transport($this, function(jo, result) {
+            $('.center-block-b').show();
+            $('.nullpointform').hide();
+        }, function(jo, result){
+        	alert('Something went wrong, please try again later');
+        });
+        return false;
+    });
+
+    //===============contacts submit==================
+    $(".form-contact").submit(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        ajaxedForm.transport($this, function(jo, result) {
+            $('.center-block-b').show();
+            $('.center-block').hide();
+        }, function(jo, result){
+        	alert('Something went wrong, please try again later');
+        });
+        return false;
     });
 
     $(".residence-but").click(function () {
