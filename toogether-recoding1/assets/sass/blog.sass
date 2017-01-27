@@ -10,11 +10,12 @@
     width: 100%
     display: flex
     flex-flow: column nowrap
-    .new-feature, .recently
+    .new-feature, .recently-title
       font-size: 15px
       text-transform: uppercase
       color: #706868
       margin-bottom: 16px
+      display: block
     .baner-photo
       width: 100%
       max-width: 1179px
@@ -45,14 +46,17 @@
       p
         font-size: 16px
         margin-top: 30px
+    .recently .recently-feature:nth-child(2)
+      margin-top: 0
     .recently
+      margin-top: 70px
       .recently-feature
         width: 100%
         display: flex
         justify-content: space-between
         align-items: center
         flex-wrap: nowrap
-        margin-top: 57px
+        margin-top: 60px
         .recently-feature-cont
           display: flex
           flex-flow: column nowrap
@@ -86,8 +90,7 @@
           height: 203px
           max-height: 100%
           background: gray
-      .recently-feature:nth-child(1)
-        margin: 0
+
 
 
   .blog-side-bar
