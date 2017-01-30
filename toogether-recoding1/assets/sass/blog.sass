@@ -10,19 +10,22 @@
     width: 100%
     display: flex
     flex-flow: column nowrap
-    .new-feature, .recently-title
+    .new-feature, .recently-name
       font-size: 15px
       text-transform: uppercase
       color: #706868
       margin-bottom: 16px
       display: block
+    .recently-name
+      margin-top: 70px
     .baner-photo
       width: 100%
       max-width: 1179px
       height: 487px
       min-height: 100%
-      margin-bottom: 68px
-      background: gray
+      img
+        width: 100%
+        height: 100%
     .during-feature
       .date-feature
         display: flex
@@ -46,10 +49,9 @@
       p
         font-size: 16px
         margin-top: 30px
-    .recently .recently-feature:nth-child(2)
+    .recently .recently-feature:nth-child(1)
       margin-top: 0
     .recently
-      margin-top: 70px
       .recently-feature
         width: 100%
         display: flex
@@ -65,7 +67,7 @@
           .date-feature
             display: flex
             align-items: center
-            margin: 17px 0
+            margin: 16px 0
             span
               display: block
               font-size: 16px
@@ -89,7 +91,9 @@
           width: 100%
           height: 203px
           max-height: 100%
-          background: gray
+          img
+            height: 100%
+            width: 100%
 
 
 
@@ -111,8 +115,9 @@
         width: 100%
         height: 140px
         max-height: 100%
-        background: gray
-      //background: url("") no-repeat center
+        img
+          width: 100%
+          height: 100%
       .new-article-date
         display: flex
         align-items: center
@@ -145,11 +150,10 @@
         margin: 0
         padding: 0
         display: flex
-        justify-content: space-between
         width: 100%
         flex-wrap: wrap
         li
-          margin: 20px 20px 20px 0
+          margin: 20px 15px 20px 0
           a
             background: #5d6c8c
             color: #ffffff
