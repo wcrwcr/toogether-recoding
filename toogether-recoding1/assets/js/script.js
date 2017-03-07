@@ -1,6 +1,6 @@
 var ajaxedForm = {
 	transport: function($this, _success, _fail) {
-		var _url = $this.prop('action'), 
+		var _url = $this.prop('action'),
 		_data = $this.serialize();
 		$.ajax({
 			  url: _url,
@@ -14,7 +14,7 @@ var ajaxedForm = {
 				_fail($this, data);
 			}
 		});
-	} 
+	}
 };
 
 var formTution  = {
@@ -22,7 +22,7 @@ var formTution  = {
 	buttons: {
 		step1 : ".start-registr",
 		step2 : ".finish-registr",
-		final : ".agree-butt"  
+		final : ".agree-butt"
 	},
 	step1FormSelector: "#apply-step-1",
 	step2FormSelector: "#apply-step-2",
@@ -65,7 +65,7 @@ var formTution  = {
         if (!($form.validate())) {
         	return false;
         }
-        
+
         this._serializeResult($form, 'step1');
         var price = parseFloat($('#choose-type option:selected').prop('value')),
         		totalPrice = price + fee1 + fee2;
@@ -80,12 +80,12 @@ var formTution  = {
 	form2Submit: function(e) {
 		e.preventDefault();
         var $form = $(this.step2FormSelector);
-        
+
         if (!($form.validate())) {
         	console.log('fails');
         	return false;
         }
-        
+
         this._serializeResult($form, 'step2');
         return true;
 	},
@@ -93,11 +93,11 @@ var formTution  = {
 		e.preventDefault();
         var $form = $(this.step3FormSelector);
 
-        
+
         if (!$('#terms-of').prop('checked')) {
         	return false;
         }
-        
+
         this._serializeResult($form, 'final');
         return true;
 	},
@@ -123,12 +123,12 @@ var formTution  = {
 	},
 	form2Switch: function(e) {
         e.preventDefault();
-        
+
         if (this.form2Submit(e)){
 	        $(".apply-step-2").hide();
 	        $(".apply-step-3").show().css("display", "flex");
 	        $(".ret-to-step-1").toggle().css("display","block");
-	
+
 	        $(".step-2").css("border-bottom", "3px solid #ffffff");
 	        $(".step-3").css("border-bottom", "3px solid #195491");
         }
@@ -164,10 +164,6 @@ $(function (){
     });
 
 
-    $(".language_arrow").hover(function () {
-        $("#dropDownLanguage").slideToggle();
-    });
-    
     /*============ tution =================*/
     $(formTution.step1FormSelector).submit(function(e){
     	e.preventDefault();
@@ -182,19 +178,19 @@ $(function (){
     	formTution.form2Switch(e);
     	return false;
 	});
-    
+
     $(formTution.buttons.step2).click(function (e) {
     	e.preventDefault();
     	$('#validationform2').click();
 	});
-    
+
     $(formTution.buttons.final).click(function(e){
     	e.preventDefault();
     	return formTution.formAgreeSwitch(e);
 	});
-    
-    //================request info ===============
-    
+
+    //================ request info ===============
+
     $('.form-request-info').submit(function(e){
         e.preventDefault();
         var $this = $(this);
@@ -231,7 +227,7 @@ $(function (){
         $(".residence-but").toggle().css("display", "block");
         $(".resid-arrow").toggle().css("display", "none");
     });
-    
+
     $('.test-runner').click(function(e){
     	e.preventDefault();
     	var $this = $(this),
@@ -247,7 +243,7 @@ $(function (){
             	$testTop.hide();
             	$('#test-name-holder').html($this.data('name'));
             	$testBody.show();
-            	
+
             },
             async: true
         });
@@ -261,7 +257,7 @@ $(function netherSwitch() {
         $(this).next(".nether-drop").slideToggle();
     });
     $(".language_arrow").click(function () {
-       $("#dropDownLanguage-mobile").slideToggle();
+       $(".dropDownLanguage-mobile").slideToggle();
     });
 });
 
@@ -287,7 +283,13 @@ $(".mobile-button").click(function() {
 
 /*=============== FANCY BOX ================*/
 
-$(".gallery").fancybox();
+$(".gallery").fancybox({
+    helpers: {
+        overlay: {
+            locked: false
+        }
+    }
+});
 $(".photo-group").fancybox({
     overlayShow : true,
     helpers: {
@@ -304,3 +306,13 @@ $(".video-group").fancybox({
         }
     }
 });
+
+/*========== TOGGLE LANGUAGES ==========*/
+
+$('.language_change').click(function () {
+
+    $(".language_drop li:not(:nth-child(1))").slideToggle();
+
+});
+
+

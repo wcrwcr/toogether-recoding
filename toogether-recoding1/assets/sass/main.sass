@@ -1,14 +1,20 @@
 @font-face
   font-family: helveticaRegular
-  src: url("/assets/fonts/HelveticaRegular.ttf")
-  src: url("/assets/fonts/HelveticaRegular.eot")
-  src: url("/assets/fonts/HelveticaRegular.woff")
+  src:  url('/assets/fonts/HelveticaRegular.woff2') format('woff2')
+  src:  url('/assets/fonts/HelveticaRegular.woff') format('woff')
+  src:  url('/assets/fonts/HelveticaRegular.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
 
 @font-face
   font-family: helveticaLight
-  src: url("/assets/fonts/HelveticaLight.ttf")
-  src: url("/assets/fonts/HelveticaLight.eot")
-  src: url("/assets/fonts/HelveticaLight.woff")
+  src:  url('/assets/fonts/helveticalight.eot')
+  src:  url('/assets/fonts/helveticalight.eot?#iefix') format('embedded-opentype')
+  src:  url('/assets/fonts/helveticalight.woff2') format('woff2')
+  src:  url('/assets/fonts/helveticalight.woff') format('woff')
+  src:  url('/assets/fonts/helveticalight.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
 
 @font-face
   font-family: helveticaBold
@@ -111,28 +117,31 @@ body
         font-weight: bold
         margin-right: 20px
     .language-top
-      width: 29px
-      height: 29px
-      background: url("/assets/images/header/russian.png") no-repeat center
-      .language_arrow
-        float: left
-        display: block
-        width: 15px
-        height: 10px
-        margin-left: 31px
-        margin-top: 14px
-        background: url("/assets/images/header/search-arrow.png")
+      position: relative
+      display: flex
+      .language_change
         cursor: pointer
-      #dropDownLanguage
-        display: none
-        list-style-type: none
+        display: block
+        margin-left: 32px
+        margin-top: 10px
+        font-size: 15px
+      .language_drop
         position: absolute
-        top: 45px
+        top: 0
+        left: 0
+        list-style-type: none
+        margin: 0
         padding: 0
+        li:not(:nth-child(1))
+          display: none
         li
+          margin-bottom: 5px
           a
-            margin: 5px 0
             display: block
+          .ru-lang
+            width: 29px
+            height: 29px
+            background: url("/assets/images/header/russian.png") no-repeat center
           .polish-lang
             background: url("/assets/images/header/flag-b.png") no-repeat center
             width: 29px
@@ -141,7 +150,6 @@ body
             background: url("/assets/images/header/english.png") no-repeat center
             width: 29px
             height: 29px
-
   .mob-button-back
     display: none
     position: fixed
@@ -232,6 +240,7 @@ body
             margin-left: 5px
             margin-top: 12px
             background: url("/assets/images/header/search-arrow.png")
+            cursor: pointer
           .nether-drop
             display: none
             width: 100%
@@ -255,7 +264,7 @@ body
         margin-left: 31px
         margin-top: 14px
         background: url("/assets/images/header/search-arrow.png")
-      #dropDownLanguage-mobile
+      .dropDownLanguage-mobile
         display: none
         list-style-type: none
         position: absolute
@@ -319,6 +328,7 @@ body
 
 
   .getting-start
+    font-family: helveticaLight
     display: flex
     flex-wrap: wrap
     .left-text

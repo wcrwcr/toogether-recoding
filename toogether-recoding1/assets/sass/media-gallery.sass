@@ -54,20 +54,24 @@
           top: 0
           left: 0
           text-decoration: none
-
-          i
+          i, .gallery_subscribe
+            position: absolute
+            left: 0
+            right: 0
+            top: 30%
+            z-index: 10
+          .gallery_subscribe
+            top: 55%
+            font-size: 20px
+          .gallery_mask
             position: absolute
             width: 100%
             height: 100%
-            top: 0
             left: 0
-            display: flex
-            justify-content: center
-            align-items: center
-            z-index: 10
+            top: 0
             background: rgba(140,179,209,0.5)
             transition: background 0.5s
-          i:hover
+        .icon-to-group:hover .gallery_mask
             background: rgba(102,156,198,0.7)
         .media-group
           z-index: -1
