@@ -273,8 +273,8 @@ $(function footLink () {
 $(".mobile-button").click(function() {
     var changeBut = $(".mobile-button").css("right");
     if(changeBut === "20px"){
-        $(".mobile-button").css("right", "60%");
-        $(".mobile-menu").css("margin-right", "60%");
+        $(".mobile-button").css("right", "55%");
+        $(".mobile-menu").css("margin-right", "55%");
     }else{
         $(".mobile-button").css("right", "20px");
         $(".mobile-menu").css("margin-right", "-50%");

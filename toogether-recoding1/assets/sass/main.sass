@@ -1,36 +1,10 @@
-@font-face
-  font-family: helveticaRegular
-  src:  url('/assets/fonts/HelveticaRegular.woff2') format('woff2')
-  src:  url('/assets/fonts/HelveticaRegular.woff') format('woff')
-  src:  url('/assets/fonts/HelveticaRegular.ttf') format('truetype')
-  font-weight: normal
-  font-style: normal
-
-@font-face
-  font-family: helveticaLight
-  src:  url('/assets/fonts/helveticalight.eot')
-  src:  url('/assets/fonts/helveticalight.eot?#iefix') format('embedded-opentype')
-  src:  url('/assets/fonts/helveticalight.woff2') format('woff2')
-  src:  url('/assets/fonts/helveticalight.woff') format('woff')
-  src:  url('/assets/fonts/helveticalight.ttf') format('truetype')
-  font-weight: normal
-  font-style: normal
-
-@font-face
-  font-family: helveticaBold
-  src: url("/assets/fonts/HelveticaBold.ttf")
-  src: url("/assets/fonts/HelveticaBold.eot")
-  src: url("/assets/fonts/HelveticaBold.woff")
-
-
 a:focus, input:focus
   outline: none
 h1,h2,h3
   cursor: default
 
-
 body
-  font-family: helveticaRegular
+  font-family: 'Open Sans', sans-serif
   .menu-top-a
     display: flex
     flex-wrap: wrap
@@ -159,14 +133,15 @@ body
     left: 0
     z-index: 20
     width: 100%
-    .logo-mobile
-      margin-left: 35px
-      position: absolute
-      height: 100%
+    .mob-buton_subscribe
       display: flex
       align-items: center
-      img
-        max-width: 100%
+      .logo-mobile
+        margin-left: 35px
+        img
+          max-width: 100%
+      span
+        font-size: 24px
     .mobile-button
       font-size: 24px
       text-decoration: none
@@ -176,6 +151,7 @@ body
       top: 13px
       z-index: 20
       transition: all 1.5s
+      cursor: pointer
 
   .mobile-menu
     z-index: 20
@@ -197,16 +173,21 @@ body
       input
         float: left
       .search-btn
-        margin-top: 8px
-        margin-left: 4px
+        background: url("/assets/images/sprites/small-icons.png") 77px 35px
+        width: 18px
+        height: 18px
         border: none
-        background: #FFFFFF
+        display: block
+        margin-left: 2px
+        margin-top: 7px
       .search-field
         width: 70%
         border: 1px solid #a9a9ab
         background: #f0eeee
         border-radius: 1px
         height: 31px
+        margin-right: 5px
+        padding-left: 10px
     .overhead-menu, .nether-menu
       margin-top: 15px
       ul
@@ -258,6 +239,7 @@ body
       background: url("/assets/images/header/russian.png") no-repeat center
       .language_arrow
         float: left
+        cursor: pointer
         display: block
         width: 15px
         height: 10px
@@ -328,12 +310,11 @@ body
 
 
   .getting-start
-    font-family: helveticaLight
     display: flex
     flex-wrap: wrap
+    font-weight: lighter
     .left-text
       color: #000b38
-      font-weight: bold
       .left-text-inner
         padding: 60px 0 0 0
         h1
@@ -703,7 +684,7 @@ body
       .links
         display: flex
         justify-content: space-between
-        font-family: helveticaLight
+        font-weight: lighter
         max-width: 552px
         width: 100%
         .links-content
