@@ -153,14 +153,16 @@ $(function (){
 
     $(window).scroll(function () {
         var top = $(document).scrollTop();
-        if (top < 490) $(".menu-b").css({
-            top: '0',
-            position: 'relative'
-        });
-        else $(".menu-b").css({
-            top: '60px',
-            position: 'fixed'
-        });
+        if (top < 490)
+            $(".menu-b").css({
+                                position: 'relative',
+                                top: '0'
+                            });
+        else
+            $(".menu-b").css({
+                                top: '60px',
+                                position: 'fixed'
+                            });
     });
 
 
@@ -309,10 +311,17 @@ $(".video-group").fancybox({
 
 /*========== TOGGLE LANGUAGES ==========*/
 
-$('.language_change').click(function () {
+$('.language-top').click(function () {
 
     $(".language_drop li:not(:nth-child(1))").slideToggle();
 
 });
 
 
+/*========================== MENU-B DROPDOWN ====================================*/
+
+$('.menu-b li').hover(function () {
+    $(this).children('ul').css({'display':'block'});
+},function () {
+    $(this).children('ul').css({'display':'none'});
+});

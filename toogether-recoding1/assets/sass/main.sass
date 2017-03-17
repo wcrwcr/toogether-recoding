@@ -281,6 +281,7 @@ body
     background: #000b38
     list-style-type: none
     z-index: 17
+    padding: 0
     li
       a
         display: block
@@ -292,11 +293,13 @@ body
         background: #aca717
       ul
         position: absolute
-        display: none
         margin: 0
         padding: 0
         list-style-type: none
         background: #000b38
+        min-width: 150px
+        display: none
+        z-index: 15
         li
           a
             display: block
@@ -304,10 +307,6 @@ body
             padding: 12px 15px
           a:hover
             background: #182938
-
-    li:hover ul
-      display: block
-
 
   .getting-start
     display: flex
