@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="lazy_translator" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="lazy_translator" phpdoc-subpackage="model">
+<object class="ltStore" table="lazy_translator_stores" extends="xPDOSimpleObject">
+<field key="ru_name" dbtype="varchar" precision="1000" phptype="string" null="false" default="" index="index" />
+<field key="pl_name" dbtype="varchar" precision="1000" phptype="string" null="true" default="" />
+<field key="en_name" dbtype="varchar" precision="1000" phptype="string" null="true" default="" />
+</object>
+</model>

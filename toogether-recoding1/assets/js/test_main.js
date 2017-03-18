@@ -1,7 +1,7 @@
 
 function mainAnswer(param) {
 	
-	if (typeof arrQuestions == 'undefined' || typeof arrAnswers == 'undefined') {
+	if (typeof arrQuestions == 'undefined' || typeof arrAnswers == 'undefined' || typeof arrAnswers[param] == 'undefined') {
 		return false;
 	}
 	
@@ -28,26 +28,85 @@ var answerSave = [];
 
 var rightAnswers = [];
 
-function outRight() {
-    count = 0;
+var testVar = null;
 
+function calculatePercents() {
+	var rightAnswCount = 0, answCount = 0;
     for (var i = 0; i < arrAnswers.length; i ++){
-        if (arrAnswers [i] == rightAnswers [i]){
-            count ++;
-
+    	answCount++;
+        if (answerSave [i] == keys [i]){
+        	rightAnswCount++;
         }
     }
+	
+    $res = answCount / rightAnswCount *100;
+    return $res;
+}
 
+function checkPl() {
+	var $res = calculatePercents();
+    if ($res <= 30) {
+    	return 'A1';
+    }
+    
+    if ($res <= 65) {
+    	return 'A2';
+    }
+
+    if ($res <= 100) {
+    	return 'B1';
+    }
+}
+
+function checkEn(){
+	var $res = calculatePercents();
+    if ($res < 75) {
+    	return 'A1';
+    }
+    
+    if ($res < 100) {
+    	return 'A2';
+    }
+
+    if ($res >= 100) {
+    	return 'B1';
+    }
+    
+}
+
+function outResults() {
+    count = 0;
+	$('#test-body-holder').hide();
+	$('#test-result-holder').show();
+	var results;  
+	if (testVar == 'english_arr.js') {
+		results = checkEn();
+		$('#test-type').value('English');
+	} else {
+		results = checkPl();
+		$('#test-type').value('Polski');
+	}
+	$('#overall-test-result').value(results);
 }
 
 $(function () {
-   mainAnswer(0);
+	$('.test-runner').click(function(e) {
+		testVar = $(this).data('file');
+		$('.test-top-holder').hide(function(e){
+			$('#test-top-holder').hide();
+			$('#test-body-holder').show();
+			mainAnswer(0);
+			
+		});
+	});
+	
+	
     $(".answer").change(function () {
         mainAnswer(answer);
         answerSave[answer] = $(this).data('rel');
         answer ++;
-        if(arrQuestions.length < answer){
-            outRight();
+        if (arrQuestions.length < answer) {
+        	outResults();
         }
     });
 });

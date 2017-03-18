@@ -1,6 +1,4 @@
-/**
- * Created by Black_Moon on 1/5/2017.
- */
+
 var arrQuestions = ["Ile jest 20 + 4?",
     "Mam 34 __, a mój brat ma 14__.",
     "Wiemy, że dzisiaj jest test z polskiego, ale Marta i Konrad o tym nie __.",
@@ -89,3 +87,45 @@ var arrAnswers = [
     ["w Polsce jest coraz mniej osób bez pracy.", "w Polsce tworzy się dużo nowych miejsc pracy.", "Polacy wyjeżdzają, żeby zdobyć wykształcenie."]
 ];
 
+var keys = [
+	2,
+	2,
+	4,
+	2,
+	3,
+	1,
+	3,
+	3,
+	2,
+	1,
+	1,
+	1,
+	2,
+	3,
+	3,
+	1,
+	3,
+	1,
+	3,
+	3,
+	2,
+	2,
+	3,
+	2,
+	1,
+	1,
+	3,
+	1,
+	2,
+	1,
+	3,
+	1,
+	3,
+	1,
+	1,
+	1,
+	3,
+	3,
+	2,
+	1
+];
