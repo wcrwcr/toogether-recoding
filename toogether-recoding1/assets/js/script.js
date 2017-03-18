@@ -31,7 +31,7 @@ var formTution  = {
 		$.ajax({
 			method: 'POST',
 		    url: $(this.step1FormSelector).data('action'),
-		    data: { data: this.resultHolder, _a_form: 'apply' },
+		    data: { data: this.resultHolder, _a_form: 'apply', context: $('#context_value_holder').val() },
 		    dataType: "json",
 		    success: function(data) {
 		    	if (data.success) {
@@ -228,6 +228,19 @@ $(function (){
         $(".resid-arrow").toggle().css("display", "none");
     });
 
+    //test
+    $(".form-test-result").submit(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        ajaxedForm.transport($this, function(jo, result) {
+            //$('.center-block-b').show();
+            //$('.center-block').hide();
+        	alert('Sent');
+        }, function(jo, result){
+        	alert('Something went wrong, please try again later');
+        });
+        return false;
+    });
     $('.test-runner').click(function(e){
     	e.preventDefault();
     	var $this = $(this),

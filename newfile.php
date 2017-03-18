@@ -11,7 +11,6 @@
     </div>
     <div class="right-form col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="right-form-inner col-lg-9">
-        	[[++cultureKey:is=`en`:then=`menu_ru`:else=`menu_en`]]
             <a href="[[!BabelUrl? &resourceId=`66`]]">Пройдите наш бесплатный тест</a>
             <a href="[[!BabelUrl? &resourceId=`77`]]">Приходите на первое бесплатное занятие</a>
             <a href="[[!BabelUrl? &resourceId=`29`]]">Рассчитайте стоимость курса</a>

@@ -1,7 +1,8 @@
 <div id ='test-result-holder' style='display:none'>
     <div class="test-step-1">
         <span class="title">
-            How to get your IELTS test results. ... Please note that you will only receive one copy of your Test Report Form,</span>
+            How to get your IELTS test results. ... Please note that you will only receive one copy of your Test Report Form,
+        </span>
         <form action="" method="post" class="test-step-1-info">
             <div class="label-blue">Contact information</div>
             <div class="block1">
