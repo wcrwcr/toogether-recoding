@@ -325,11 +325,8 @@ $(".video-group").fancybox({
 /*========== TOGGLE LANGUAGES ==========*/
 
 $('.language-top').click(function () {
-
     $(".language_drop li:not(:nth-child(1))").slideToggle();
-
 });
-
 
 /*========================== MENU-B DROPDOWN ====================================*/
 
@@ -337,4 +334,9 @@ $('.menu-b li').hover(function () {
     $(this).children('ul').css({'display':'block'});
 },function () {
     $(this).children('ul').css({'display':'none'});
+});
+
+/*========================= test-send ===============================*/
+$('.test-send').click(function () {
+   $('.modal-send').fadeIn(200);
 });
