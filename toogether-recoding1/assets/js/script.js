@@ -198,7 +198,7 @@ $(function (){
         var $this = $(this);
         ajaxedForm.transport($this, function(jo, result) {
             $('.center-block-b').show();
-            $('.nullpointform').hide();
+            $('.test-result-holder').hide();
         }, function(jo, result){
         	alert('Something went wrong, please try again later');
         });
