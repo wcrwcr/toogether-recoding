@@ -39,7 +39,7 @@ function calculatePercents() {
         }
     }
 	
-    $res = answCount / rightAnswCount *100;
+    $res =  rightAnswCount / answCount *100;
     return $res;
 }
 
@@ -81,12 +81,12 @@ function outResults() {
 	var results;  
 	if (testVar == 'english_arr.js') {
 		results = checkEn();
-		$('#test-type').value('English');
+		$('#test-type').val('English');
 	} else {
 		results = checkPl();
-		$('#test-type').value('Polski');
+		$('#test-type').val('Polski');
 	}
-	$('#overall-test-result').value(results);
+	$('#overall-test-result').val(results);
 }
 
 $(function () {

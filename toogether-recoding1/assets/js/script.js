@@ -235,8 +235,7 @@ $(function (){
         e.preventDefault();
         var $this = $(this);
         ajaxedForm.transport($this, function(jo, result) {
-            //$('.center-block-b').show();
-            //$('.center-block').hide();
+        	$('.form-test-result').hide();
         	$('.modal-send').show();
         }, function(jo, result){
         	alert('Something went wrong, please try again later');
