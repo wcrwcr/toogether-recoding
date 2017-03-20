@@ -170,7 +170,7 @@ Skype: cj.together
 Дополнительно рекомендуем пройти устное собеседование.
 
 Если вы заинтересованы в повышении уровня знаний, просим вас заполнить анкету:
-(%calculator_uri$s)
+(URL:calculator_uri)
 После заполнения с вами свяжется Ваш менеджер CJ Together.
 
             ',
@@ -179,7 +179,7 @@ Dear %first_name$s you completed our free online test to your level
 Your level is %test_result$s.
 We recommend an oral test.
 If you are interested in improving your level, please fill in application form
-(%calculator_uri$s)
+(URL:calculator_uri)
 Your Manager will answer as soon as possible!
 
             ',
@@ -188,7 +188,7 @@ Drogi %first_name$s, skorzystałeś z naszego bezpłatnego testu kompetencji ję
 Twój poziom to %test_result$s.
 Zalecamy przejście rozmowy kwalifikacyjnej.
 Jeśli chcesz podnieść swój poziom, wypełnij profil:
-(%calculator_uri$s)
+(URL:calculator_uri)
 Nasz manager skontaktuje się wkrótce.
             '
             ),
@@ -321,9 +321,8 @@ Your Manager will answer you as soon as possible to discuss the details.
         $subject = ($type == 'admin')?
         $this->subjs['admin'][$this->formId] :
         $this->subjs['user'][$this->formId][$this->context] ;
-
-        $this->vars['calculator_uri'] = $this->modx->makeUrl($this->applyPage[$this->context]);
-        return $this->processTemplate($subject, $this->vars);
+        $text = $this->processTemplate($subject, $this->vars);
+        return $text;
     }
 
     public function route(){
@@ -346,15 +345,18 @@ Your Manager will answer you as soon as possible to discuss the details.
                 return $m[1].'%'.($map[$m[2]] + 1).'$';
             },
             $str
-            );
-        return vsprintf($new_str, $args);
+        );
+        $text = vsprintf($new_str, $args);;
+        $calculator_uri = $this->modx->makeUrl($this->applyPage[$this->context], $this->context, '' , 'abs');
+        
+        
+        return str_replace('URL:calculator_uri', $calculator_uri, $text);
     }
 
     function ajaxRoutine() {
         $adminMailTpl = $this->processTemplate($this->_getTemplate(), $this->vars);
         $userMailTpl = $this->processTemplate($this->_getTemplate('user'), $this->vars);
-        $userMailTpl .= $userFooter[$this->context];
-
+        $userMailTpl .= $this->userFooter[$this->context];
         $success = (
             $this->sendMail($this->adminMail, $this->getSubject(), $adminMailTpl) &&
             $this->sendMail($this->getUserEmail(), $this->getSubject('user'), $userMailTpl)

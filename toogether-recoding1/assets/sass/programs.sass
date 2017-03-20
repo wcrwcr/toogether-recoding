@@ -6,16 +6,18 @@
   align-items: flex-start
   justify-content: space-between
   margin: 30px auto 0
-  .programs:nth-child(2n)
-    h2
-      background: #fa9901
   .programs
     display: flex
     flex-flow: column wrap
     width: 710px
     color: #636161
     margin: 0 0 65px
-    .programs_title
+    &:nth-child(2n)
+      h2
+        background: #fa9901
+    &>a
+      cursor: pointer
+    h2
       width: 100%
       display: block
       text-transform: uppercase
@@ -46,10 +48,10 @@
         padding: 16px 10px
         width: auto
         transition: all 0.5s
-      .program-button:hover
-        background: #0b5d9d
-        color: #FFFFFF
-        transition: all 0.5s
+        &:hover
+          background: #0b5d9d
+          color: #FFFFFF
+          transition: all 0.5s
     ul
       list-style-type: none
       margin: 0
@@ -60,5 +62,5 @@
       li
         padding: 22px 30px
         text-align: center
-      li:nth-child(odd)
-        background: #dad5d5
+        &:nth-child(odd)
+          background: #dad5d5
