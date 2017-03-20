@@ -54,9 +54,9 @@
                         <h1>проверьте почту!</h1>
                     </div>
                     <div class="info">
-                        <p>To learn more about our programs or request a custom quote, please click on the button below:</p>
+                        <p>Чтобы узнать больше о наших курсах, нажмите на кнопку ниже:</p>
                     </div>
-                    <a href="#" class="button">request information about our programs</a>
+                    <a href="#" class="button">Подробнее о курсах</a>
                 </div>
             </form>
     </div>
