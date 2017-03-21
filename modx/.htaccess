@@ -1,0 +1,235 @@
+# MODX supports Friendly URLs via this .htaccess file. You must serve web
+# pages via Apache with mod_rewrite to use this functionality, and you must
+# change the file name from ht.access to .htaccess.
+#
+# Make sure RewriteBase points to the directory where you installed MODX.
+# E.g., "/modx" if your installation is in a "modx" subdirectory.
+#
+# You may choose to make your URLs non-case-sensitive by adding a NC directive
+# to your rule: RewriteRule ^(.*)$ index.php?q=$1 [L,QSA,NC]
+
+RewriteEngine On
+RewriteBase /
+
+
+
+
+# Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
+RewriteRule ^ru\/$ http://new.together-school.pl/ [R=301,L]
+RewriteRule ^ru$ http://new.together-school.pl/ [R=301,L]
+RewriteRule ^ru\/kursy-polskogo-yazyka-v-varshave-2\/$ http://new.together-school.pl/content/courses/ [R=301,L]
+RewriteRule ^ru\/kursy-polskogo-yazyka-v-varshave-2$ http://new.together-school.pl/content/courses/ [R=301,L]
+RewriteRule ^ru\/kursy-anglijskogo-yazyka\/$ http://new.together-school.pl/content/courses/ [R=301,L]
+RewriteRule ^ru\/kursy-anglijskogo-yazyka$ http://new.together-school.pl/content/courses/ [R=301,L]
+RewriteRule ^ru\/chasto-zadavaemye-voprosy\/$ http://new.together-school.pl/pl/content/head/rejestracja.html [R=301,L]
+RewriteRule ^ru\/chasto-zadavaemye-voprosy$ http://new.together-school.pl/pl/content/head/rejestracja.html [R=301,L]
+RewriteRule ^ru\/zapisatsa-na-kursy-polskogo-jazyka\/$ http://new.together-school.pl/content/courses/ [R=301,L]
+RewriteRule ^ru\/zapisatsa-na-kursy-polskogo-jazyka$ http://new.together-school.pl/content/courses/ [R=301,L]
+RewriteRule ^ru\/skidki-i-akcyi-w-jazykowoj-shkole-together\/$ http://new.together-school.pl/content/head/skidka.html [R=301,L]
+RewriteRule ^ru\/skidki-i-akcyi-w-jazykowoj-shkole-together$ http://new.together-school.pl/content/head/skidka.html [R=301,L]
+RewriteRule ^ru\/prisyazhnye-perevody-perevody-dokumentov\/$ http://new.together-school.pl/content/head/perevod_dokumentov.html [R=301,L]
+RewriteRule ^ru\/prisyazhnye-perevody-perevody-dokumentov$ http://new.together-school.pl/content/head/perevod_dokumentov.html [R=301,L]
+RewriteRule ^ru\/category\/blog-nashej-shkoly\/$ http://new.together-school.pl/content/blogpage/ [R=301,L]
+RewriteRule ^ru\/category\/blog-nashej-shkoly$ http://new.together-school.pl/content/blogpage/ [R=301,L]
+RewriteRule ^ru\/category\/stati\/$ http://new.together-school.pl/content/blogpage/ [R=301,L]
+RewriteRule ^ru\/category\/stati$ http://new.together-school.pl/content/blogpage/ [R=301,L]
+RewriteRule ^ru\/letnie-kursy-po-izucheniyu-polskogo-yazyka\/$ http://new.together-school.pl/content/head/letnij_kurs.html [R=301,L]
+RewriteRule ^ru\/letnie-kursy-po-izucheniyu-polskogo-yazyka$ http://new.together-school.pl/content/head/letnij_kurs.html [R=301,L]
+RewriteRule ^ru\/korporativnoe-obuchenie-polskomu-yazyku-predlozhenie-dlya-firm\/$ http://new.together-school.pl/content/o_nas/sotrudnichestvo.html [R=301,L]
+RewriteRule ^ru\/korporativnoe-obuchenie-polskomu-yazyku-predlozhenie-dlya-firm$ http://new.together-school.pl/content/o_nas/sotrudnichestvo.html [R=301,L]
+RewriteRule ^ru\/galereya\/$ http://new.together-school.pl/content/studentyi/media_gallery/ [R=301,L]
+RewriteRule ^ru\/galereya$ http://new.together-school.pl/content/studentyi/media_gallery/ [R=301,L]
+RewriteRule ^ru\/nashej-shkole\/$ http://new.together-school.pl/content/o_nas/o_nas.html [R=301,L]
+RewriteRule ^ru\/nashej-shkole$ http://new.together-school.pl/content/o_nas/o_nas.html [R=301,L]
+RewriteRule ^ru\/nashej-shkole\/nashi-sotrudniki-prepodavateli\/$ http://new.together-school.pl/content/o_nas/colektiv/ [R=301,L]
+RewriteRule ^ru\/nashej-shkole\/nashi-sotrudniki-prepodavateli$ http://new.together-school.pl/content/o_nas/colektiv/ [R=301,L]
+RewriteRule ^ru\/partnyory\/$ http://new.together-school.pl/content/o_nas/sotrudnichestvo.html [R=301,L]
+RewriteRule ^ru\/partnyory$ http://new.together-school.pl/content/o_nas/sotrudnichestvo.html [R=301,L]
+RewriteRule ^en\/polish-courses-in-warsaw\/$ http://new.together-school.pl/pl/content/courses/ [R=301,L]
+RewriteRule ^en\/polish-courses-in-warsaw$ http://new.together-school.pl/pl/content/courses/ [R=301,L]
+RewriteRule ^en\/intensive-polish-language-course\/$ http://new.together-school.pl/en/content/courses/intensive_course/intensive_polish.html [R=301,L]
+RewriteRule ^en\/intensive-polish-language-course$ http://new.together-school.pl/en/content/courses/intensive_course/intensive_polish.html [R=301,L]
+RewriteRule ^en\/year-long-polish-language-courses-2\/$ http://new.together-school.pl/en/content/courses/godovoj_standart/year_long_polish_language_courses.html [R=301,L]
+RewriteRule ^en\/year-long-polish-language-courses-2$ http://new.together-school.pl/en/content/courses/godovoj_standart/year_long_polish_language_courses.html [R=301,L]
+RewriteRule ^en\/frequently-asked-question\/$ http://new.together-school.pl/en/content/head/how_to_register.html [R=301,L]
+RewriteRule ^en\/frequently-asked-question$ http://new.together-school.pl/en/content/head/how_to_register.html [R=301,L]
+RewriteRule ^en\/join-our-language-school\/$ http://new.together-school.pl/en/content/apply.html [R=301,L]
+RewriteRule ^en\/join-our-language-school$ http://new.together-school.pl/en/content/apply.html [R=301,L]
+RewriteRule ^en\/translation\/$ http://new.together-school.pl/en/content/head/translation.html [R=301,L]
+RewriteRule ^en\/translation$ http://new.together-school.pl/en/content/head/translation.html [R=301,L]
+RewriteRule ^en\/ecl-exam\/$ http://new.together-school.pl/en/content/head/ecl.html [R=301,L]
+RewriteRule ^en\/ecl-exam$ http://new.together-school.pl/en/content/head/ecl.html [R=301,L]
+RewriteRule ^en\/corporate-polish-polish-language-for-companies\/$ http://new.together-school.pl/en/content/head/corporate_polish.html [R=301,L]
+RewriteRule ^en\/corporate-polish-polish-language-for-companies$ http://new.together-school.pl/en/content/head/corporate_polish.html [R=301,L]
+RewriteRule ^en\/about-our-school\/$ http://new.together-school.pl/en/content/about_us/about_us.html [R=301,L]
+RewriteRule ^en\/about-our-school$ http://new.together-school.pl/en/content/about_us/about_us.html [R=301,L]
+RewriteRule ^en\/our-team\/$ http://new.together-school.pl/en/content/about_us/staff/ [R=301,L]
+RewriteRule ^en\/our-team$ http://new.together-school.pl/en/content/about_us/staff/ [R=301,L]
+RewriteRule ^pl\/kontakt-2\/$ http://new.together-school.pl/en/content/contacts.html [R=301,L]
+RewriteRule ^pl\/kontakt-2$ http://new.together-school.pl/en/content/contacts.html [R=301,L]
+RewriteRule ^pl\/kursy-szkole-jezykowej-together\/$ http://new.together-school.pl/pl/content/courses/ [R=301,L]
+RewriteRule ^pl\/kursy-szkole-jezykowej-together$ http://new.together-school.pl/pl/content/courses/ [R=301,L]
+RewriteRule ^pl\/category\/artykuly\/$ http://new.together-school.pl/pl/content/blogpage/ [R=301,L]
+RewriteRule ^pl\/category\/artykuly$ http://new.together-school.pl/pl/content/blogpage/ [R=301,L]
+RewriteRule ^pl\/o-naszej-szkole\/nasze-koledzy-wykladowcy\/$ http://new.together-school.pl/pl/content/o_nas/colektiv/ [R=301,L]
+RewriteRule ^pl\/o-naszej-szkole\/nasze-koledzy-wykladowcy$ http://new.together-school.pl/pl/content/o_nas/colektiv/ [R=301,L]
+RewriteRule ^pl\/kontakt-2\/$ http://new.together-school.pl/pl/content/kontakt.html [R=301,L]
+RewriteRule ^pl\/kontakt-2$ http://new.together-school.pl/pl/content/kontakt.html [R=301,L]
+RewriteRule ^pl\/kursy-polskiego-dla-obcokrajowcow-w-warszawie-gdzie\/$ http://new.together-school.pl/pl/content/blogpage/polski_dla_obcokrajowcow.html [R=301,L]
+RewriteRule ^pl\/kursy-polskiego-dla-obcokrajowcow-w-warszawie-gdzie$ http://new.together-school.pl/pl/content/blogpage/polski_dla_obcokrajowcow.html [R=301,L]
+RewriteRule ^pl\/kursy-szkole-jezykowej-together\/$ http://new.together-school.pl/pl/content/courses/ [R=301,L]
+RewriteRule ^pl\/kursy-szkole-jezykowej-together$ http://new.together-school.pl/pl/content/courses/ [R=301,L]
+RewriteRule ^pl\/polski-dla-obcokrajowcow-w-centrum-jezykowym-together\/$ http://new.together-school.pl/pl/content/blogpage/polski_dla_obcokrajowcow_w_centrum_jezykowym_together.html [R=301,L]
+RewriteRule ^pl\/polski-dla-obcokrajowcow-w-centrum-jezykowym-together$ http://new.together-school.pl/pl/content/blogpage/polski_dla_obcokrajowcow_w_centrum_jezykowym_together.html [R=301,L]
+RewriteRule ^pl\/jezyk-angielski-pomoze-ci-znalezc-prace\/$ http://new.together-school.pl/pl/content/blogpage/jezyk_angielski.html [R=301,L]
+RewriteRule ^pl\/jezyk-angielski-pomoze-ci-znalezc-prace$ http://new.together-school.pl/pl/content/blogpage/jezyk_angielski.html [R=301,L]
+RewriteRule ^pl\/nauka-zabawa-czy-mozna-pogodzic-nauke-z-imprezowaniem\/$ http://new.together-school.pl/pl/content/blogpage/nauka_i_zabawa.html [R=301,L]
+RewriteRule ^pl\/nauka-zabawa-czy-mozna-pogodzic-nauke-z-imprezowaniem$ http://new.together-school.pl/pl/content/blogpage/nauka_i_zabawa.html [R=301,L]
+RewriteRule ^pl\/nauka-polskiego-dlaczego-warto\/$ http://new.together-school.pl/pl/content/blogpage/nauka_jezyka_dla_obcokrajowcow.html [R=301,L]
+RewriteRule ^pl\/nauka-polskiego-dlaczego-warto$ http://new.together-school.pl/pl/content/blogpage/nauka_jezyka_dla_obcokrajowcow.html [R=301,L]
+RewriteRule ^en\/satisfaction-guaranteed\/$ http://new.together-school.pl/en/content/blogpage/satisfaction_guaranteed!.html [R=301,L]
+RewriteRule ^en\/satisfaction-guaranteed$ http://new.together-school.pl/en/content/blogpage/satisfaction_guaranteed!.html [R=301,L]
+RewriteRule ^en\/learning-and-fun-is-it-possible-to-reconcile-the-teachings-of-partying\/$ http://new.together-school.pl/en/content/blogpage/learning_vs_fun.html [R=301,L]
+RewriteRule ^en\/learning-and-fun-is-it-possible-to-reconcile-the-teachings-of-partying$ http://new.together-school.pl/en/content/blogpage/learning_vs_fun.html [R=301,L]
+RewriteRule ^en\/polish-language-courses-in-warsaw-why-should-you-choose-together\/$ http://new.together-school.pl/en/content/blogpage/polish_warsaw.html [R=301,L]
+RewriteRule ^en\/polish-language-courses-in-warsaw-why-should-you-choose-together$ http://new.together-school.pl/en/content/blogpage/polish_warsaw.html [R=301,L]
+RewriteRule ^en\/polish-language-courses-for-foreigners-why\/$ http://new.together-school.pl/en/content/blogpage/polish_language_courses.html [R=301,L]
+RewriteRule ^en\/polish-language-courses-for-foreigners-why$ http://new.together-school.pl/en/content/blogpage/polish_language_courses.html [R=301,L]
+RewriteRule ^en\/permit-residence-poland\/$ http://new.together-school.pl/en/content/blogpage/permit_residence.html [R=301,L]
+RewriteRule ^en\/permit-residence-poland$ http://new.together-school.pl/en/content/blogpage/permit_residence.html [R=301,L]
+RewriteRule ^ru\/vnzh-v-polshe-osnovanii-kursov\/$ http://new.together-school.pl/content/blogpage/vnz_v_polshe.html [R=301,L]
+RewriteRule ^ru\/vnzh-v-polshe-osnovanii-kursov$ http://new.together-school.pl/content/blogpage/vnz_v_polshe.html [R=301,L]
+RewriteRule ^ru\/vnzh-v-polshe-po-yazykovym-kursam-osteregajtes-moshennikov\/$ http://new.together-school.pl/content/blogpage/ostorozno_vnz.html [R=301,L]
+RewriteRule ^ru\/vnzh-v-polshe-po-yazykovym-kursam-osteregajtes-moshennikov$ http://new.together-school.pl/content/blogpage/ostorozno_vnz.html [R=301,L]
+RewriteRule ^ru\/zhile-v-polshe-informaciya-dlya-inostrancev\/$ http://new.together-school.pl/content/blogpage/live_in_poland.html [R=301,L]
+RewriteRule ^ru\/zhile-v-polshe-informaciya-dlya-inostrancev$ http://new.together-school.pl/content/blogpage/live_in_poland.html [R=301,L]
+RewriteRule ^ru\/zachem-nuzhny-kursy-polskogo-yazyka-v-varshave\/$ http://new.together-school.pl/content/blogpage/dlaczego_polski.html [R=301,L]
+RewriteRule ^ru\/zachem-nuzhny-kursy-polskogo-yazyka-v-varshave$ http://new.together-school.pl/content/blogpage/dlaczego_polski.html [R=301,L]
+RewriteRule ^ru\/kak-sostavit-rezyume-cv-na-polskom-yazyke\/$ http://new.together-school.pl/content/blogpage/cv_na_polskom.html [R=301,L]
+RewriteRule ^ru\/kak-sostavit-rezyume-cv-na-polskom-yazyke$ http://new.together-school.pl/content/blogpage/cv_na_polskom.html [R=301,L]
+RewriteRule ^ru\/kursy-poskogo-yazyka-kak-emigtacija-w-evropu\/$ http://new.together-school.pl/content/blogpage/kursy_v_evropu.html [R=301,L]
+RewriteRule ^ru\/kursy-poskogo-yazyka-kak-emigtacija-w-evropu$ http://new.together-school.pl/content/blogpage/kursy_v_evropu.html [R=301,L]
+RewriteRule ^ru\/obuchenie-v-polskix-vuzax-kak-uchitsya-za-granicej\/$ http://new.together-school.pl/content/blogpage/obuchenie_vuzy.html [R=301,L]
+RewriteRule ^ru\/obuchenie-v-polskix-vuzax-kak-uchitsya-za-granicej$ http://new.together-school.pl/content/blogpage/obuchenie_vuzy.html [R=301,L]
+RewriteRule ^ru\/obuchenie-v-polskix-universitetax-sovmestno-s-together-study\/$ http://new.together-school.pl/content/blogpage/together_study.html [R=301,L]
+RewriteRule ^ru\/obuchenie-v-polskix-universitetax-sovmestno-s-together-study$ http://new.together-school.pl/content/blogpage/together_study.html [R=301,L]
+RewriteRule ^ru\/zachem-nuzhny-kursy-polskogo-yazyka-mozhno-li-vyuchit-yazyk-samostoyatelno\/$ http://new.together-school.pl/content/blogpage/polski_samostojatelno.html [R=301,L]
+RewriteRule ^ru\/zachem-nuzhny-kursy-polskogo-yazyka-mozhno-li-vyuchit-yazyk-samostoyatelno$ http://new.together-school.pl/content/blogpage/polski_samostojatelno.html [R=301,L]
+RewriteRule ^ru\/pereezd-v-polshu-vmeste-s-yazykovoj-shkoloj-together\/$ http://new.together-school.pl/content/blogpage/pereezd_polsha.html [R=301,L]
+RewriteRule ^ru\/pereezd-v-polshu-vmeste-s-yazykovoj-shkoloj-together$ http://new.together-school.pl/content/blogpage/pereezd_polsha.html [R=301,L]
+RewriteRule ^ru\/pochemu-vazhno-izuchat-polskij-yazyk-v-polshe\/$ http://new.together-school.pl/content/blogpage/polskij_yazyik_v_polshe.html [R=301,L]
+RewriteRule ^ru\/pochemu-vazhno-izuchat-polskij-yazyk-v-polshe$ http://new.together-school.pl/content/blogpage/polskij_yazyik_v_polshe.html [R=301,L]
+RewriteRule ^ru\/po-doroge-k-mechte-o-evropejskom-obrazovanii\/$ http://new.together-school.pl/content/blogpage/evropejskoe_obrazovanie.html [R=301,L]
+RewriteRule ^ru\/po-doroge-k-mechte-o-evropejskom-obrazovanii$ http://new.together-school.pl/content/blogpage/evropejskoe_obrazovanie.html [R=301,L]
+RewriteRule ^ru\/skolko-stoit-zhit-v-polshe\/$ http://new.together-school.pl/content/blogpage/ceny_polskie.html [R=301,L]
+RewriteRule ^ru\/skolko-stoit-zhit-v-polshe$ http://new.together-school.pl/content/blogpage/ceny_polskie.html [R=301,L]
+RewriteRule ^ru\/polskij-yazyk-dlya-nachinayushhix-pochemu-ne-stoit-uchit-po-samouchitelyu\/$ http://new.together-school.pl/content/blogpage/polskij_novichkam.html [R=301,L]
+RewriteRule ^ru\/polskij-yazyk-dlya-nachinayushhix-pochemu-ne-stoit-uchit-po-samouchitelyu$ http://new.together-school.pl/content/blogpage/polskij_novichkam.html [R=301,L]
+RewriteRule ^ru\/poleznye-sajty-o-polshe-oblegchayushhie-zhizn-na-kazhdyj-den\/$ http://new.together-school.pl/content/blogpage/poleznoe_polsha.html [R=301,L]
+RewriteRule ^ru\/poleznye-sajty-o-polshe-oblegchayushhie-zhizn-na-kazhdyj-den$ http://new.together-school.pl/content/blogpage/poleznoe_polsha.html [R=301,L]
+RewriteRule ^ru\/biblioteka-together\/$ http://new.together-school.pl/content/blogpage/biblioteka_together.html [R=301,L]
+RewriteRule ^ru\/biblioteka-together$ http://new.together-school.pl/content/blogpage/biblioteka_together.html [R=301,L]
+RewriteRule ^ru\/farma-iluzji\/$ http://new.together-school.pl/content/blogpage/ferma_iluzij.html [R=301,L]
+RewriteRule ^ru\/farma-iluzji$ http://new.together-school.pl/content/blogpage/ferma_iluzij.html [R=301,L]
+RewriteRule ^ru\/szlachetna-paczka-2016\/$ http://new.together-school.pl/content/blogpage/szlachetna_paczka.html [R=301,L]
+RewriteRule ^ru\/szlachetna-paczka-2016$ http://new.together-school.pl/content/blogpage/szlachetna_paczka.html [R=301,L]
+RewriteRule ^ru\/po-doroge-k-mechte-o-evropejskom-obrazovanii\/$ http://new.together-school.pl/content/blogpage/evropejskoe_obrazovanie.html [R=301,L]
+RewriteRule ^ru\/po-doroge-k-mechte-o-evropejskom-obrazovanii$ http://new.together-school.pl/content/blogpage/evropejskoe_obrazovanie.html [R=301,L]
+
+#################################################################################
+
+
+
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} !^new.together-school\.pl [NC]
+
+
+
+RewriteRule (.*) http://new.together-school.pl/$1 [R=301,L]
+
+#
+# or for the opposite domain.com -> www.domain.com use the following
+# DO NOT USE BOTH
+#
+#RewriteCond %{HTTP_HOST} .
+#RewriteCond %{HTTP_HOST} !^www\.example-domain-please-change\.com [NC]
+#RewriteRule (.*) http://www.example-domain-please-change.com/$1 [R=301,L]
+
+
+
+# Rewrite secure requests properly to prevent SSL cert warnings, e.g. prevent 
+# https://www.domain.com when your cert only allows https://secure.domain.com
+#RewriteCond %{SERVER_PORT} !^443
+#RewriteRule (.*) https://example-domain-please-change.com/$1 [R=301,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(ru|en|pl)?/?(.*)$ index.php?cultureKey=$1&q=$2 [L,QSA]
+
+# The Friendly URLs part
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(ru|en|pl)/favicon.ico$ favicon.ico [L,QSA]
+   
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(ru|en|pl)/assets(.*)$ assets$2 [L,QSA]
+ 
+
+# Make sure .htc files are served with the proper MIME type, which is critical
+# for XP SP2. Un-comment if your host allows htaccess MIME type overrides.
+
+#AddType text/x-component .htc
+
+
+
+# If your server is not already configured as such, the following directive
+# should be uncommented in order to set PHP's register_globals option to OFF.
+# This closes a major security hole that is abused by most XSS (cross-site
+# scripting) attacks. For more information: http://php.net/register_globals
+#
+# To verify that this option has been set to OFF, open the Manager and choose
+# Reports -> System Info and then click the phpinfo() link. Do a Find on Page
+# for "register_globals". The Local Value should be OFF. If the Master Value
+# is OFF then you do not need this directive here.
+#
+# IF REGISTER_GLOBALS DIRECTIVE CAUSES 500 INTERNAL SERVER ERRORS :
+#
+# Your server does not allow PHP directives to be set via .htaccess. In that
+# case you must make this change in your php.ini file instead. If you are
+# using a commercial web host, contact the administrators for assistance in
+# doing this. Not all servers allow local php.ini files, and they should
+# include all PHP configurations (not just this one), or you will effectively
+# reset everything to PHP defaults. Consult www.php.net for more detailed
+# information about setting PHP directives.
+
+#php_flag register_globals Off
+
+
+
+# For servers that support output compression, you should pick up a bit of
+# speed by un-commenting the following lines.
+
+#php_flag zlib.output_compression On
+#php_value zlib.output_compression_level 5
+
+
+
+# The following directives stop screen flicker in IE on CSS rollovers. If
+# needed, un-comment the following rules. When they're in place, you may have
+# to do a force-refresh in order to see changes in your designs.
+
+#ExpiresActive On
+#ExpiresByType image/gif A2592000
+#ExpiresByType image/jpeg A2592000
+#ExpiresByType image/png A2592000
+#BrowserMatch "MSIE" brokenvary=1
+#BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
+#BrowserMatch "Opera" !brokenvary
+#SetEnvIf brokenvary 1 force-no-vary

@@ -109,11 +109,12 @@ body
         padding: 0
         li:not(:nth-child(1))
           display: none
+        li:first-child a
+          pointer-events: none
         li
           margin-bottom: 5px
           a
             display: block
-            pointer-events: none
           .ru-lang
             width: 29px
             height: 29px
@@ -435,6 +436,8 @@ body
           height: inherit
           display: flex
           justify-content: center
+          width: 50%
+          margin: auto
           .img-name-img
             width: 150px
             padding-top: 82px
