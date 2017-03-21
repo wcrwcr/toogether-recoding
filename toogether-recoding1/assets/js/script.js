@@ -205,6 +205,13 @@ $(function (){
         return false;
     });
 
+    $('.send-button').click(function () {
+
+        $('.left-request-forms > form').hide();
+        $('.center-block-b').show();
+
+    });
+
     //===============contacts submit==================
     $(".form-contact").submit(function (e) {
         e.preventDefault();
